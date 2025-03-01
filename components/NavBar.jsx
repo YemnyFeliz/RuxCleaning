@@ -23,13 +23,18 @@ import Commercial from '../pages/Commercial';
 import EcoFriendly from '../pages/Eco-Friendly';
 import Career from '../Pages/Career'
 import CallAction from '../pages/CallAction';
+import logo from '../../assets/logo.png'; // Adjust path based on file location
+
 
 const Navigation = () => {
   return (
     <Router>
     <Navbar fixed="top" collapseOnSelect expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="/">RuxCleaning</Navbar.Brand>
+        <Navbar.Brand href="/">
+          <img alt="ruxcleaninglogo" src={logo} width="30" height="30" className="d-inline-block align-top" />
+
+          {' '}RuxCleaning</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">

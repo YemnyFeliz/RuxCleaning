@@ -22,7 +22,7 @@ const BubblesBackground = () => {
                 x: Math.random() * canvas.width, 
                 y: canvas.height + radius, // Start from the bottom
                 radius,
-                speedX: (Math.random() - 0.5) * 0.3, // Slightly slower movement
+                speedX: (Math.random() - 0.5) * 0.05, // Slightly slower movement
                 speedY: Math.random() * -2 - 0.2, // Move up slowly
                 alpha: 1,
             });
