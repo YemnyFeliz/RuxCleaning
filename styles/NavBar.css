@@ -1,0 +1,11 @@
+nav.bg-body-tertiary {
+    /* --bs-bg-opacity: 1; */
+    background-color: #caf0f8!important;
+    height: 5rem;
+    
+}
+
+.nav-link {
+    margin: 2.5rem;
+    font-size: 1.2rem;
+}
