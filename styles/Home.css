@@ -90,7 +90,43 @@ h2 {
     width: 100%;
     text-align: center; 
     padding: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.5; /* Improve readability */
     
 }
+
+/* -----------------------Dropdown-------------------- */
+
+/* Make dropdown larger */
+.navbar .dropdown-menu {
+    background-color: rgba(255,255,255,0.5)!important;  /* Dark blue background */
+    border-radius: 10px !important;  /* Rounded corners */
+    border-style: hidden;
+    min-width: 600px !important;  /* Set width */
+    padding: 12px !important;
+}
+
+/* Style dropdown items */
+.navbar .dropdown-menu .dropdown-item {
+    color: #7d8597!important;  /* White text */
+    font-size: 1.2rem !important;  /* Larger font */
+    padding: 12px 20px !important;
+}
+
+/* Hover effect */
+.navbar .dropdown-menu .dropdown-item:hover {
+    background-color: #0077b6 !important;  /* Lighter blue */
+    color: #fff !important;
+}
+
+/* Active item */
+.navbar .dropdown-menu .dropdown-item:active {
+    background-color: #00b4d8 !important; 
+}
+
+/* Ensure Navbar links fill entire width */
+.navbar-nav {
+    width: 100% !important;
+    justify-content: space-between !important; /* Spread items */
+}
+
