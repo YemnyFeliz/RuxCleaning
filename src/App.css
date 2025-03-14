@@ -9,6 +9,7 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    background: linear-gradient( #caf0f8 30%, #023e8a) !important;
     /* background-color: blue !important; */
 }
 
@@ -32,6 +33,7 @@ canvas {
     width: 100% !important;
     height: 100% !important;
     pointer-events: none !important;
+    background: none !important;
 }
 
 .header {

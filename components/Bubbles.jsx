@@ -6,6 +6,7 @@ const BubblesBackground = () => {
     const animationFrameId = useRef(null);
 
     useEffect(() => {
+        console.log("🎈 BubblesBackground MOUNTED");
         const canvas = canvasRef.current;
         const ctx = canvas.getContext('2d');
 
