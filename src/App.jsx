@@ -8,6 +8,7 @@ import Header from '../components/Header';
 import BubblesBackground from '../components/Bubbles';
 
 import Home from '../pages/Home';
+import ResidentialMain from '../Pages/ResidentialMain';
 import RegularCleaning from '../Pages/Residential/RegularCleaning';
 import DeepCleaning from '../Pages/Residential/DeepCleaning';
 import MoveCleaning from '../Pages/Residential/MoveCleaning';
@@ -61,6 +62,7 @@ function App() {
       
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/residential" element={<ResidentialMain />} /> 
         <Route path="/regularCleaning" element={<RegularCleaning />} />
         <Route path="/deepCleaning" element={<DeepCleaning />} />
         <Route path="/moveCleaning" element={<MoveCleaning />} />

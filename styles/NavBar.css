@@ -37,3 +37,8 @@ nav.bg-body-tertiary {
 .callBtn {
 font-size: 1.3rem;
 }
+
+.dropdown-link {
+    text-decoration: none;
+    color: var(--bs-nav-link-color);
+}
