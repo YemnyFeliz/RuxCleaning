@@ -31,24 +31,11 @@ const Navigation = () => {
             <NavDropdown.Item as={Link} to="/moveCleaning">Move in/out Cleaning</NavDropdown.Item>
             <NavDropdown.Item as={Link} to="/postConstructionCleaning">Post Construction Cleaning</NavDropdown.Item>
           </NavDropdown>
-          {/* </Nav.Link> */}
-
-          {/* <Dropdown as={ButtonGroup}>
-            <Button>Residential</Button>
-            <Dropdown.Toggle split id="dropdown-split-basic" className='custom-dropdown'/>
-            <Dropdown.Item as={Link} to="/regularCleaning">Regular Cleaning</Dropdown.Item>
-            <Dropdown.Item as={Link} to="/deepCleaning">Deep Cleaning</Dropdown.Item>
-            <Dropdown.Item as={Link} to="/moveCleaning">Move in/out Cleaning</Dropdown.Item>
-            <Dropdown.Item as={Link} to="/postConstructionCleaning">Post Construction Cleaning</Dropdown.Item>
-            <Dropdown.Menu>
-
-            </Dropdown.Menu>
-          </Dropdown> */}
 
           <Nav.Link as={Link} to="/commercial">Commercial</Nav.Link>
           <Nav.Link as={Link} to="/ecoFriendly">Eco Friendly</Nav.Link>
           <Nav.Link as={Link} to="/career">Career</Nav.Link>
-          <Button className="callBtn" variant="secondary" as={Link} to="/callAction">Call Now 777-777-7777</Button>
+          <Button className="callBtn" variant="secondary" href="tel:609-757-5153">Call Now 777-777-7777</Button>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
