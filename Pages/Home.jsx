@@ -46,19 +46,19 @@ function Home() {
 
 <Row className="justify-content-center">
     <Col md={8}>
-        <Card className="text-center card">
+        <Card className="text-center cardHome">
             <Card.Body>
                 {/* <Card.Title>Special title treatment</Card.Title> */}
                 <Card.Text className="cardtext">
-                    🏡 Residential Cleaning – Routine and deep home cleaning to keep your living space fresh and inviting. <br />
+                    <strong>🏡 Residential Cleaning – </strong>Routine and deep home cleaning to keep your living space fresh and inviting. <br />
                     <br />
-                    🏢 Commercial Cleaning – Office, retail, warehouse, and industrial cleaning for a healthier work environment. <br />
+                    <strong>🏢 Commercial Cleaning –</strong> Office, retail, warehouse, and industrial cleaning for a healthier work environment. <br />
                     <br />
-                    🛠 Post-Construction Cleaning – Removing dust, debris, and residue for a clean, move-in-ready space. <br />
+                    <strong>🛠 Post-Construction Cleaning – </strong>Removing dust, debris, and residue for a clean, move-in-ready space. <br />
                     <br />
-                    🚛 Move-In/Move-Out Cleaning – Preparing homes for new occupants by removing dirt, dust, and grime. <br />
+                    <strong>🚛 Move-In/Move-Out Cleaning – </strong>Preparing homes for new occupants by removing dirt, dust, and grime. <br />
                     <br />
-                    🧼 Deep Cleaning – Comprehensive cleaning for hard-to-reach areas and high-traffic spaces.
+                    <strong>🧼 Deep Cleaning – </strong>Comprehensive cleaning for hard-to-reach areas and high-traffic spaces.
                 </Card.Text>
             </Card.Body>
         </Card>
