@@ -49,5 +49,6 @@ font-size: 1.2rem;
     border: none;
     border-radius: 15px;
     padding: 2rem;
-   
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
