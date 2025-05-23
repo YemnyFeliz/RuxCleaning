@@ -13,7 +13,7 @@ import residentialCleaning from "../../src/assets/residentialCleaning.jpg";
 function RegularCleaning() {
     return (
         <>
-            <div className="regResidential container ">
+            <div className="regResidential container">
                 <Row>
                     <Col>
                         <div className="regIntro">
