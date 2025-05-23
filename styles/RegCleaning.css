@@ -89,3 +89,7 @@ text-align: center;
   .smCardText{
 font-size: 1.1rem;
   }
+  
+  .text-indent{
+    text-indent: 6rem;
+  }
