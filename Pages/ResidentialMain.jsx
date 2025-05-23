@@ -5,20 +5,29 @@ import '../styles/residential.css';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import { CardBody } from "react-bootstrap";
+
+// import cleaningSink2 from "../src/assets/cleaningSink2.mp4";
+import cleaningSink from "../src/assets/cleaningSink.mp4";
+// import cleanMicrowave from "../src/assets/cleanMicrowave.jpeg";
+// import cleanSink from "../src/assets/postConstruction.jpeg";
+import cleanStove from "../src/assets/cleanStove.jpeg";
+// import dirtyMicrowave from "../src/assets/dirtyMicrowave.jpeg";
+// import dirtySink from "../src/assets/dirtySink.jpeg";
+import dirtyStove from "../src/assets/dirtyStove.jpeg";
+// import gifSink from "../src/assets/gifSink.gif";
 
 function ResidentialMain() {
     return (
 
 
         <div className="genResidential container ">
-            <h2 className="resTitle">Residential Cleaning in General</h2>
+            <h2 className="regTitle">Residential Cleaning in General</h2>
 
             {/* Row 1 - Card Left, Image Right */}
             <div className="whyResidential">
                 <Row className="align-items-center mb-5">
                     <Col md={6}>
-                        <Card className="resCard h-100">
+                        <Card className="regCard h-100">
                             <Card.Body>
                                 <Card.Title className="resCardTitle">  Why You Need Residential Cleaning Services  </Card.Title>
                                 <Card.Text className="resCardText">
@@ -28,33 +37,55 @@ function ResidentialMain() {
                             </Card.Body>
                         </Card>
                     </Col>
-                </Row>
-            </div>
 
 
-            {/* Row 2 - Image Left, Card Right */}
-            <div className="howResidential">
-                <Row className="align-items-center flex-md-row-reverse mb-5">
                     <Col md={6}>
-                        <Card className="resCard h-100">
-                            <Card.Body>
-                                <Card.Title className="resCardTitle"> How Residential Cleaning Helps You </Card.Title>
-                                <Card.Text className="resCardText">
-                                    <ul>
-                                        <li><strong>Saves Time and Effort</strong> – Skip the hassle of scrubbing and dusting! Let our team handle everything so you can focus on what matters most.
-                                        </li> <br />
-                                        <li><strong>Creates a Healthier Home </strong>– Our deep cleaning removes allergens, dust, bacteria, and mold, improving indoor air quality and reducing potential health risks.</li><br />
-                                        <li><strong>Stress-Free Living </strong>– Enjoy coming home to a spotless environment without the worry of cleaning chores piling up.</li><br />
-                                        <li><strong>Increases Property Value </strong>– Regular cleaning preserves the condition of your home, keeping floors, furniture, and appliances in top shape.</li><br />
-                                        <li><strong>Customized Cleaning Plans </strong>– Tailored services to meet individual needs and schedules.
-                                        </li>
-                                    </ul>
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
+                        <div className="d-flex h-100 gap-2">
+                            <img src={dirtyStove} className="w-50 object-fit-cover" style={{ height: '100%' }} />
+                            <img src={cleanStove} className="w-50 object-fit-cover" style={{ height: '100%' }} />
+                        </div>
                     </Col>
                 </Row>
             </div>
+
+
+          
+
+            <Row className="flex-md-row-reverse mb-5">
+  {/* Card (natural height) */}
+  <Col md={6}>
+    <Card className="regCard">
+      <Card.Body>
+        <Card.Title className="resCardTitle">How Residential Cleaning Helps You</Card.Title>
+        <Card.Text className="resCardText">
+        <ul>
+                                    <li><strong>Saves Time and Effort</strong> – Skip the hassle of scrubbing and dusting! Let our team handle everything so you can focus on what matters most.
+                                    </li> 
+                                    <li><strong>Creates a Healthier Home </strong>– Our deep cleaning removes allergens, dust, bacteria, and mold, improving indoor air quality and reducing potential health risks.</li>
+                                    <li><strong>Stress-Free Living </strong>– Enjoy coming home to a spotless environment without the worry of cleaning chores piling up.</li>
+                                    <li><strong>Increases Property Value </strong>– Regular cleaning preserves the condition of your home, keeping floors, furniture, and appliances in top shape.</li>
+                                    <li><strong>Customized Cleaning Plans </strong>– Tailored services to meet individual needs and schedules.
+                                    </li>
+                                </ul>
+        </Card.Text>
+      </Card.Body>
+    </Card>
+  </Col>
+
+  {/* Video column with half-height video */}
+  <Col md={6} className="d-flex justify-content-center">
+    <div style={{ width: '100%', maxHeight: '550px', borderRadius: '0.5rem', overflow: 'hidden' }}>
+      <video
+        src={cleaningSink}
+        autoPlay
+        muted
+        loop
+        className="w-100 h-100 object-fit-cover"
+      />
+    </div>
+  </Col>
+</Row>
+
 
 
             {/* Row 3 - Single Card Slightly Right */}

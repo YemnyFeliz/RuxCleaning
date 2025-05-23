@@ -7,7 +7,7 @@
     padding: 2rem;
     /* background-color: #ecf8f8; */
    background-color: #fdf0d5; 
-   
+   /* background-color: transparent; */
     
     /* background: linear-gradient( #fdf0d5 , #fec85d ) */
   }
@@ -51,4 +51,9 @@ font-size: 1.2rem;
     padding: 2rem;
     margin-top: 3rem;
     margin-bottom: 2rem;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+  border-radius: 10px;
 }
