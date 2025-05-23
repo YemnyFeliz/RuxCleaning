@@ -62,7 +62,7 @@ function DeepCleaning() {
                     </Col>
                 </Row>
 
-                <Row>
+                <Row className="mb-5 mt-5">
                     <Col>
                         <Card className="regCard">
                             <Card.Body>
