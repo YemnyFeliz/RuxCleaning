@@ -212,7 +212,7 @@ function RegularCleaning() {
 
                 {/* </div> */}
 
-            </div>
+           
 
 
 
@@ -233,6 +233,7 @@ function RegularCleaning() {
                     </Card>
                 </Col>
             </Row>
+            </div>
         </>
     )
 }

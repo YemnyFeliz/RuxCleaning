@@ -1,63 +1,162 @@
 import React from "react";
+import "../../src/App.css";
+import '../../styles/MoveCleaning.css';
+
+import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import residentialCleaning from "../../src/assets/residentialCleaning.jpg";
 
 function MoveCleaning() {
     return (
         <>
-            <div className="moveCleaning">
-                <h2>Move-In/Move-Out Cleaning by Rux Cleaning in Bolingbrook
-                </h2>
-                <p>Moving into a new home or leaving your old one can be stressful, but move-in/out cleaning from Rux Cleaning makes the process easier and more enjoyable. Our professional cleaning service ensures that your new or vacated home is spotless and ready for the next chapter, all while using safe, environmentally-friendly cleaning products that protect your health and the planet.</p>
-            </div>
-            <div className="whyMoveCleaning">
-                <h3>Why You Need Move-In/Move-Out Cleaning
-                </h3>
-                <ul>
-                    <li>A Fresh Start – Whether you're moving in or moving out, cleaning is essential to make sure every corner of your space is ready for a new beginning. Our move-in/out service guarantees a fresh, hygienic environment free of dirt, grime, and odors.
-                    </li>
-                    <li>Safe and Green Cleaning – we use eco-friendly solutions that are non-toxic, biodegradable, and safe for everyone, including children and pets. You don’t have to worry about harsh chemicals in your new home or on your belongings.
-                    </li>
-                    <li>Time and Energy Saver – Moving is exhausting enough. With our comprehensive cleaning services, you won’t have to spend hours scrubbing every surface, giving you more time to focus on your move.
-                    </li>
-                    <li>Avoiding Security Deposit Deductions – If you're a renter, cleaning your old space thoroughly is essential to avoid deductions from your security deposit. Our expert cleaners will make sure the property is spotless, ensuring you get the maximum refund.
-                    </li>
-                </ul>
-            </div>
-            <div className="howMoveClenaing">
-                <h3>How It Helps You
-                </h3>
-                <ul>
-                    <li>Healthy Living Environment: Our eco-friendly products clean without leaving behind harmful residue, so you can breathe easy in your new space.
-                    </li>
-                    <li>Comprehensive Service: We cover all areas, including hard-to-reach spots, ensuring every inch of your space is clean and disinfected.
-                    </li>
-                    <li>Peace of Mind: With Rux Cleaning, you can rest assured that your move-in or move-out cleaning will be done right. We take care of the details, so you don’t have to worry about a thing.
-                    </li>
+            <div className="regResidential container">
+                <Row>
+                    <Col>
+                        <div className="regIntro">
+                            <h2 className="regTitle">Move-In/Move-Out Cleaning by Rux Cleaning in Bolingbrook
+                            </h2>
+                            <div className="regIntroText">
+                                <p className="text-indent">Moving into a new home or leaving your old one can be stressful, but <strong>move-in/out cleaning</strong> from <strong>Rux Cleaning</strong> makes the process easier and more enjoyable. Our professional cleaning service ensures that your new or vacated home is spotless and ready for the next chapter, all while using <strong>safe, environmentally-friendly cleaning products</strong> that protect your health and the planet.</p>
+                            </div>
+                        </div>
+                    </Col>
+                </Row>
 
-                </ul>
-            </div>
-            <div className="includedMoveCleaning">
-                <h3>What’s Included in Our Move-In/Move-Out Cleaning
-                </h3>
-                <ul>
-                    <li>Kitchen: Cleaning all appliances (inside and out), countertops, sinks, and cabinets. Scrubbing floors and wiping down baseboards.
-                    </li>
-                    <li>Bathrooms: Disinfecting toilets, tubs, showers, sinks, and counters. Cleaning mirrors and ensuring that every surface is sanitized.
-                    </li>
-                    <li>Living Areas & Bedrooms: Dusting and wiping down all furniture, baseboards, and window sills. Vacuuming carpets, cleaning floors, and removing any debris left behind.
-                    </li>
-                    <li>Deep Cleaning Areas: Cleaning inside cabinets, closets, and drawers to remove dust and debris. Wiping down walls, light switches, and door frames.
-                    </li>
-                    <li>Eco-Friendly Products: We use green-certified, biodegradable cleaning supplies that are effective yet gentle on the environment, leaving your home fresh without the harsh chemicals.
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h3>Serving Bolingbrook and Surrounding Areas
-                </h3>
+                <Row xs={1} md={2} className="g-4">
+                    <Col className="whyMoveCleaning">
+                        <Card className="regCard">
+                            <Card.Body>
+                                <Card.Title className="regCardTitle">Why You Need Move-In/Move-Out Cleaning
+                                </Card.Title>
+                                <Card.Text className="regCardText">
+                                    <ul>
+                                        <li><strong>A Fresh Start – </strong>Whether you're moving in or moving out, cleaning is essential to make sure every corner of your space is ready for a new beginning. Our move-in/out service guarantees a <strong>fresh, hygienic environment</strong> free of dirt, grime, and odors.
+                                        </li>
+                                        <li><strong>Safe and Green Cleaning –</strong> we use <strong>eco-friendly solutions</strong> that are non-toxic, biodegradable, and safe for everyone, including children and pets. You don’t have to worry about harsh chemicals in your new home or on your belongings.
+                                        </li>
+                                        <li><strong>Time and Energy Saver –</strong> Moving is exhausting enough. With our comprehensive cleaning services, you won’t have to spend hours scrubbing every surface, giving you more time to focus on your move.
+                                        </li>
+                                        <li><strong>Avoiding Security Deposit Deductions – </strong>If you're a renter, cleaning your old space thoroughly is essential to avoid deductions from your security deposit. Our expert cleaners will make sure the property is spotless, ensuring you get the maximum refund.
+                                        </li>
+                                    </ul>
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+
+                    <Col className="howMoveClenaing">
+                        <Card className="regCard">
+                            <Card.Body>
+                                <Card.Title className="regCardTitle">How It Helps You
+                                </Card.Title>
+                                <Card.Text className="regCardText">
+                                    <ul>
+                                        <li><strong>Healthy Living Environment:</strong> Our eco-friendly products clean without leaving behind harmful residue, so you can breathe easy in your new space.
+                                        </li>
+                                        <li><strong>Comprehensive Service:</strong> We cover all areas, including hard-to-reach spots, ensuring every inch of your space is clean and disinfected.
+                                        </li>
+                                        <li><strong>Peace of Mind:</strong> With Rux Cleaning, you can rest assured that your move-in or move-out cleaning will be done right. We take care of the details, so you don’t have to worry about a thing.
+                                        </li>
+                                    </ul>
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                </Row>
+            
+
+
+
+            <h2 className="regCardTitle mb-5" >What’s Included in Our Move-In/Move-Out Cleaning
+            </h2>
+
+            <Row>
+                <Col>
+                    <Card className="smCard">
+                        <Card.Body>
+                        <Card.Img className="cardImg" variant="top" src={residentialCleaning} />
+                            <Card.Title className="smCardTitle">Kitchen:</Card.Title>
+                            <Card.Text className="smCardText">
+                                <p>Cleaning all appliances (inside and out), countertops, sinks, and cabinets. Scrubbing floors and wiping down baseboards.
+                                </p>
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </Col>
+
+                <Col>
+                    <Card className="smCard">
+                        <Card.Body>
+                        <Card.Img className="cardImg" variant="top" src={residentialCleaning} />
+                            <Card.Title className="smCardTitle">Bathrooms:</Card.Title>
+                            <Card.Text className="smCardText">
+                                <p>Disinfecting toilets, tubs, showers, sinks, and counters. Cleaning mirrors and ensuring that every surface is sanitized.
+                                </p>
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </Col>
+
+                <Col>
+                    <Card className="smCard">
+                        <Card.Body>
+                        <Card.Img className="cardImg" variant="top" src={residentialCleaning} />
+                            <Card.Title className="smCardTitle">Living Areas & Bedrooms:</Card.Title>
+                            <Card.Text className="smCardText">
+                                <p>Dusting and wiping down all furniture, baseboards, and window sills. Vacuuming carpets, cleaning floors, and removing any debris left behind.
+                                </p>
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </Col>
+
+                <Col>
+                    <Card className="smCard">
+                        <Card.Body>
+                        <Card.Img className="cardImg" variant="top" src={residentialCleaning} />
+                            <Card.Title className="smCardTitle">Deep Cleaning Areas:</Card.Title>
+                            <Card.Text className="smCardText">
+                                <p>Cleaning inside cabinets, closets, and drawers to remove dust and debris. Wiping down walls, light switches, and door frames.
+                                </p>
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </Col>
+
+                <Col>
+                    <Card className="smCard">
+                        <Card.Body>
+                        <Card.Img className="cardImg" variant="top" src={residentialCleaning} />
+                            <Card.Title className="smCardTitle">Eco-Friendly Products:</Card.Title>
+                            <Card.Text className="smCardText">
+                                <p>We use <strong>green-certified, biodegradable cleaning supplies</strong> that are effective yet gentle on the environment, leaving your home fresh without the harsh chemicals.
+
+                                </p>
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </Col>
+            </Row>
+            
+
+            <Row className="justify-content-center mt-5">
+            
+            <Col md={6}>
+            <Card className="bookCard">
+            <Card.Body>
+                <Card.Title className="resCardTitle">Serving Bolingbrook and Surrounding Areas
+                </Card.Title>
+                <Card.Text className="resCardText">
                 <p>Let Rux Cleaning make your move easier and more eco-friendly. Our move-in/out cleaning services in Bolingbrook provide a safe, fresh, and spotless home without compromising the health of your family or the planet.
                 </p>
                 <p>📞 Contact us today for a quote and enjoy a hassle-free, eco-friendly move!
                 </p>
+                </Card.Text>
+                </Card.Body>
+                </Card>
+                </Col>
+            </Row>
             </div>
         </>
     )
