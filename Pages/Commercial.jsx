@@ -1,14 +1,26 @@
 import React from "react";
+import "../src/App.css";
+import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import residentialCleaning from "../src/assets/residentialCleaning.jpg";
 
 function Commercial() {
     return (
         <>
-            <div className="commercial">
-                <h2>Commercial Cleaning Services
+            <div className="regResidential container">
+                <Row>
+                    <Col>
+                    <div className="regIntro">
+                    <h2 regTitle>Commercial Cleaning Services
                 </h2>
-                <p>A clean and well-maintained workspace is essential for productivity, professionalism, and employee well-being. At Rux Cleaning, we offer eco-friendly commercial cleaning services in Bolingbrook to ensure your business space is spotless, hygienic, and welcoming for employees, clients, and visitors.
+                <p className="regIntroText text-indent">A clean and well-maintained workspace is essential for productivity, professionalism, and employee well-being. At Rux Cleaning, we offer eco-friendly commercial cleaning services in Bolingbrook to ensure your business space is spotless, hygienic, and welcoming for employees, clients, and visitors.
                 </p>
-            </div>
+                    </div>
+                    </Col>
+                </Row>
+                
+            
             <div className="whatCommercial">
                 <h3>What is Commercial Cleaning?
                 </h3>
@@ -67,6 +79,7 @@ function Commercial() {
 📍 Serving Bolingbrook & Surrounding Areas
 </p>
               
+            </div>
             </div>
         </>
     )
