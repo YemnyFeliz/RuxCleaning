@@ -5,6 +5,8 @@ import "../../styles/RegCleaning.css";
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import residentialCleaning from "../../src/assets/residentialCleaning.jpg";
+
 
 
 
@@ -15,7 +17,7 @@ function RegularCleaning() {
                 <Row>
                     <Col>
                         <div className="regIntro">
-                            <h2 className="regTitle">Regular Residential Cleaning by Rux Cleaning in Bolingbrook</h2>
+                            <h2 className="regTitle">Regular Residential Cleaning <br /> by Rux Cleaning in Bolingbrook</h2>
                             <div className="regIntroText">
                                 <p>Keeping your home clean is essential for a <strong>healthy, comfortable, and stress-free living environment.</strong></p>
                                 <p>At <strong>Rux Cleaning</strong>, we provide <strong>professional, eco-friendly regular cleaning services</strong> in Bolingbrook, ensuring your home stays fresh and spotless without the use of harsh chemicals.</p>
@@ -41,33 +43,124 @@ function RegularCleaning() {
 
 
 
-                    <Row className="mt-4">
-                        <Col className="howRegResidential">
-                            {/* <div className="howRegResidential"> */}
-                            <Card className="regCard">
-                                <Card.Title className="regCardTitle">How Regular Cleaning Helps You
-                                </Card.Title>
-                                <Card.Text className="regCardText">
-                                    <p>🏡 Keeps Your Home in Top Shape – A regularly cleaned home looks and feels
-                                        fresh at all times.
-                                    </p>
-                                    <p>⏳ More Free Time – Spend less time cleaning and more time enjoying your home,
-                                        family, and hobbies.
-                                    </p>
-                                    <p>🌿 Healthier Living Environment – Reduce allergens, bacteria, and dust to create a
-                                        cleaner, healthier home.</p>
-                                    <p> 💰 Extends the Life of Your Home & Furniture – Regular dusting and cleaning
-                                        prevent wear and tear on furniture, flooring, and fixtures.</p>
+                    {/* <Row className="mt-4"> */}
+                    <Col className="howRegResidential">
+                        {/* <div className="howRegResidential"> */}
+                        <Card className="regCard">
+                            <Card.Title className="regCardTitle">How Regular Cleaning Helps You
+                            </Card.Title>
+                            <Card.Text className="regCardText">
+                                <p>🏡 <strong>Keeps Your Home in Top Shape – </strong>A regularly cleaned home <strong>looks and feels
+                                    fresh</strong> at all times.
+                                </p>
+                                <p>⏳<strong> More Free Time –</strong> Spend less time cleaning and more time enjoying your home,
+                                    family, and hobbies.
+                                </p>
+                                <p>🌿 <strong>Healthier Living Environment –</strong> Reduce allergens, bacteria, and dust to create a
+                                    cleaner, <strong>healthier home</strong>.</p>
+                                <p> 💰 <strong>Extends the Life of Your Home & Furniture –</strong> Regular dusting and cleaning
+                                    prevent <strong>wear and tear on furniture, flooring, and fixtures</strong>.</p>
 
+                            </Card.Text>
+                        </Card>
+                        {/* </div> */}
+                    </Col>
+                </Row>
+
+                {/* </Row> */}
+                {/* </div> */}
+
+
+
+
+                <h2 className="includedTitle">What’s Included in Rux Cleaning’s Regular Residential Cleaning? </h2>
+                <Row className="includedRegResidential">
+
+                    <Col >
+                        <Card className="smCard">
+                            <Card.Body>
+                                <Card.Img className="cardImg" variant="top" src={residentialCleaning} />
+                                <Card.Title className="smCardTitle">🧹 Living Areas & Bedrooms:</Card.Title>
+                                <Card.Text className="smCardText">
+                                    <ul>
+                                        <li>Dusting and wiping down surfaces, furniture, and décor</li>
+                                        <li>Vacuuming carpets and rugs
+                                        </li>
+                                        <li>Sweeping and mopping floors</li>
+                                        <li>Cleaning mirrors and glass surfaces</li>
+                                        <li>Emptying trash bins
+                                        </li>
+                                    </ul>
                                 </Card.Text>
-                            </Card>
-                            {/* </div> */}
-                        </Col>
-
-                    </Row>
-                    {/* </div> */}
+                            </Card.Body>
+                        </Card>
+                    </Col>
 
 
+                    <Col>
+                        <Card className="smCard">
+                            <Card.Body>
+                                <Card.Img className="cardImg" variant="top" src={residentialCleaning} />
+                                <Card.Title className="smCardTitle">🛁 Bathrooms:
+                                </Card.Title>
+                                <Card.Text className="smCardText">
+                                    <ul>
+                                        <li>Scrubbing and disinfecting toilets, sinks, bathtubs, and showers</li>
+                                        <li>Wiping down countertops and fixtures
+                                        </li>
+                                        <li>Cleaning mirrors and polishing chrome</li>
+                                        <li>Mopping floors and sanitizing high-touch areas
+                                        </li>
+
+                                    </ul>
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+
+
+                    <Col>
+                        <Card className="smCard">
+                            <Card.Body>
+                                <Card.Img className="cardImg" variant="top" src={residentialCleaning} />
+                                <Card.Title className="smCardTitle">🍽 Kitchen:</Card.Title>
+                                <Card.Text className="smCardText">
+                                    <ul>
+                                        <li>Wiping down countertops, sinks, and appliances
+                                        </li>
+                                        <li>Cleaning the exterior of cabinets and drawers</li>
+                                        <li>Sanitizing high-touch surfaces like doorknobs and light switches</li>
+                                        <li>Sweeping and mopping floors
+                                        </li>
+
+                                    </ul>
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+
+
+                    <Col>
+                        <Card className="smCard">
+                            <Card.Body>
+                                <Card.Img className="cardImg" variant="top" src={residentialCleaning} />
+                                <Card.Title className="smCardTitle">🌱 Eco-Friendly Cleaning Products Used:</Card.Title>
+                                <Card.Text className="smCardText">
+                                    <ul>
+                                        <li>Non-toxic, biodegradable cleaners
+                                        </li>
+                                        <li>Safe for children, pets, and allergy-sensitive individuals</li>
+                                        <li>Gentle yet effective cleaning solutions for a chemical-free home</li>
+                                    </ul>
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                </Row>
+
+
+
+                <Row xs={1} md={2} className="g-4">
                     <Col className="whyNeedRegResidential">
                         {/* <div className="whyNeedRegResidential"> */}
                         <Card className="regCard">
@@ -112,115 +205,34 @@ function RegularCleaning() {
 
 
 
-                <div className="includedRegResidential">
-                    <h2 className="includedTitle">What’s Included in Rux Cleaning’s Regular Residential Cleaning? </h2>
-                    <Row>
-                        <Col>
-                            <Card className="smCard">
-                                <Card.Body>
-                                    <Card.Img className="cardImg" variant="top" src="holder.js/100px160" />
-                                    <Card.Title className="smCardTitle">🧹 Living Areas & Bedrooms:</Card.Title>
-                                    <Card.Text className="smCardText">
-                                        <ul>
-                                            <li>Dusting and wiping down surfaces, furniture, and décor</li>
-                                            <li>Vacuuming carpets and rugs
-                                            </li>
-                                            <li>Sweeping and mopping floors</li>
-                                            <li>Cleaning mirrors and glass surfaces</li>
-                                            <li>Emptying trash bins
-                                            </li>
-                                        </ul>
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
+                {/* <div className="includedRegResidential"> */}
 
 
-                        <Col>
-                            <Card className="smCard">
-                                <Card.Body>
-                                    <Card.Img className="cardImg" variant="top" src="holder.js/100px160" />
-                                    <Card.Title className="smCardTitle">🛁 Bathrooms:
-                                    </Card.Title>
-                                    <Card.Text className="smCardText">
-                                        <ul>
-                                            <li>Scrubbing and disinfecting toilets, sinks, bathtubs, and showers</li>
-                                            <li>Wiping down countertops and fixtures
-                                            </li>
-                                            <li>Cleaning mirrors and polishing chrome</li>
-                                            <li>Mopping floors and sanitizing high-touch areas
-                                            </li>
-
-                                        </ul>
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
 
 
-                        <Col>
-                            <Card className="smCard">
-                                <Card.Body>
-                                    <Card.Img className="cardImg" variant="top" src="holder.js/100px160" />
-                                    <Card.Title className="smCardTitle">🍽 Kitchen:</Card.Title>
-                                    <Card.Text className="smCardText">
-                                        <ul>
-                                            <li>Wiping down countertops, sinks, and appliances
-                                            </li>
-                                            <li>Cleaning the exterior of cabinets and drawers</li>
-                                            <li>Sanitizing high-touch surfaces like doorknobs and light switches</li>
-                                            <li>Sweeping and mopping floors
-                                            </li>
-
-                                        </ul>
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-
-
-                        <Col>
-                            <Card className="smCard">
-                                <Card.Body>
-                                    <Card.Img className="cardImg" variant="top" src="../" />
-                                    <Card.Title className="smCardTitle">🌱 Eco-Friendly Cleaning Products Used:</Card.Title>
-                                    <Card.Text className="smCardText">
-                                        <ul>
-                                            <li>Non-toxic, biodegradable cleaners
-                                            </li>
-                                            <li>Safe for children, pets, and allergy-sensitive individuals</li>
-                                            <li>Gentle yet effective cleaning solutions for a chemical-free home</li>
-                                        </ul>
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                    </Row>
-
-
-                    
-                </div>
+                {/* </div> */}
 
             </div>
 
 
 
             <Row className="justify-content-center">
-                    <Col md={6}>
-                        <Card className="bookCard ">
-                            <Card.Body>
-                                <Card.Title className="resCardTitle">Book Your Cleaning Service Today!</Card.Title>
-                                <Card.Text className="resCardText">
-                                    <p>Let Rux Cleaning help you maintain a clean, fresh, and healthy home in Bolingbrook with our eco-friendly residential cleaning services.</p>
-                                    <p>
-                            📞 Call Us for a Free Quote!
-                            📍 Serving Bolingbrook & Nearby Areas
-                        </p>
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                </Row>
+                <Col md={6}>
+                    <Card className="bookCard ">
+                        <Card.Body>
+                            <Card.Title className="resCardTitle">Book Your Cleaning Service Today!</Card.Title>
+                            <Card.Text className="resCardText">
+                                <p>Let <strong>Rux Cleaning</strong> help you maintain a clean, fresh, and healthy home in <strong>Bolingbrook</strong> with our <strong>eco-friendly residential cleaning services</strong>.</p>
+                                <p>
+                                    <strong>📞 Call Us for a Free Quote!
+                                        📍 Serving Bolingbrook & Nearby Areas
+                                    </strong>
+                                </p>
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </Col>
+            </Row>
         </>
     )
 }
