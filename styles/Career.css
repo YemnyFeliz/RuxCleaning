@@ -1,7 +1,12 @@
-.formGroup{
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+.formGroup {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
-.formLabel{
+.formLabel {
     font-size: 1.3rem;
+}
+
+#applyBtn {
+    background-color: #6c757d !important;
+    color: #fff !important;
 }

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Form, Button, Container, Row, Col, Card } from 'react-bootstrap';
 import handShake from '../src/assets/handShake.jpg';
 import "../styles/Career.css";
+import emailjs from '@emailjs/browser';
 
 function Career() {
     const [formData, setFormData] = useState({
@@ -28,60 +29,82 @@ function Career() {
     const handleSubmit = (e) => {
         e.preventDefault();
         const newErrors = {};
-
+    
         // Full Name
         if (!formData.fullName.trim()) {
             newErrors.fullName = "This field is required.";
         } else if (formData.fullName.length < 2 || formData.fullName.length > 50) {
             newErrors.fullName = "Name must be between 2 and 50 characters.";
         }
-
+    
         // Phone
         if (!formData.phone.trim()) {
             newErrors.phone = "This field is required.";
         } else if (!/^\(?([0-9]{3})\)?[-.\s]?([0-9]{3})[-.\s]?([0-9]{4})$/.test(formData.phone)) {
             newErrors.phone = "Invalid phone number.";
         }
-
+    
         // Email
         if (!formData.email.trim()) {
             newErrors.email = "This field is required.";
         } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
             newErrors.email = "Invalid email address.";
         }
-
+    
         // Availability
         if (!formData.availability) {
             newErrors.availability = "This field is required.";
         }
-
+    
         // Experience
         if (!formData.experience.trim()) {
             newErrors.experience = "This field is required.";
-        } else if (formData.experience.length < 10 || formData.experience.length > 300) {
+        } else if (formData.experience.length < 2 || formData.experience.length > 300) {
             newErrors.experience = "Must be between 10 and 300 characters.";
         }
-
+    
         // Transportation
         if (!formData.transportation) {
             newErrors.transportation = "This field is required.";
         }
-
+    
         // About You
         if (!formData.aboutYou.trim()) {
             newErrors.aboutYou = "This field is required.";
         } else if (formData.aboutYou.length < 20 || formData.aboutYou.length > 500) {
             newErrors.aboutYou = "Must be between 20 and 500 characters.";
         }
-
+    
         setErrors(newErrors);
-
+    
         if (Object.keys(newErrors).length === 0) {
-            alert("Application submitted!");
-            console.log(formData);
-            // optionally reset the form or send data to API
+            // Send email via EmailJS
+            emailjs.send(
+                'service_7krkz4w',     // replace with your actual EmailJS service ID
+                'template_wz85848',    // replace with your actual template ID
+                formData,
+                '3RKvcCKvTjd4FX4rx'      // replace with your EmailJS public key
+            ).then((response) => {
+                console.log('SUCCESS!', response.status, response.text);
+                alert("Application submitted!");
+    
+                // Optional: clear form
+                setFormData({
+                    fullName: '',
+                    phone: '',
+                    email: '',
+                    availability: '',
+                    experience: '',
+                    transportation: '',
+                    aboutYou: ''
+                });
+            }).catch((err) => {
+                console.error('FAILED...', err);
+                alert("Something went wrong. Please try again later.");
+            });
         }
     };
+    
 
 
 
@@ -244,7 +267,7 @@ function Career() {
                                     </Form.Group>
 
                                     <div className="text-center">
-                                        <Button variant="secondary" type="submit">
+                                        <Button variant="secondary" type="submit" id="applyBtn">
                                             Apply Now
                                         </Button>
                                     </div>
