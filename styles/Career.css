@@ -5,3 +5,8 @@
 .formLabel{
     font-size: 1.3rem;
 }
+
+#applyBtn{
+    background-color:#6c757d !important;
+    color: #fff !important;
+}

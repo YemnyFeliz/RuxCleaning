@@ -8,8 +8,12 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 
-import residentialCleaning from "../src/assets/residentialCleaning.jpg";
+
 import commercialCleaning from "../src/assets/commercialCleaning.jpeg";
+import breakroom from "../src/assets/breakroom.jpg";
+import gencleaning from "../src/assets/gencleaning.jpg";
+import restroom from "../src/assets/restroom.jpg";
+import trashremoval from "../src/assets/trashremoval.jpg";
 
 function Commercial() {
 
@@ -83,7 +87,7 @@ function Commercial() {
                     <Col>
                         <Card className="smCard">
                             <Card.Body>
-                                <Card.Img className="cardImg" variant="top" src={residentialCleaning} />
+                                <Card.Img className="cardImg h-100" variant="top" src={gencleaning} />
                                 <Card.Title className="smCardTitle"></Card.Title>
                                 <Card.Text className="smCardText">
                                     <p>🧹 <strong>General Cleaning & Maintenance –</strong> Dusting, sweeping, mopping, and disinfecting high-traffic areas.</p>
@@ -95,7 +99,7 @@ function Commercial() {
                     <Col>
                         <Card className="smCard">
                             <Card.Body>
-                                <Card.Img className="cardImg" variant="top" src={residentialCleaning} />
+                                <Card.Img className="cardImg h-100" variant="top" src={restroom} />
                                 <Card.Title className="smCardTitle"></Card.Title>
                                 <Card.Text className="smCardText">
                                     <p>🛁 <strong>Restroom Sanitation –</strong> Deep cleaning and sanitizing of sinks, toilets, and high-touch surfaces.</p>
@@ -107,7 +111,7 @@ function Commercial() {
                     <Col>
                         <Card className="smCard">
                             <Card.Body>
-                                <Card.Img className="cardImg" variant="top" src={residentialCleaning} />
+                                <Card.Img className="cardImg h-100" variant="top" src={breakroom} />
                                 <Card.Title className="smCardTitle"></Card.Title>
                                 <Card.Text className="smCardText">
                                     🍽 <strong>Breakroom & Kitchen Cleaning –</strong> Wiping down countertops, cleaning sinks, and sanitizing appliances.
@@ -119,7 +123,7 @@ function Commercial() {
                     <Col>
                         <Card className="smCard">
                             <Card.Body>
-                                <Card.Img className="cardImg" variant="top" src={residentialCleaning} />
+                                <Card.Img className="cardImg" variant="top" src={trashremoval} />
                                 <Card.Title className="smCardTitle"></Card.Title>
                                 <Card.Text className="smCardText">
                                     🗑 <strong>Trash Removal –</strong> Ensuring a clean, clutter-free workspace with responsible waste disposal.

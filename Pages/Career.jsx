@@ -58,7 +58,7 @@ function Career() {
         // Experience
         if (!formData.experience.trim()) {
             newErrors.experience = "This field is required.";
-        } else if (formData.experience.length < 10 || formData.experience.length > 300) {
+        } else if (formData.experience.length < 2 || formData.experience.length > 300) {
             newErrors.experience = "Must be between 10 and 300 characters.";
         }
 
@@ -244,7 +244,7 @@ function Career() {
                                     </Form.Group>
 
                                     <div className="text-center">
-                                        <Button variant="secondary" type="submit">
+                                        <Button variant="secondary" type="submit" id="applyBtn">
                                             Apply Now
                                         </Button>
                                     </div>

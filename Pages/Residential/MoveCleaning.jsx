@@ -9,6 +9,12 @@ import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 import residentialCleaning from "../../src/assets/residentialCleaning.jpg";
 
+import MoveKitchen from '../../src/assets/MoveKitchen.jpg';
+import MoveDeep from '../../src/assets/MoveDeep.jpg';
+import MoveLiving from '../../src/assets/MoveLiving.jpg';
+import MoveProducts from '../../src/assets/MoveProducts.jpg';
+import MoveBathroom from '../../src/assets/MoveBathroom.jpg'
+
 function MoveCleaning() {
 
     const [showPhone, setShowPhone] = useState(false);
@@ -88,7 +94,7 @@ function MoveCleaning() {
                     <Col>
                         <Card className="smCard">
                             <Card.Body>
-                                <Card.Img className="cardImg" variant="top" src={residentialCleaning} />
+                                <Card.Img className="cardImg" variant="top" src={MoveKitchen} />
                                 <Card.Title className="smCardTitle">Kitchen:</Card.Title>
                                 <Card.Text className="smCardText">
                                     <p>Cleaning all appliances (inside and out), countertops, sinks, and cabinets. Scrubbing floors and wiping down baseboards.
@@ -101,7 +107,7 @@ function MoveCleaning() {
                     <Col>
                         <Card className="smCard">
                             <Card.Body>
-                                <Card.Img className="cardImg" variant="top" src={residentialCleaning} />
+                                <Card.Img className="cardImg" variant="top" src={MoveBathroom} />
                                 <Card.Title className="smCardTitle">Bathrooms:</Card.Title>
                                 <Card.Text className="smCardText">
                                     <p>Disinfecting toilets, tubs, showers, sinks, and counters. Cleaning mirrors and ensuring that every surface is sanitized.
@@ -114,7 +120,7 @@ function MoveCleaning() {
                     <Col>
                         <Card className="smCard">
                             <Card.Body>
-                                <Card.Img className="cardImg" variant="top" src={residentialCleaning} />
+                                <Card.Img className="cardImg" variant="top" src={MoveLiving} />
                                 <Card.Title className="smCardTitle">Living Areas & Bedrooms:</Card.Title>
                                 <Card.Text className="smCardText">
                                     <p>Dusting and wiping down all furniture, baseboards, and window sills. Vacuuming carpets, cleaning floors, and removing any debris left behind.
@@ -127,7 +133,7 @@ function MoveCleaning() {
                     <Col>
                         <Card className="smCard">
                             <Card.Body>
-                                <Card.Img className="cardImg" variant="top" src={residentialCleaning} />
+                                <Card.Img className="cardImg" variant="top" src={MoveDeep} />
                                 <Card.Title className="smCardTitle">Deep Cleaning Areas:</Card.Title>
                                 <Card.Text className="smCardText">
                                     <p>Cleaning inside cabinets, closets, and drawers to remove dust and debris. Wiping down walls, light switches, and door frames.
@@ -140,7 +146,7 @@ function MoveCleaning() {
                     <Col>
                         <Card className="smCard">
                             <Card.Body>
-                                <Card.Img className="cardImg" variant="top" src={residentialCleaning} />
+                                <Card.Img className="cardImg" variant="top" src={MoveProducts} />
                                 <Card.Title className="smCardTitle">Eco-Friendly Products:</Card.Title>
                                 <Card.Text className="smCardText">
                                     <p>We use <strong>green-certified, biodegradable cleaning supplies</strong> that are effective yet gentle on the environment, leaving your home fresh without the harsh chemicals.
