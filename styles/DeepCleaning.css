@@ -31,3 +31,11 @@
 #list{
     list-style: none;
 }
+
+#deepBathImg{
+    height: 33%;
+}
+
+.centerText{
+padding-left: 3rem;
+}

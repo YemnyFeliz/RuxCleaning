@@ -7,7 +7,12 @@ import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
-import residentialCleaning from "../../src/assets/residentialCleaning.jpg";
+// import residentialCleaning from "../../src/assets/residentialCleaning.jpg";
+import bathroom1 from "../../src/assets/bathroom1.jpg";
+import ResLivingArea from "../../src/assets/ResLivingArea.jpg";
+import ResKitchen from "../../src/assets/ResKitchen.jpg";
+import ResProducts from "../../src/assets/ResProducts.jpg";
+
 
 
 
@@ -87,13 +92,23 @@ function RegularCleaning() {
 
 
 
-                <h2 className="includedTitle">What’s Included in Regular Cleaning? </h2>
+                <Row>
+                <Col>
+                <div className="deepCleaningIntroText">
+                    <h2 className="regCardTitle">What Does Residential Cleaning Include?
+                    </h2>
+                    </div>
+                </Col>
+            </Row>
+
+
+
                 <Row className="includedRegResidential">
 
                     <Col >
                         <Card className="smCard">
                             <Card.Body>
-                                <Card.Img className="cardImg" variant="top" src={residentialCleaning} />
+                                <Card.Img className="cardImg" variant="top" src={ResLivingArea} />
                                 <Card.Title className="smCardTitle">🧹 Living Areas & Bedrooms:</Card.Title>
                                 <Card.Text className="smCardText">
                                     <ul>
@@ -114,7 +129,7 @@ function RegularCleaning() {
                     <Col>
                         <Card className="smCard">
                             <Card.Body>
-                                <Card.Img className="cardImg" variant="top" src={residentialCleaning} />
+                                <Card.Img className="cardImg" variant="top" src={bathroom1} />
                                 <Card.Title className="smCardTitle">🛁 Bathrooms:
                                 </Card.Title>
                                 <Card.Text className="smCardText">
@@ -136,7 +151,7 @@ function RegularCleaning() {
                     <Col>
                         <Card className="smCard">
                             <Card.Body>
-                                <Card.Img className="cardImg" variant="top" src={residentialCleaning} />
+                                <Card.Img className="cardImg" variant="top" src={ResKitchen} />
                                 <Card.Title className="smCardTitle">🍽 Kitchen:</Card.Title>
                                 <Card.Text className="smCardText">
                                     <ul>
@@ -157,7 +172,7 @@ function RegularCleaning() {
                     <Col>
                         <Card className="smCard">
                             <Card.Body>
-                                <Card.Img className="cardImg" variant="top" src={residentialCleaning} />
+                                <Card.Img className="cardImg" variant="top" src={ResProducts} />
                                 <Card.Title className="smCardTitle">🌱 Eco-Friendly Cleaning Products Used:</Card.Title>
                                 <Card.Text className="smCardText">
                                     <ul>

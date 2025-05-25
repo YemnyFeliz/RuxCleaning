@@ -61,7 +61,9 @@ font-size: 1.2rem;
 .btn-secondary{
   font-size: 1.5rem;
   font-weight: bold;
-  background-color: #35c97d;
+  /* background-color: #35c97d; */
+   /* background: linear-gradient( #fdf0d5 , #fec85d ); */
+   background-color: #fec85d;
   border: none;
   box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.3);
   color: black;
