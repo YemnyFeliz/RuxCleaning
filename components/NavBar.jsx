@@ -15,8 +15,8 @@ const Navigation = () => {
   return (
     <Navbar fixed="top" collapseOnSelect expand="lg" className="bg-body-tertiary">
       <Navbar.Brand as={Link} to="/" className="d-flex align-items-center">
-        <img alt="ruxcleaninglogo" src={logo} width="150" height="150" className="d-inline-block align-top" />
-        <span className="brand-name">RuxCleaning</span>
+        <img alt="ruxcleaninglogo" src={logo} width="200" height="150" className="d-inline-block align-top" />
+        {/* <span className="brand-name">RuxCleaning</span> */}
       </Navbar.Brand>
 
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />

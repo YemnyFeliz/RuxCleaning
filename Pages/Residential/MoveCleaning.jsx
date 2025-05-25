@@ -14,7 +14,7 @@ function MoveCleaning() {
                 <Row>
                     <Col>
                         <div className="regIntro">
-                            <h2 className="regTitle">Move-In/Move-Out Cleaning by Rux Cleaning in Bolingbrook
+                            <h2 className="regTitle">Move-In/Move-Out Cleaning 
                             </h2>
                             <div className="regIntroText">
                                 <p className="text-indent">Moving into a new home or leaving your old one can be stressful, but <strong>move-in/out cleaning</strong> from <strong>Rux Cleaning</strong> makes the process easier and more enjoyable. Our professional cleaning service ensures that your new or vacated home is spotless and ready for the next chapter, all while using <strong>safe, environmentally-friendly cleaning products</strong> that protect your health and the planet.</p>

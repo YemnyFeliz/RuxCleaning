@@ -42,8 +42,8 @@ font-size: 1.2rem;
 
 .bookCard {
     /* background-color: #fec85d; */
-    /* background-color: #fdf0d5; */
-    background: linear-gradient( #fdf0d5 , #fec85d );
+    background-color: #fdf0d5;
+    /* background: linear-gradient( #fdf0d5 , #fec85d ); */
      box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.5);
     transition: transform 0.2s ease;
     border: none;
@@ -57,3 +57,7 @@ font-size: 1.2rem;
   object-fit: cover;
   border-radius: 10px;
 }
+
+/* #resIncCard{
+  background-color: transparent;
+} */

@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from 'react';
 import '../../src/App.css';
 import '../../styles/DeepCleaning.css';
 import residentialCleaning from "../../src/assets/residentialCleaning.jpg";
@@ -6,14 +7,26 @@ import residentialCleaning from "../../src/assets/residentialCleaning.jpg";
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import Button from 'react-bootstrap/Button';
+
 
 function DeepCleaning() {
+
+    const [showPhone, setShowPhone] = useState(false);
+
+    const handleToggle = () => {
+        setShowPhone(!showPhone);
+    };
+
+    const handlePhoneClick = () => {
+        setShowPhone(false);
+    };
     return (
         <>
             <div className="deepCleaning container">
                 <Row>
                     <Col>
-                        <h2 className="deepCleaningTitle">Eco-Friendly Deep Cleaning Services in Bolingbrook</h2>
+                        <h2 className="deepCleaningTitle">Deep Cleaning Services </h2>
                         <div className="deepCleaningIntroText">
                             <p className="text-indent">Looking for a <strong>thorough and eco-friendly deep cleaning service</strong> in Bolingbrook?
                                 At <strong>Rux Cleaning</strong>, we specialize in <strong>green deep cleaning solutions</strong> that eliminate dirt, bacteria, and allergens while using <strong>safe, non-toxic products</strong> for a healthier home and environment.
@@ -64,7 +77,7 @@ function DeepCleaning() {
 
                 <Row className="mb-5 mt-5">
                     <Col>
-                        <Card className="regCard">
+                        <Card className="regCard deepCard">
                             <Card.Body>
                                 <Card.Title className="regCardTitle">Why Choose Deep Cleaning?
                                 </Card.Title>
@@ -73,8 +86,8 @@ function DeepCleaning() {
                                     </p><br />
                                     <p>✅ <strong>Healthier Home Environment –</strong> Removes allergens, bacteria,  and dust buildup, improving indoor air quality.
                                     </p>
-                                    <p>✅<strong>Prevents Pest Infestations –</strong> Cleans hidden food debris and buildup that attract pests like ants or cockroaches.</p>
-                                    <p>✅<strong>Extends the Life of Your Home –</strong> Protects furniture, carpets, and appliances from long-term dirt and wear.
+                                    <p>✅ <strong>Prevents Pest Infestations –</strong> Cleans hidden food debris and buildup that attract pests like ants or cockroaches.</p>
+                                    <p>✅ <strong>Extends the Life of Your Home –</strong> Protects furniture, carpets, and appliances from long-term dirt and wear.
                                     </p>
                                     <p>✅ <strong>Eco-Friendly & Safe –</strong> We use biodegradable, non-toxic products that are safe for children, pets, and the planet.</p>
                                     <p>✅ <strong>Tough on Dirt, Gentle on Surfaces –</strong> Our deep cleaning methods restore freshness without harsh chemicals.</p>
@@ -98,10 +111,10 @@ function DeepCleaning() {
                         </Col>
                 </Row>
 
-                <Row>
-                    <Col>
+                <Row className="g-4 mb-4">
+                <Col md={6}>
 
-                        <Card className="smCard">
+                <Card className="smCard h-100">
                             <Card.Body>
                                 <Card.Img className="cardImg" variant="top" src={residentialCleaning} />
                                 <Card.Title className="smCardTitle">Kitchen</Card.Title>
@@ -124,8 +137,8 @@ function DeepCleaning() {
                         </Card>
                     </Col>
 
-                    <Col>
-                        <Card className="smCard">
+                    <Col md={6}>
+                        <Card className="smCard h-100">
                             <Card.Body>
                                 <Card.Img className="cardImg" variant="top" src={residentialCleaning} />
                                 <Card.Title className="smCardTitle">Bathrooms
@@ -149,12 +162,12 @@ function DeepCleaning() {
                             </Card.Body>
                         </Card>
                     </Col>
-                {/* </Row>
+                </Row>
 
-                <Row> */}
+                <Row className="g-4 mb-4">
+                <Col md={6}>
 
-                    <Col>
-                        <Card className="smCard">
+                <Card className="smCard h-100">
                             <Card.Body>
                                 <Card.Img className="cardImg" variant="top" src={residentialCleaning} />
                                 <Card.Title className="smCardTitle">Bedrooms</Card.Title>
@@ -181,8 +194,8 @@ function DeepCleaning() {
                         </Card>
                     </Col>
 
-                    <Col>
-                        <Card className="smCard">
+                    <Col md={6}>
+                        <Card className="smCard h-100">
                             <Card.Body>
                                 <Card.Img className="cardImg" variant="top" src={residentialCleaning} />
                                 <Card.Title className="smCardTitle">Other Areas: living room, hallway, stairs</Card.Title>
@@ -217,7 +230,12 @@ function DeepCleaning() {
                             <Card.Title className="resCardTitle">
                                 <Card.Text className="resCardText">
                                     <p className="text-indent">Whether you’re moving in, moving out, or just need a fresh start, our team is ready to provide reliable, eco-friendly deep cleaning services in Bolingbrook. </p>  <br />
-                                    <p className="text-indent"> 📞 Call us today for a free quote and let’s make your home sparkle the green way!
+                                    <p > 
+                                    <Button variant="secondary" className="m-1" onClick={handleToggle}>
+                                        📞 Callus today</Button>    
+                                    
+                                    
+                                     for a free quote and let’s make your home sparkle the green way!
                                         Book a Professional Deep Cleaning Today!</p>
                                    
                                 </Card.Text>

@@ -14,7 +14,7 @@ function PostConstruction() {
                 <Row>
                     <Col>
                         <div className="regIntro">
-                            <h2 className="regTitle">Eco-Friendly Post-Construction Cleaning: <br />A Safe & Green Solution
+                            <h2 className="regTitle">Post-Construction Cleaning
                             </h2>
                         </div>
                     </Col>
@@ -122,13 +122,18 @@ function PostConstruction() {
                             <Card.Body>
                                 <Card.Title className="resCardTitle">Get a Fresh Start with Post-Construction Cleaning!</Card.Title>
                                 <Card.Text className="resCardText">
-                                    <p className="text-indent">If you've recently completed a construction or renovation project in <strong>Bolingbrook</strong>, let <strong>Rux Cleaning</strong> handle the <strong>final cleanup</strong>. 
-                                    Contact us today for a free quote and enjoy a clean, safe, and eco-friendly home!
+                                    <div className="d-flex flex-column align-items-center text-center">
+                                    <p className="mb-4" id="indent">If you've recently completed a construction or renovation project in <strong>Bolingbrook</strong>, let <strong>Rux Cleaning</strong> handle the <strong>final cleanup</strong>. 
+                                    
                                     </p>
-                                    <p><strong>📞 Call Rux Cleaning Today!
-                                        📍 Serving Bolingbrook & Nearby Areas</strong>
+                                    
+                                    <p><strong>📞 Call Rux Cleaning Today!<br />
+                                    📍 Serving Bolingbrook & Nearby Areas
+                                        </strong>
                                     </p>
-
+                                    {/* <p><strong>📍 Serving Bolingbrook & Nearby Areas</strong></p> */}
+                                    
+                                    </div>
                                 </Card.Text>
                             </Card.Body>
                         </Card>

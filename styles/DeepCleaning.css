@@ -23,3 +23,11 @@
 #includedIntro {
     text-align: center;
 }
+
+#deepCard{
+    max-height: 50%;
+}
+
+ul{
+    list-style: none;
+}
