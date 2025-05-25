@@ -13,10 +13,11 @@ import RegularCleaning from '../Pages/Residential/RegularCleaning';
 import DeepCleaning from '../Pages/Residential/DeepCleaning';
 import MoveCleaning from '../Pages/Residential/MoveCleaning';
 import PostConstruction from '../Pages/Residential/PostConstruction';
-import Commercial from '../pages/Commercial';
-import EcoFriendly from '../pages/Eco-Friendly';
+import Commercial from '/pages/Commercial';
+import EcoFriendly from '/pages/Eco-Friendly';
 import Career from '../Pages/Career';
 import CallAction from '../pages/CallAction';
+import RuxFooter from '../components/Footer'
 
 console.log("✅ App component is rendering...");
 
@@ -72,6 +73,8 @@ function App() {
         <Route path="/career" element={<Career />} />
         <Route path="/callAction" element={<CallAction />} />
       </Routes>
+
+      <RuxFooter />
     </div>
   );
 }
