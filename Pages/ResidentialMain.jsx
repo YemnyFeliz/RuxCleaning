@@ -1,7 +1,8 @@
 import React from "react";
+import { useState } from 'react';
 import '../src/App.css';
 import '../styles/residential.css';
-import { useState } from 'react';
+
 
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
@@ -138,13 +139,16 @@ function ResidentialMain() {
                         <Card.Body>
                             <Card.Title className="resCardTitle">Serving Bolingbrook and Surrounding Areas</Card.Title>
                             <Card.Text className="resCardText">
-                                <p>Rux Cleaning is proud to serve the <strong>Bolingbrook community </strong> with reliable, professional cleaning services that prioritize your satisfaction and well-being.</p>
+                                <p id="indent">Rux Cleaning is proud to serve the <strong>Bolingbrook community </strong> 
+                                with reliable, professional cleaning services that prioritize your satisfaction and well-being.</p>
 
                                 <div className="d-flex flex-column align-items-center">
+                                <p id="indent" className="text-center">
                                     {!showPhone ? (
-                                        <Button variant="secondary" className="m-3" onClick={handleToggle}>
+                                        <Button variant="secondary" className="m-1" onClick={handleToggle}>
                                             📞 Contact us
                                         </Button>
+                                        
 
                                     ) : (
                                         <a
@@ -156,8 +160,8 @@ function ResidentialMain() {
                                         </a>
 
                                     )}
-                                    <p><strong>
-                                        today for a free estimate and experience a cleaner, healthier home!
+                                    <strong>
+                                    today for a free estimate and experience a cleaner, healthier home!
                                     </strong></p>
                                 </div>
 

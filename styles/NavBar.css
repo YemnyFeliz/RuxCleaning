@@ -35,8 +35,10 @@ nav.bg-body-tertiary {
 }
 
 .callBtn {
-font-size: 1.3rem;
-margin-right: 2rem;
+font-size: 1.3rem !important;
+margin-right: 2rem !important;
+background-color:#6c757d !important;
+color: #fff !important;
 }
 
 .dropdown-link {
