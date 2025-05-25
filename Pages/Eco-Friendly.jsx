@@ -1,15 +1,28 @@
 import React from "react";
+import { useState } from 'react';
 import "../src/App.css";
 import "../styles/Eco-Friendly.css";
 
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import Button from 'react-bootstrap/Button';
 
 import ecofriendly from '../src/assets/ecofriendly.png';
 // import cleanMicrowave from "../src/assets/cleanMicrowave.jpeg";
 
 function EcoFriendly() {
+
+    const [showPhone, setShowPhone] = useState(false);
+
+    const handleToggle = () => {
+        setShowPhone(!showPhone);
+    };
+
+    const handlePhoneClick = () => {
+        setShowPhone(false);
+    };
+
     return (
         <>
             <div className="regResidential container">
@@ -94,7 +107,7 @@ function EcoFriendly() {
                         <Card className="regCard">
                             <Card.Body>
                                 <Card.Title className="regCardTitle">Why Do Clients Need Eco-Friendly Cleaning?</Card.Title>
-                                <Card.Text>
+                                <Card.Text className="regCardText">
                                     <p>✅ <strong>Healthier Indoor Air Quality –</strong> Conventional cleaning products release harmful chemicals (VOCs) that can cause respiratory issues, allergies, and irritation. Eco-friendly products eliminate these risks.</p>
                                     <p>✅ <strong>Safer for Families & Pets –</strong> Non-toxic and chemical-free solutions ensure a safe environment for children, pets, and allergy-sensitive individuals.</p>
                                     <p>✅ <strong>Sustainable & Environmentally Responsible –</strong> Traditional cleaning chemicals contribute to water pollution and environmental damage. Eco-friendly cleaning minimizes this impact.</p>
@@ -126,21 +139,49 @@ function EcoFriendly() {
 
 
                 <Row className="justify-content-center">
-                    <Col md={6}>
-                        <Card className="bookCard ">
-                            <Card.Body>
-                                <Card.Title className="resCardTitle">Experience a Cleaner, Greener Space with Rux Cleaning!</Card.Title>
-                                <Card.Text className="resCardText">
-                                    <p>If you're looking for a <strong>safe, effective, and environmentally responsible cleaning service in Bolingbrook, Rux Cleaning is your go-to choice!</strong>
-                                    </p>
-                                    <p><strong>📞 Call Us for a Free Quote Today!
-                                        📍 Serving Bolingbrook & Surrounding Areas</strong>
-                                    </p>
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                </Row>
+                <Col md={6}>
+                    <Card className="bookCard ">
+                        <Card.Body>
+                            <Card.Title className="resCardTitle">Experience a Cleaner, Greener Space with Rux Cleaning!</Card.Title>
+                            <Card.Text className="resCardText">
+                                <p id="indent" className="text-center">
+                                If you're looking for a 
+                                <strong>safe, effective, and environmentally responsible cleaning service in Bolingbrook, 
+                                    Rux Cleaning is your go-to choice! </strong> 
+                                </p>
+
+                                <div className="d-flex flex-column align-items-center">
+                                <p id="indent" className="text-center">
+                                    {!showPhone ? (
+                                        <Button variant="secondary" className="m-1" onClick={handleToggle}>
+                                            📞 Call Us for a Free Quote Today!
+                                        </Button>
+                                        
+
+                                    ) : (
+                                        <a
+                                            href="tel:1234567890"
+                                            onClick={handlePhoneClick}
+                                            className="m-2 text-decoration-none"
+                                        >
+                                            <strong style={{ fontSize: "1.2rem" }}>📱 (123) 456-7890</strong>
+                                        </a>
+
+                                    )}
+                                   </p>
+                                   
+                                   <p>
+                                   <strong>
+                                   📍 Serving Bolingbrook & Surrounding Areas
+                                    </strong>
+                                   </p>
+                                </div>
+
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </Col>
+            </Row>
 
 
             </div>

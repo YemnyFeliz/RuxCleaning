@@ -57,7 +57,7 @@ function DeepCleaning() {
                                 <Card.Title className="regCardTitle">When Should You Get a Deep Cleaning Service?
                                 </Card.Title>
                                 <Card.Text className="regCardText">
-                                    <ul>
+                                    <ul id="list">
                                         <li>✔️ Moving into a new home
                                         </li>
                                         <li>✔️ Preparing for a special event or guests
@@ -104,17 +104,17 @@ function DeepCleaning() {
                         <h2 className="regCardTitle">What Does Deep Cleaning Include?
                         </h2>
                         <div className="deepCleaningIntroText">
-                        <p className="text-indent">
-                            A deep cleaning service covers all areas of your home, including:
-                        </p>
+                            <p className="text-indent">
+                                A deep cleaning service covers all areas of your home, including:
+                            </p>
                         </div>
-                        </Col>
+                    </Col>
                 </Row>
 
                 <Row className="g-4 mb-4">
-                <Col md={6}>
+                    <Col md={6}>
 
-                <Card className="smCard h-100">
+                        <Card className="smCard h-100">
                             <Card.Body>
                                 <Card.Img className="cardImg" variant="top" src={residentialCleaning} />
                                 <Card.Title className="smCardTitle">Kitchen</Card.Title>
@@ -165,9 +165,9 @@ function DeepCleaning() {
                 </Row>
 
                 <Row className="g-4 mb-4">
-                <Col md={6}>
+                    <Col md={6}>
 
-                <Card className="smCard h-100">
+                        <Card className="smCard h-100">
                             <Card.Body>
                                 <Card.Img className="cardImg" variant="top" src={residentialCleaning} />
                                 <Card.Title className="smCardTitle">Bedrooms</Card.Title>
@@ -187,7 +187,7 @@ function DeepCleaning() {
                                         </li>
                                         <li>Floor vacuumed and mopped
                                         </li>
-                                        
+
                                     </ul>
                                 </Card.Text>
                             </Card.Body>
@@ -215,21 +215,64 @@ function DeepCleaning() {
                             </Card.Body>
                         </Card>
                     </Col>
-
-
-
-
                 </Row >
+
+                <Row className="justify-content-center">
+                    <Col md={6}>
+                        <Card className="bookCard ">
+                            <Card.Body>
+                                <Card.Title className="resCardTitle">Serving Bolingbrook and Surrounding Areas</Card.Title>
+                                <Card.Text className="resCardText">
+                                    <p id="indent">
+                                        Whether you’re moving in, moving out, or just need a fresh start, our team is ready to provide
+                                        <strong>
+                                            reliable, eco-friendly deep cleaning services in Bolingbrook.
+                                        </strong>
+
+                                    </p>
+
+                                    <div className="d-flex flex-column align-items-center">
+                                        <p id="indent" className="text-center">
+                                            {!showPhone ? (
+                                                <Button variant="secondary" className="m-1" onClick={handleToggle}>
+                                                    📞 Contact us
+                                                </Button>
+
+
+                                            ) : (
+                                                <a
+                                                    href="tel:1234567890"
+                                                    onClick={handlePhoneClick}
+                                                    className="m-2 text-decoration-none"
+                                                >
+                                                    <strong style={{ fontSize: "1.2rem" }}>📱 (123) 456-7890</strong>
+                                                </a>
+
+                                            )}
+                                            <strong>
+                                                today for a free quote and let’s make your home sparkle the green way!
+                                                Book a Professional Deep Cleaning Today!
+
+                                            </strong></p>
+                                    </div>
+
+
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                </Row>
 
 
             </div>
-            <Row className="justify-content-center">
+            {/* <Row className="justify-content-center">
                 <Col md={6}>
                     <Card className="bookCard ">
                         <Card.Body>
                             <Card.Title className="resCardTitle">
-                                <Card.Text className="resCardText">
-                                    <p className="text-indent">Whether you’re moving in, moving out, or just need a fresh start, our team is ready to provide reliable, eco-friendly deep cleaning services in Bolingbrook. </p>  <br />
+                                <Card.Text className="regCardText">
+                                    <p className="text-indent">Whether you’re moving in, moving out, or just need a fresh start, 
+                                    our team is ready to provide reliable, eco-friendly deep cleaning services in Bolingbrook. </p>  
                                     <p > 
                                     <Button variant="secondary" className="m-1" onClick={handleToggle}>
                                         📞 Callus today</Button>    
@@ -243,7 +286,7 @@ function DeepCleaning() {
                         </Card.Body>
                     </Card>
                 </Col>
-            </Row>
+            </Row> */}
 
 
 

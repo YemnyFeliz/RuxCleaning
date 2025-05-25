@@ -260,7 +260,7 @@ function RegularCleaning() {
       <Card.Body>
         <Card.Title className="resCardTitle">Book Your Cleaning Service Today!</Card.Title>
         <Card.Text className="resCardText">
-          <p>
+          <p id="indent" className="text-center">
             Let <strong>Rux Cleaning</strong> help you maintain a clean, fresh, and healthy home in
             <strong> Bolingbrook</strong> with our <strong>eco-friendly residential cleaning services</strong>.
           </p>

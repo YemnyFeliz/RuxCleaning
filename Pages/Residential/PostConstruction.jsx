@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from 'react';
 import '../../src/App.css';
 import '../../styles/PostConstruction.css';
 import postConstruction from "../../src/assets/postConstruction.jpeg";
@@ -6,8 +7,21 @@ import postConstruction from "../../src/assets/postConstruction.jpeg";
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import Button from 'react-bootstrap/Button';
 
 function PostConstruction() {
+
+    const [showPhone, setShowPhone] = useState(false);
+
+    const handleToggle = () => {
+        setShowPhone(!showPhone);
+    };
+
+    const handlePhoneClick = () => {
+        setShowPhone(false);
+    };
+
+    
     return (
         <>
             <div className="regResidential container">
@@ -117,28 +131,48 @@ function PostConstruction() {
                 </Row>
 
                 <Row className="justify-content-center">
-                    <Col md={6}>
-                        <Card className="bookCard ">
-                            <Card.Body>
-                                <Card.Title className="resCardTitle">Get a Fresh Start with Post-Construction Cleaning!</Card.Title>
-                                <Card.Text className="resCardText">
-                                    <div className="d-flex flex-column align-items-center text-center">
-                                    <p className="mb-4" id="indent">If you've recently completed a construction or renovation project in <strong>Bolingbrook</strong>, let <strong>Rux Cleaning</strong> handle the <strong>final cleanup</strong>. 
-                                    
-                                    </p>
-                                    
-                                    <p><strong>📞 Call Rux Cleaning Today!<br />
-                                    📍 Serving Bolingbrook & Nearby Areas
-                                        </strong>
-                                    </p>
-                                    {/* <p><strong>📍 Serving Bolingbrook & Nearby Areas</strong></p> */}
-                                    
-                                    </div>
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                </Row>
+                <Col md={6}>
+                    <Card className="bookCard ">
+                        <Card.Body>
+                            <Card.Title className="resCardTitle">Get a Fresh Start with Post-Construction Cleaning!
+</Card.Title>
+                            <Card.Text className="resCardText">
+                                <p id="indent">
+                                If you've recently completed a construction or renovation project in <strong>Bolingbrook</strong>, 
+                                let <strong>Rux Cleaning</strong> handle the final cleanup.
+                                 Contact us today for a <strong>free quote</strong> and enjoy a clean, safe, and eco-friendly home!
+                                </p>
+
+                                <div className="d-flex flex-column align-items-center">
+                                <p id="indent" className="text-center">
+                                    {!showPhone ? (
+                                        <Button variant="secondary" className="m-1" onClick={handleToggle}>
+                                            📞 Call Rux Cleaning Today!
+                                        </Button>
+                                        
+
+                                    ) : (
+                                        <a
+                                            href="tel:1234567890"
+                                            onClick={handlePhoneClick}
+                                            className="m-2 text-decoration-none"
+                                        >
+                                            <strong style={{ fontSize: "1.2rem" }}>📱 (123) 456-7890</strong>
+                                        </a>
+
+                                    )}
+                                   </p>
+                                   <p><strong>
+                                   📍 Serving Bolingbrook & Nearby Areas
+
+                                    </strong></p>
+                                </div>
+
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </Col>
+            </Row>
 
 
             </div>

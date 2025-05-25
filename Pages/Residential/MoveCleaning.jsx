@@ -1,20 +1,33 @@
 import React from "react";
+import { useState } from 'react';
 import "../../src/App.css";
 import '../../styles/MoveCleaning.css';
 
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import Button from 'react-bootstrap/Button';
 import residentialCleaning from "../../src/assets/residentialCleaning.jpg";
 
 function MoveCleaning() {
+
+    const [showPhone, setShowPhone] = useState(false);
+
+    const handleToggle = () => {
+        setShowPhone(!showPhone);
+    };
+
+    const handlePhoneClick = () => {
+        setShowPhone(false);
+    };
+
     return (
         <>
             <div className="regResidential container">
                 <Row>
                     <Col>
                         <div className="regIntro">
-                            <h2 className="regTitle">Move-In/Move-Out Cleaning 
+                            <h2 className="regTitle">Move-In/Move-Out Cleaning
                             </h2>
                             <div className="regIntroText">
                                 <p className="text-indent">Moving into a new home or leaving your old one can be stressful, but <strong>move-in/out cleaning</strong> from <strong>Rux Cleaning</strong> makes the process easier and more enjoyable. Our professional cleaning service ensures that your new or vacated home is spotless and ready for the next chapter, all while using <strong>safe, environmentally-friendly cleaning products</strong> that protect your health and the planet.</p>
@@ -64,99 +77,128 @@ function MoveCleaning() {
                         </Card>
                     </Col>
                 </Row>
-            
 
 
 
-            <h2 className="regCardTitle mb-5" >What’s Included in Our Move-In/Move-Out Cleaning
-            </h2>
 
-            <Row>
-                <Col>
-                    <Card className="smCard">
-                        <Card.Body>
-                        <Card.Img className="cardImg" variant="top" src={residentialCleaning} />
-                            <Card.Title className="smCardTitle">Kitchen:</Card.Title>
-                            <Card.Text className="smCardText">
-                                <p>Cleaning all appliances (inside and out), countertops, sinks, and cabinets. Scrubbing floors and wiping down baseboards.
-                                </p>
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
-                </Col>
+                <h2 className="regCardTitle mb-5" >What’s Included in Our Move-In/Move-Out Cleaning
+                </h2>
 
-                <Col>
-                    <Card className="smCard">
-                        <Card.Body>
-                        <Card.Img className="cardImg" variant="top" src={residentialCleaning} />
-                            <Card.Title className="smCardTitle">Bathrooms:</Card.Title>
-                            <Card.Text className="smCardText">
-                                <p>Disinfecting toilets, tubs, showers, sinks, and counters. Cleaning mirrors and ensuring that every surface is sanitized.
-                                </p>
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
-                </Col>
+                <Row>
+                    <Col>
+                        <Card className="smCard">
+                            <Card.Body>
+                                <Card.Img className="cardImg" variant="top" src={residentialCleaning} />
+                                <Card.Title className="smCardTitle">Kitchen:</Card.Title>
+                                <Card.Text className="smCardText">
+                                    <p>Cleaning all appliances (inside and out), countertops, sinks, and cabinets. Scrubbing floors and wiping down baseboards.
+                                    </p>
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>
 
-                <Col>
-                    <Card className="smCard">
-                        <Card.Body>
-                        <Card.Img className="cardImg" variant="top" src={residentialCleaning} />
-                            <Card.Title className="smCardTitle">Living Areas & Bedrooms:</Card.Title>
-                            <Card.Text className="smCardText">
-                                <p>Dusting and wiping down all furniture, baseboards, and window sills. Vacuuming carpets, cleaning floors, and removing any debris left behind.
-                                </p>
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
-                </Col>
+                    <Col>
+                        <Card className="smCard">
+                            <Card.Body>
+                                <Card.Img className="cardImg" variant="top" src={residentialCleaning} />
+                                <Card.Title className="smCardTitle">Bathrooms:</Card.Title>
+                                <Card.Text className="smCardText">
+                                    <p>Disinfecting toilets, tubs, showers, sinks, and counters. Cleaning mirrors and ensuring that every surface is sanitized.
+                                    </p>
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>
 
-                <Col>
-                    <Card className="smCard">
-                        <Card.Body>
-                        <Card.Img className="cardImg" variant="top" src={residentialCleaning} />
-                            <Card.Title className="smCardTitle">Deep Cleaning Areas:</Card.Title>
-                            <Card.Text className="smCardText">
-                                <p>Cleaning inside cabinets, closets, and drawers to remove dust and debris. Wiping down walls, light switches, and door frames.
-                                </p>
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
-                </Col>
+                    <Col>
+                        <Card className="smCard">
+                            <Card.Body>
+                                <Card.Img className="cardImg" variant="top" src={residentialCleaning} />
+                                <Card.Title className="smCardTitle">Living Areas & Bedrooms:</Card.Title>
+                                <Card.Text className="smCardText">
+                                    <p>Dusting and wiping down all furniture, baseboards, and window sills. Vacuuming carpets, cleaning floors, and removing any debris left behind.
+                                    </p>
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>
 
-                <Col>
-                    <Card className="smCard">
-                        <Card.Body>
-                        <Card.Img className="cardImg" variant="top" src={residentialCleaning} />
-                            <Card.Title className="smCardTitle">Eco-Friendly Products:</Card.Title>
-                            <Card.Text className="smCardText">
-                                <p>We use <strong>green-certified, biodegradable cleaning supplies</strong> that are effective yet gentle on the environment, leaving your home fresh without the harsh chemicals.
+                    <Col>
+                        <Card className="smCard">
+                            <Card.Body>
+                                <Card.Img className="cardImg" variant="top" src={residentialCleaning} />
+                                <Card.Title className="smCardTitle">Deep Cleaning Areas:</Card.Title>
+                                <Card.Text className="smCardText">
+                                    <p>Cleaning inside cabinets, closets, and drawers to remove dust and debris. Wiping down walls, light switches, and door frames.
+                                    </p>
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>
 
-                                </p>
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
-                </Col>
-            </Row>
-            
+                    <Col>
+                        <Card className="smCard">
+                            <Card.Body>
+                                <Card.Img className="cardImg" variant="top" src={residentialCleaning} />
+                                <Card.Title className="smCardTitle">Eco-Friendly Products:</Card.Title>
+                                <Card.Text className="smCardText">
+                                    <p>We use <strong>green-certified, biodegradable cleaning supplies</strong> that are effective yet gentle on the environment, leaving your home fresh without the harsh chemicals.
 
-            <Row className="justify-content-center mt-5">
-            
-            <Col md={6}>
-            <Card className="bookCard">
-            <Card.Body>
-                <Card.Title className="resCardTitle">Serving Bolingbrook and Surrounding Areas
-                </Card.Title>
-                <Card.Text className="resCardText">
-                <p>Let Rux Cleaning make your move easier and more eco-friendly. Our move-in/out cleaning services in Bolingbrook provide a safe, fresh, and spotless home without compromising the health of your family or the planet.
-                </p>
-                <p>📞 Contact us today for a quote and enjoy a hassle-free, eco-friendly move!
-                </p>
-                </Card.Text>
-                </Card.Body>
-                </Card>
-                </Col>
-            </Row>
+                                    </p>
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                </Row>
+
+
+                <Row className="justify-content-center">
+                    <Col md={6}>
+                        <Card className="bookCard ">
+                            <Card.Body>
+                                <Card.Title className="resCardTitle">Serving Bolingbrook and Surrounding Areas</Card.Title>
+                                <Card.Text className="resCardText">
+                                    <p id="indent" className="text-center">
+
+                                        Let <strong>Rux Cleaning</strong> make your move easier and more eco-friendly.
+                                        Our <strong>move-in/out cleaning services in Bolingbrook</strong> provide a
+                                        <strong>safe, fresh, and spotless home</strong> without compromising the health of your family or the planet.
+
+
+                                    </p>
+
+                                    <div className="d-flex flex-column align-items-center">
+                                        <p id="indent" className="text-center">
+                                            {!showPhone ? (
+                                                <Button variant="secondary" className="m-1" onClick={handleToggle}>
+                                                    📞 Contact us
+                                                </Button>
+
+
+                                            ) : (
+                                                <a
+                                                    href="tel:1234567890"
+                                                    onClick={handlePhoneClick}
+                                                    className="m-2 text-decoration-none"
+                                                >
+                                                    <strong style={{ fontSize: "1.2rem" }}>📱 (123) 456-7890</strong>
+                                                </a>
+
+                                            )}
+                                            <strong>
+                                                today for a quote and enjoy a hassle-free, eco-friendly move!
+
+
+                                            </strong></p>
+                                    </div>
+
+
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                </Row>
             </div>
         </>
     )

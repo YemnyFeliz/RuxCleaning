@@ -1,14 +1,28 @@
 import React from "react";
+import { useState } from 'react';
 import "../src/App.css";
 import "../styles/Commercial.css";
 
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import Button from 'react-bootstrap/Button';
+
 import residentialCleaning from "../src/assets/residentialCleaning.jpg";
 import commercialCleaning from "../src/assets/commercialCleaning.jpeg";
 
 function Commercial() {
+
+    const [showPhone, setShowPhone] = useState(false);
+
+    const handleToggle = () => {
+        setShowPhone(!showPhone);
+    };
+
+    const handlePhoneClick = () => {
+        setShowPhone(false);
+    };
+
     return (
         <>
             <div className="regResidential container">
@@ -157,22 +171,47 @@ function Commercial() {
                 </Row>
 
                 <Row className="justify-content-center">
-                    <Col md={6}>
-                        <Card className="bookCard ">
-                            <Card.Body>
-                                <Card.Title className="resCardTitle">Schedule Your Commercial Cleaning Service Today!</Card.Title>
-                                <Card.Text className="resCardText">
-                                    <p className="text-indent">Let <strong>Rux Cleaning</strong>
-                                        keep <strong>your office, store, or business space</strong> spotless and sanitary with our <strong>eco-friendly commercial cleaning services in Bolingbrook.</strong>
-                                    </p>
-                                    <p>📞 <strong>Call Us for a Free Quote!<br/>
-                                        📍 Serving Bolingbrook & Surrounding Areas</strong>
-                                    </p>
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                </Row>
+                <Col md={6}>
+                    <Card className="bookCard ">
+                        <Card.Body>
+                            <Card.Title className="resCardTitle">Schedule Your Commercial Cleaning Service Today!</Card.Title>
+                            <Card.Text className="resCardText">
+                                <p id="indent" className="text-center">
+                                Let <strong>Rux Cleaning</strong> keep your <strong>office, store, or business space</strong> spotless and sanitary
+                                 with our <strong>eco-friendly commercial cleaning services in Bolingbrook.</strong>
+                                </p>
+
+                                <div className="d-flex flex-column align-items-center">
+                                <p id="indent" className="text-center">
+                                    {!showPhone ? (
+                                        <Button variant="secondary" className="m-1" onClick={handleToggle}>
+                                            📞 Call Us for a Free Quote!
+                                        </Button>
+                                        
+
+                                    ) : (
+                                        <a
+                                            href="tel:1234567890"
+                                            onClick={handlePhoneClick}
+                                            className="m-2 text-decoration-none"
+                                        >
+                                            <strong style={{ fontSize: "1.2rem" }}>📱 (123) 456-7890</strong>
+                                        </a>
+
+                                    )}
+                                   </p>
+                                   <p>
+                                   <strong>
+                                   📍 Serving Bolingbrook & Surrounding Areas
+                                    </strong>
+                                   </p>
+                                </div>
+
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </Col>
+            </Row>
 
 
 

@@ -58,6 +58,11 @@ font-size: 1.2rem;
   border-radius: 10px;
 }
 
-/* #resIncCard{
-  background-color: transparent;
-} */
+.btn-secondary{
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #35c97d;
+  border: none;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.3);
+  color: black;
+}
