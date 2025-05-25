@@ -94,3 +94,7 @@ font-size: 1.1rem;
   .text-indent{
     text-indent: 6rem;
   }
+
+#indent{
+text-indent: 2.5rem;
+}

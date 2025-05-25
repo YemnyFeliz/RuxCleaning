@@ -108,13 +108,13 @@ function EcoFriendly() {
                     <Col>
                         <Card className="regCard">
                             <Card.Body>
-                                <Card.Title className="regCardTitle">Why Choose Rux Cleaning for Eco-Friendly Cleaning in Bolingbrook?</Card.Title>
+                                <Card.Title className="regCardTitle">Why Choose Rux Cleaning?</Card.Title>
                                 <Card.Text className="regCardText">
                                     <p>🌿 <strong>Committed to Green Cleaning –</strong> We use <strong>only non-toxic, eco-friendly cleaning products</strong> that are safe for you and the planet.</p>
                                     <p>🏡 <strong>Safe for Homes & Businesses –</strong> Whether residential or commercial, we prioritize <strong>health-conscious and sustainable cleaning practices</strong>.</p>
                                     <p>💦 <strong>Environmentally Responsible Water Disposal –</strong> We ensure our cleaning processes follow <sreong>green standards</sreong> to protect local water systems.
                                     </p>
-                                    <p>📍 <strong>Locally Trusted in Bolingbrook –</strong> We proudly serve the <strong>Bolingbrook community and surrounding areas</strong>, helping homes and businesses go green.</p>
+                                    
                                 </Card.Text>
                             </Card.Body>
                         </Card>

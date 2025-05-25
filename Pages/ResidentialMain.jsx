@@ -1,10 +1,12 @@
 import React from "react";
 import '../src/App.css';
 import '../styles/residential.css';
+import { useState } from 'react';
 
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import Button from 'react-bootstrap/Button';
 
 // import cleaningSink2 from "../src/assets/cleaningSink2.mp4";
 import cleaningSink from "../src/assets/cleaningSink.mp4";
@@ -17,6 +19,18 @@ import dirtyStove from "../src/assets/dirtyStove.jpeg";
 // import gifSink from "../src/assets/gifSink.gif";
 
 function ResidentialMain() {
+
+    const [showPhone, setShowPhone] = useState(false);
+
+    const handleToggle = () => {
+        setShowPhone(!showPhone);
+    };
+
+    const handlePhoneClick = () => {
+        setShowPhone(false);
+    };
+
+
     return (
 
 
@@ -29,7 +43,7 @@ function ResidentialMain() {
                     <Col md={6}>
                         <Card className="regCard h-100">
                             <Card.Body>
-                                <Card.Title className="resCardTitle">  Why You Need Residential Cleaning Services  </Card.Title>
+                                <Card.Title className="resCardTitle">Why You Need Residential Cleaning   </Card.Title>
                                 <Card.Text className="resCardText">
                                     <p> At <strong>Rux Cleaning</strong>, we understand that a clean home is a happy home. Residential cleaning is essential for maintaining a <strong>healthy, comfortable, and welcoming environment</strong> in your home. </p>
                                     <p> Whether you're busy with work, family, or just need a break, our professional cleaning services give you back your time and peace of mind, knowing your home is in good hands.</p>
@@ -49,53 +63,54 @@ function ResidentialMain() {
             </div>
 
 
-          
+
 
             <Row className="flex-md-row-reverse mb-5">
-  {/* Card (natural height) */}
-  <Col md={6}>
-    <Card className="regCard">
-      <Card.Body>
-        <Card.Title className="resCardTitle">How Residential Cleaning Helps You</Card.Title>
-        <Card.Text className="resCardText">
-        <ul>
+                {/* Card (natural height) */}
+                <Col md={6}>
+                    <Card className="regCard">
+                        <Card.Body>
+                            <Card.Title className="resCardTitle">How Residential Cleaning Helps You</Card.Title>
+                            <Card.Text className="resCardText">
+                                <ul>
                                     <li><strong>Saves Time and Effort</strong> – Skip the hassle of scrubbing and dusting! Let our team handle everything so you can focus on what matters most.
-                                    </li> 
+                                    </li>
                                     <li><strong>Creates a Healthier Home </strong>– Our deep cleaning removes allergens, dust, bacteria, and mold, improving indoor air quality and reducing potential health risks.</li>
                                     <li><strong>Stress-Free Living </strong>– Enjoy coming home to a spotless environment without the worry of cleaning chores piling up.</li>
                                     <li><strong>Increases Property Value </strong>– Regular cleaning preserves the condition of your home, keeping floors, furniture, and appliances in top shape.</li>
                                     <li><strong>Customized Cleaning Plans </strong>– Tailored services to meet individual needs and schedules.
                                     </li>
                                 </ul>
-        </Card.Text>
-      </Card.Body>
-    </Card>
-  </Col>
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </Col>
 
-  {/* Video column with half-height video */}
-  <Col md={6} className="d-flex justify-content-center">
-    <div style={{ width: '100%', maxHeight: '550px', borderRadius: '0.5rem', overflow: 'hidden' }}>
-      <video
-        src={cleaningSink}
-        autoPlay
-        muted
-        loop
-        className="w-100 h-100 object-fit-cover"
-      />
-    </div>
-  </Col>
-</Row>
+                {/* Video column with half-height video */}
+                <Col md={6} className="d-flex justify-content-center">
+                    <div style={{ width: '100%', maxHeight: '550px', borderRadius: '0.5rem', overflow: 'hidden' }}>
+                        <video
+                            src={cleaningSink}
+                            autoPlay
+                            muted
+                            loop
+                            className="w-100 h-100 object-fit-cover"
+                        />
+                    </div>
+                </Col>
+            </Row>
 
-
+            <h2 className="resCardTitle m-5">What Does Residential Cleaning Include?</h2>
 
             {/* Row 3 - Single Card Slightly Right */}
             <div className="includedResidential">
                 <Row className="mb-5">
                     <Col md={{ span: 8, offset: 2 }}>
-                        <Card className="resCard h-100">
+                        {/* <h2 className="resCardTitle m-5">What Does Residential Cleaning Include?</h2> */}
+                        <Card className="resCard h-100" id="resIncCard">
                             <Card.Body>
-                                <Card.Title className="resCardTitle">What Does Residential Cleaning with Rux Cleaning Include?
-                                </Card.Title>
+                                {/* <Card.Title className="resCardTitle">What Does Residential Cleaning Include?
+                                </Card.Title> */}
                                 <Card.Text className="resCardText">
                                     <p>Our <strong>Eco-Friendly cleaning services</strong> are designed to meet the unique needs of your home. We offer:
                                     </p>
@@ -116,21 +131,42 @@ function ResidentialMain() {
 
 
             {/* Row 4 - Centered Card */}
-            <div className="surroundingAreas">
-                <Row className="justify-content-center">
-                    <Col md={6}>
-                        <Card className="bookCard ">
-                            <Card.Body>
-                                <Card.Title className="resCardTitle">Serving Bolingbrook and Surrounding Areas</Card.Title>
-                                <Card.Text className="resCardText">
-                                    <p>Rux Cleaning is proud to serve the <strong>Bolingbrook community </strong> with reliable, professional cleaning services that prioritize your satisfaction and well-being.</p>
-                                    <p><strong>📞 Contact us today for a free estimate and experience a cleaner, healthier home!</strong></p>
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                </Row>
-            </div>
+
+            <Row className="justify-content-center">
+                <Col md={6}>
+                    <Card className="bookCard ">
+                        <Card.Body>
+                            <Card.Title className="resCardTitle">Serving Bolingbrook and Surrounding Areas</Card.Title>
+                            <Card.Text className="resCardText">
+                                <p>Rux Cleaning is proud to serve the <strong>Bolingbrook community </strong> with reliable, professional cleaning services that prioritize your satisfaction and well-being.</p>
+
+                                <div className="d-flex flex-column align-items-center">
+                                    {!showPhone ? (
+                                        <Button variant="secondary" className="m-3" onClick={handleToggle}>
+                                            📞 Contact us
+                                        </Button>
+
+                                    ) : (
+                                        <a
+                                            href="tel:1234567890"
+                                            onClick={handlePhoneClick}
+                                            className="m-2 text-decoration-none"
+                                        >
+                                            <strong style={{ fontSize: "1.2rem" }}>📱 (123) 456-7890</strong>
+                                        </a>
+
+                                    )}
+                                    <p><strong>
+                                        today for a free estimate and experience a cleaner, healthier home!
+                                    </strong></p>
+                                </div>
+
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </Col>
+            </Row>
+
         </div>
 
 

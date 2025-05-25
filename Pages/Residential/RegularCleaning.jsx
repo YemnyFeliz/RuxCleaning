@@ -1,23 +1,37 @@
 import React from "react";
 import "../../src/App.css";
 import "../../styles/RegCleaning.css";
+import { useState } from 'react';
 
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import Button from 'react-bootstrap/Button';
 import residentialCleaning from "../../src/assets/residentialCleaning.jpg";
 
 
 
 
+
 function RegularCleaning() {
+
+    const [showPhone, setShowPhone] = useState(false);
+
+    const handleToggle = () => {
+        setShowPhone(!showPhone);
+    };
+
+    const handlePhoneClick = () => {
+        setShowPhone(false);
+    };
+    
     return (
         <>
             <div className="regResidential container">
                 <Row>
                     <Col>
                         <div className="regIntro">
-                            <h2 className="regTitle">Regular Residential Cleaning <br /> by Rux Cleaning in Bolingbrook</h2>
+                            <h2 className="regTitle">Regular Residential Cleaning </h2>
                             <div className="regIntroText">
                                 <p>Keeping your home clean is essential for a <strong>healthy, comfortable, and stress-free living environment.</strong></p>
                                 <p>At <strong>Rux Cleaning</strong>, we provide <strong>professional, eco-friendly regular cleaning services</strong> in Bolingbrook, ensuring your home stays fresh and spotless without the use of harsh chemicals.</p>
@@ -73,7 +87,7 @@ function RegularCleaning() {
 
 
 
-                <h2 className="includedTitle">What’s Included in Rux Cleaning’s Regular Residential Cleaning? </h2>
+                <h2 className="includedTitle">What’s Included in Regular Cleaning? </h2>
                 <Row className="includedRegResidential">
 
                     <Col >
@@ -216,7 +230,7 @@ function RegularCleaning() {
 
 
 
-            <Row className="justify-content-center">
+            {/* <Row className="justify-content-center">
                 <Col md={6}>
                     <Card className="bookCard ">
                         <Card.Body>
@@ -224,15 +238,58 @@ function RegularCleaning() {
                             <Card.Text className="resCardText">
                                 <p>Let <strong>Rux Cleaning</strong> help you maintain a clean, fresh, and healthy home in <strong>Bolingbrook</strong> with our <strong>eco-friendly residential cleaning services</strong>.</p>
                                 <p>
-                                    <strong>📞 Call Us for a Free Quote!
-                                        📍 Serving Bolingbrook & Nearby Areas
+                                    <strong>
+
+
+                                        <div className="d-flex justify-content-center">
+                                            <Button variant="secondary" className="m-2">📞 Call Us for a Free Quote!</Button> <br />
+                                        <p>📍 Serving Bolingbrook <br />& Nearby Areas</p>
+                                        </div>
+                                        
                                     </strong>
                                 </p>
                             </Card.Text>
                         </Card.Body>
                     </Card>
                 </Col>
-            </Row>
+            </Row> */}
+
+<Row className="justify-content-center">
+  <Col md={6}>
+    <Card className="bookCard">
+      <Card.Body>
+        <Card.Title className="resCardTitle">Book Your Cleaning Service Today!</Card.Title>
+        <Card.Text className="resCardText">
+          <p>
+            Let <strong>Rux Cleaning</strong> help you maintain a clean, fresh, and healthy home in
+            <strong> Bolingbrook</strong> with our <strong>eco-friendly residential cleaning services</strong>.
+          </p>
+
+          <div className="d-flex flex-column align-items-center">
+            {!showPhone ? (
+              <Button variant="secondary" className="m-3" onClick={handleToggle}>
+                📞 Call Us for a Free Quote!
+              </Button>
+            ) : (
+              <a
+                href="tel:1234567890"
+                onClick={handlePhoneClick}
+                className="m-2 text-decoration-none"
+              >
+                <strong style={{ fontSize: "1.2rem" }}>📱 (123) 456-7890</strong>
+              </a>
+            )}
+            <p className="text-center">
+              <strong>📍 Serving Bolingbrook & Nearby Areas</strong> 
+            </p>
+          </div>
+        </Card.Text>
+      </Card.Body>
+    </Card>
+  </Col>
+</Row>
+
+
             </div>
         </>
     )

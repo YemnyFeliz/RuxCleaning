@@ -32,7 +32,7 @@ function Commercial() {
                             <Card.Body>
                                 <Card.Title className="resCardTitle">What is Commercial Cleaning?</Card.Title>
                                 <Card.Text className="resCardText">
-                                    <p>Commercial cleaning is a <strong>specialized cleaning service tailored for businesses, offices, and commercial properties.</strong>
+                                    <p>Commercial cleaning is a <strong>specialized cleaning service tailored for businesses, offices, and commercial properties. </strong>
                                         Unlike residential cleaning, it involves <strong>deep sanitation, high-traffic area maintenance, and large-scale cleaning solutions</strong> to meet industry standards and ensure a healthy work environment.
                                     </p>
                                 </Card.Text>
@@ -64,7 +64,7 @@ function Commercial() {
                 </Row>
 
 
-                <h2 className="includedTitle">What’s Included in Rux Cleaning’s ommercial Cleaning Services? </h2>
+                <h2 className="resCardTitle mb-5">What’s Included in commercial Cleaning? </h2>
                 <Row className="includedRegResidential">
                     <Col>
                         <Card className="smCard">
@@ -101,33 +101,6 @@ function Commercial() {
                             </Card.Body>
                         </Card>
                     </Col>
-                </Row>
-
-
-                <Row className="includedRegResidential">
-                    <Col>
-                        <Card className="smCard">
-                            <Card.Body>
-                                <Card.Img className="cardImg" variant="top" src={residentialCleaning} />
-                                <Card.Title className="smCardTitle"></Card.Title>
-                                <Card.Text className="smCardText">
-                                    🌱 <strong>Eco-Friendly Disinfection –</strong> Using <strong>non-toxic, chemical-free cleaning solutions</strong> for a healthier environment.
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-
-                    <Col>
-                        <Card className="smCard">
-                            <Card.Body>
-                                <Card.Img className="cardImg" variant="top" src={residentialCleaning} />
-                                <Card.Title className="smCardTitle"></Card.Title>
-                                <Card.Text className="smCardText">
-                                    🪟 <strong>Window & Glass Cleaning –</strong> Streak-free cleaning of office windows and glass surfaces.
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </Col>
 
                     <Col>
                         <Card className="smCard">
@@ -143,8 +116,7 @@ function Commercial() {
                 </Row>
 
 
-
-
+               
                 <Row>
                     <Col>
                         <Card className="regCard">
@@ -170,7 +142,7 @@ function Commercial() {
                     <Col>
                         <Card className="regCard">
                             <Card.Body>
-                                <Card.Title className="regCardTitle">Why Choose Rux Cleaning for Your Commercial Cleaning Needs in Bolingbrook?</Card.Title>
+                                <Card.Title className="regCardTitle">Why Choose Rux Cleaning?</Card.Title>
                                 <Card.Text className="regCardText">
 
                                     <p>✨ <strong>Reliable & Professional Team –</strong> We provide <strong>consistent, high-quality service</strong> tailored to your business.</p>
@@ -193,7 +165,7 @@ function Commercial() {
                                     <p className="text-indent">Let <strong>Rux Cleaning</strong>
                                         keep <strong>your office, store, or business space</strong> spotless and sanitary with our <strong>eco-friendly commercial cleaning services in Bolingbrook.</strong>
                                     </p>
-                                    <p>📞 <strong>Call Us for a Free Quote!
+                                    <p>📞 <strong>Call Us for a Free Quote!<br/>
                                         📍 Serving Bolingbrook & Surrounding Areas</strong>
                                     </p>
                                 </Card.Text>
