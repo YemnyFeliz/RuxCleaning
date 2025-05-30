@@ -41,7 +41,7 @@ function ResidentialMain() {
             {/* Row 1 - Card Left, Image Right */}
             <div className="whyResidential">
                 <Row className="align-items-center mb-5">
-                    <Col md={6}>
+                    <Col xs={12} sm={10} md={12} lg={6}>
                         <Card className="regCard h-100">
                             <Card.Body>
                                 <Card.Title className="resCardTitle">Why You Need Residential Cleaning   </Card.Title>
@@ -54,7 +54,7 @@ function ResidentialMain() {
                     </Col>
 
 
-                    <Col md={6}>
+                    <Col xs={12} sm={10} md={12} lg={6}>
                         <div className="d-flex h-100 gap-2">
                             <img src={dirtyStove} className="w-50 object-fit-cover" style={{ height: '100%' }} />
                             <img src={cleanStove} className="w-50 object-fit-cover" style={{ height: '100%' }} />
@@ -68,7 +68,7 @@ function ResidentialMain() {
 
             <Row className="flex-md-row-reverse mb-5">
                 {/* Card (natural height) */}
-                <Col md={6}>
+                <Col xs={12} sm={10} md={12} lg={6}>
                     <Card className="regCard">
                         <Card.Body>
                             <Card.Title className="resCardTitle">How Residential Cleaning Helps You</Card.Title>
@@ -88,7 +88,7 @@ function ResidentialMain() {
                 </Col>
 
                 {/* Video column with half-height video */}
-                <Col md={6} className="d-flex justify-content-center">
+                <Col xs={12} sm={10} md={12} lg={6} className="d-flex justify-content-center">
                     <div style={{ width: '100%', maxHeight: '550px', borderRadius: '0.5rem', overflow: 'hidden' }}>
                         <video
                             src={cleaningSink}
@@ -106,7 +106,8 @@ function ResidentialMain() {
             {/* Row 3 - Single Card Slightly Right */}
             <div className="includedResidential">
                 <Row className="mb-5">
-                    <Col md={{ span: 8, offset: 2 }}>
+                    <Col xs={12} sm={10} md={12} lg={8} className="mx-auto">
+                    {/* <Col md={{ span: 8, offset: 2 }} > */}
                         {/* <h2 className="resCardTitle m-5">What Does Residential Cleaning Include?</h2> */}
                         <Card className="resCard h-100" id="resIncCard">
                             <Card.Body>
@@ -134,7 +135,7 @@ function ResidentialMain() {
             {/* Row 4 - Centered Card */}
 
             <Row className="justify-content-center">
-                <Col md={6}>
+                <Col md={8} lg={6}>
                     <Card className="bookCard ">
                         <Card.Body>
                             <Card.Title className="resCardTitle">Serving Bolingbrook and Surrounding Areas</Card.Title>
@@ -152,11 +153,11 @@ function ResidentialMain() {
 
                                     ) : (
                                         <a
-                                            href="tel:1234567890"
+                                            href="tel:6304414446"
                                             onClick={handlePhoneClick}
                                             className="m-2 text-decoration-none"
                                         >
-                                            <strong style={{ fontSize: "1.2rem" }}>📱 (123) 456-7890</strong>
+                                            <strong style={{ fontSize: "1.2rem" }}>📱 630-441-4446</strong>
                                         </a>
 
                                     )}

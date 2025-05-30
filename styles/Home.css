@@ -29,18 +29,21 @@ h1 {
 }
 
 .intro-text-div {
-    margin: 3rem;
-    padding: 2rem;
-    text-align: center;
+    display: flex;
     justify-content: center;
     align-items: center;
-
-}
+    flex-direction: column; /* if vertical stacking is needed */
+    text-align: center;
+    padding: 2rem;
+  }
 
 .intro-text {
-    margin-bottom: 3rem;
-    font-size: 1.7rem;
+    /* margin-bottom: 3rem;
+    font-size: 1.7rem !important; */
     /* text-align: center; */
+    font-size: 1.5rem !important;
+    text-indent: 4.5rem;
+    
 }
 
 .slogan {
@@ -61,7 +64,8 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 35rem;
+    min-height: 35rem;
+    height: auto;
     max-width: 50rem;
     margin: auto;
     margin-bottom: 5rem;
@@ -82,6 +86,10 @@ h1 {
 h2 {
     margin-bottom: 3rem;
     text-align: center;
+    /* font-size: 2.2rem !important; */
+}
+.homeh2{
+    font-size: 2.2rem !important;
 }
 
 /* .services {
@@ -92,7 +100,7 @@ h2 {
     width: 100%;
     text-align: center; 
     padding: 1rem;
-    font-size: 1.3rem;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
     line-height: 1.5; /* Improve readability */
     
 }
@@ -132,3 +140,35 @@ h2 {
     justify-content: space-between !important; /* Spread items */
 }
 
+/* -----------------------Responsive-------------------- */
+@media (max-width: 768px) {
+    .intro-text {
+      font-size: 1rem;
+      text-align: justify;
+      padding: 1rem;
+      text-indent: 1.5rem !important;
+      
+    }
+    .homeh2{
+        font-size: 1.8rem !important;
+    }
+    .navbar .dropdown-menu {
+        background-color:#00b4d8 !important;  
+        border-radius: 1rem !important;  
+        border-style: hidden;
+        padding: 12px !important;
+
+        min-width: 100% !important;
+        max-width: 100% !important ;
+        box-sizing: border-box;
+    }
+    
+    /* Style dropdown items */
+    .navbar .dropdown-menu .dropdown-item {
+        color: black!important;  /* White text */
+        font-size: 1.2rem !important;  /* Larger font */
+        font-weight: bold;
+        padding: 12px 20px !important;
+    }
+  }
+  

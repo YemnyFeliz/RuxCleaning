@@ -16,9 +16,9 @@ function RuxFooter() {
             <Col xs="auto">
               <SocialIcon url="https://www.instagram.com/ruxcleaning" className="icon" target="_blank" />
             </Col>
-            <Col xs="auto">
+            {/* <Col xs="auto">
               <SocialIcon url="https://www.x.com/ruxcleaning" className="icon" target="_blank"/>
-            </Col>
+            </Col> */}
           </Row>
           <Row className="text-center mt-3">
             <Col>

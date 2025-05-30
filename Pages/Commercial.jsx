@@ -44,13 +44,17 @@ function Commercial() {
                     </Col>
                 </Row>
 
-                <Row className="flex-md-row-reverse mb-5">
-                    <Col md={6}>
+                <Row className="mb-5">
+
+                <Col md={12} lg={6}>
+                        <Card.Img className="imgC" src={commercialCleaning} />
+                    </Col>
+                    <Col md={12} lg={6}>
                         <Card className="regCard">
                             <Card.Body>
                                 <Card.Title className="resCardTitle">What is Commercial Cleaning?</Card.Title>
                                 <Card.Text className="resCardText">
-                                    <p>Commercial cleaning is a <strong>specialized cleaning service tailored for businesses, offices, and commercial properties. </strong>
+                                    <p id="indent">Commercial cleaning is a <strong>specialized cleaning service tailored for businesses, offices, and commercial properties. </strong>
                                         Unlike residential cleaning, it involves <strong>deep sanitation, high-traffic area maintenance, and large-scale cleaning solutions</strong> to meet industry standards and ensure a healthy work environment.
                                     </p>
                                 </Card.Text>
@@ -58,14 +62,14 @@ function Commercial() {
                         </Card>
                     </Col>
 
-                    <Col md={6}>
+                    {/* <Col md={6}>
                         <Card.Img className="imgC" src={commercialCleaning} />
-                    </Col>
+                    </Col> */}
                 </Row>
 
 
                 <Row>
-                    <Col md={{ span: 8, offset: 2 }}>
+                <Col md={12} lg={8} className="mx-auto">
                         <Card className="regCard h-100">
                             <Card.Body>
                                 <Card.Title className="resCardTitle">Why Do Businesses Need Commercial Cleaning?</Card.Title>
@@ -83,8 +87,8 @@ function Commercial() {
 
 
                 <h2 className="resCardTitle mb-5">What’s Included in commercial Cleaning? </h2>
-                <Row className="includedRegResidential">
-                    <Col>
+                <Row className="includedRegResidential g-4">
+                    <Col xs={12} sm={6} md={6} lg={3}>
                         <Card className="smCard">
                             <Card.Body>
                                 <Card.Img className="cardImg h-100" variant="top" src={gencleaning} />
@@ -96,7 +100,7 @@ function Commercial() {
                         </Card>
                     </Col>
 
-                    <Col>
+                    <Col xs={12} sm={6} md={6} lg={3}>
                         <Card className="smCard">
                             <Card.Body>
                                 <Card.Img className="cardImg h-100" variant="top" src={restroom} />
@@ -108,7 +112,7 @@ function Commercial() {
                         </Card>
                     </Col>
 
-                    <Col>
+                    <Col xs={12} sm={6} md={6} lg={3}>
                         <Card className="smCard">
                             <Card.Body>
                                 <Card.Img className="cardImg h-100" variant="top" src={breakroom} />
@@ -120,7 +124,7 @@ function Commercial() {
                         </Card>
                     </Col>
 
-                    <Col>
+                    <Col xs={12} sm={6} md={6} lg={3}>
                         <Card className="smCard">
                             <Card.Body>
                                 <Card.Img className="cardImg" variant="top" src={trashremoval} />
@@ -136,7 +140,7 @@ function Commercial() {
 
                
                 <Row>
-                    <Col>
+                <Col md={12} lg={6}>
                         <Card className="regCard">
                             <Card.Body>
                                 <Card.Title className="regCardTitle">How Rux Cleaning’s Commercial Services Help Your Business</Card.Title>
@@ -157,7 +161,7 @@ function Commercial() {
                     </Col>
 
 
-                    <Col>
+                    <Col md={12} lg={6}>
                         <Card className="regCard">
                             <Card.Body>
                                 <Card.Title className="regCardTitle">Why Choose Rux Cleaning?</Card.Title>
@@ -175,7 +179,7 @@ function Commercial() {
                 </Row>
 
                 <Row className="justify-content-center">
-                <Col md={6}>
+                <Col xs={12} md={8} lg={6}>
                     <Card className="bookCard ">
                         <Card.Body>
                             <Card.Title className="resCardTitle">Schedule Your Commercial Cleaning Service Today!</Card.Title>
@@ -185,21 +189,21 @@ function Commercial() {
                                  with our <strong>eco-friendly commercial cleaning services in Bolingbrook.</strong>
                                 </p>
 
-                                <div className="d-flex flex-column align-items-center">
-                                <p id="indent" className="text-center">
+                                <div className="d-flex flex-column align-items-center text-center">
+                                <p id="indent" >
                                     {!showPhone ? (
-                                        <Button variant="secondary" className="m-1" onClick={handleToggle}>
+                                        <Button variant="secondary" className="contactBtn" onClick={handleToggle}>
                                             📞 Call Us for a Free Quote!
                                         </Button>
                                         
 
                                     ) : (
                                         <a
-                                            href="tel:1234567890"
+                                            href="tel:6304414446"
                                             onClick={handlePhoneClick}
                                             className="m-2 text-decoration-none"
                                         >
-                                            <strong style={{ fontSize: "1.2rem" }}>📱 (123) 456-7890</strong>
+                                            <strong style={{ fontSize: "1.2rem" }}>📱 630-441-4446</strong>
                                         </a>
 
                                     )}

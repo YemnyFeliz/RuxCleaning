@@ -92,20 +92,20 @@ function Career() {
                     <Col>
                         <div className="regIntro">
                             <h2 className="regTitle">Join Our Team | Rux Cleaning</h2>
-                            <div className="regIntroText text-indent">
+                            <div className="regIntroText" id="indent">
                                 <p>Are you looking for a rewarding job with a flexible schedule and great pay? </p>
-                                <p>We are hiring dedicated and detail-oriented cleaners to join our growing team in Bolingbrook and surrounding areas!</p>
+                                <p><strong>We are hiring</strong> dedicated and detail-oriented cleaners to join our growing team in Bolingbrook and surrounding areas!</p>
                             </div>
                         </div>
                     </Col>
                 </Row>
 
                 <Row>
-                    <Col md={6} className="d-flex align-items-center justify-content-center">
+                    <Col md={12} lg={6} className="d-flex align-items-center justify-content-center">
                         <Card.Img className="imgC" src={handShake} />
                     </Col>
 
-                    <Col md={6}>
+                    <Col md={12} lg={6}>
                         <Card className="regCard">
                             <Card.Body>
                                 <Card.Title className="resCardTitle">Why Work With Us?</Card.Title>
@@ -122,7 +122,7 @@ function Career() {
                 </Row>
 
                 <Row className="justify-content-center mt-5">
-                    <Col md={6} lg={8}>
+                <Col md={12} lg={8} className="mx-auto">
                         <h2 className="resCardTitle mb-5" style={{ fontSize: "1.8rem" }}>Employment Contact Form</h2>
                         <Card className="resCard">
                             <Card.Body>

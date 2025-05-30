@@ -38,7 +38,7 @@ function RegularCleaning() {
                         <div className="regIntro">
                             <h2 className="regTitle">Regular Residential Cleaning </h2>
                             <div className="regIntroText">
-                                <p>Keeping your home clean is essential for a <strong>healthy, comfortable, and stress-free living environment.</strong></p>
+                                <p id="indent">Keeping your home clean is essential for a <strong>healthy, comfortable, and stress-free living environment.</strong></p>
                                 <p>At <strong>Rux Cleaning</strong>, we provide <strong>professional, eco-friendly regular cleaning services</strong> in Bolingbrook, ensuring your home stays fresh and spotless without the use of harsh chemicals.</p>
                             </div>
                         </div>
@@ -53,7 +53,7 @@ function RegularCleaning() {
                             <Card.Body>
                                 <Card.Title className="regCardTitle">What is Regular Residential Cleaning?</Card.Title>
                                 <Card.Text className="regCardText">
-                                    <p>Regular residential cleaning is a <strong>routine maintenance cleaning service</strong> designed to keep your home consistently clean and tidy. Unlike deep cleaning, which focuses on every detail, regular cleaning covers the essential areas to maintain cleanliness and prevent buildup of dirt and dust.</p>
+                                    <p id="indent">Regular residential cleaning is a <strong>routine maintenance cleaning service</strong> designed to keep your home consistently clean and tidy. Unlike deep cleaning, which focuses on every detail, regular cleaning covers the essential areas to maintain cleanliness and prevent buildup of dirt and dust.</p>
                                 </Card.Text>
                             </Card.Body>
                         </Card>
@@ -103,9 +103,9 @@ function RegularCleaning() {
 
 
 
-                <Row className="includedRegResidential">
+                <Row className="includedRegResidential g-4">
 
-                    <Col >
+                <Col xs={12} sm={6} md={6} lg={3}>
                         <Card className="smCard">
                             <Card.Body>
                                 <Card.Img className="cardImg" variant="top" src={ResLivingArea} />
@@ -126,7 +126,7 @@ function RegularCleaning() {
                     </Col>
 
 
-                    <Col>
+                    <Col xs={12} sm={6} md={6} lg={3}>
                         <Card className="smCard">
                             <Card.Body>
                                 <Card.Img className="cardImg" variant="top" src={bathroom1} />
@@ -148,7 +148,7 @@ function RegularCleaning() {
                     </Col>
 
 
-                    <Col>
+                    <Col xs={12} sm={6} md={6} lg={3}>
                         <Card className="smCard">
                             <Card.Body>
                                 <Card.Img className="cardImg" variant="top" src={ResKitchen} />
@@ -169,7 +169,7 @@ function RegularCleaning() {
                     </Col>
 
 
-                    <Col>
+                    <Col xs={12} sm={6} md={6} lg={3}>
                         <Card className="smCard">
                             <Card.Body>
                                 <Card.Img className="cardImg" variant="top" src={ResProducts} />
@@ -190,7 +190,7 @@ function RegularCleaning() {
 
 
                 <Row xs={1} md={2} className="g-4">
-                    <Col className="whyNeedRegResidential">
+                    <Col className="whyNeedRegResidential" md={12} lg={6}>
                         {/* <div className="whyNeedRegResidential"> */}
                         <Card className="regCard">
                             <Card.Body>
@@ -210,7 +210,7 @@ function RegularCleaning() {
                     </Col>
 
 
-                    <Col className="whyChoseRegResidential">
+                    <Col className="whyChoseRegResidential" md={12} lg={6}>
                         <Card className="regCard">
                             <Card.Body>
                                 {/* <div className="whyChoseRegResidential"> */}
@@ -232,45 +232,8 @@ function RegularCleaning() {
                 </Row>
 
 
-
-
-                {/* <div className="includedRegResidential"> */}
-
-
-
-
-                {/* </div> */}
-
-           
-
-
-
-            {/* <Row className="justify-content-center">
-                <Col md={6}>
-                    <Card className="bookCard ">
-                        <Card.Body>
-                            <Card.Title className="resCardTitle">Book Your Cleaning Service Today!</Card.Title>
-                            <Card.Text className="resCardText">
-                                <p>Let <strong>Rux Cleaning</strong> help you maintain a clean, fresh, and healthy home in <strong>Bolingbrook</strong> with our <strong>eco-friendly residential cleaning services</strong>.</p>
-                                <p>
-                                    <strong>
-
-
-                                        <div className="d-flex justify-content-center">
-                                            <Button variant="secondary" className="m-2">📞 Call Us for a Free Quote!</Button> <br />
-                                        <p>📍 Serving Bolingbrook <br />& Nearby Areas</p>
-                                        </div>
-                                        
-                                    </strong>
-                                </p>
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
-                </Col>
-            </Row> */}
-
 <Row className="justify-content-center">
-  <Col md={6}>
+  <Col md={8} lg={6}>
     <Card className="bookCard">
       <Card.Body>
         <Card.Title className="resCardTitle">Book Your Cleaning Service Today!</Card.Title>
@@ -287,11 +250,11 @@ function RegularCleaning() {
               </Button>
             ) : (
               <a
-                href="tel:1234567890"
+                href="tel:6304414446"
                 onClick={handlePhoneClick}
                 className="m-2 text-decoration-none"
               >
-                <strong style={{ fontSize: "1.2rem" }}>📱 (123) 456-7890</strong>
+                <strong style={{ fontSize: "1.2rem" }}>📱 630-441-4446</strong>
               </a>
             )}
             <p className="text-center">

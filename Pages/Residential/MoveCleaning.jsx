@@ -3,6 +3,7 @@ import { useState } from 'react';
 import "../../src/App.css";
 import '../../styles/MoveCleaning.css';
 
+import { Container } from "react-bootstrap";
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
@@ -43,7 +44,7 @@ function MoveCleaning() {
                 </Row>
 
                 <Row xs={1} md={2} className="g-4">
-                    <Col className="whyMoveCleaning">
+                    <Col className="whyMoveCleaning" md={12} lg={6} >
                         <Card className="regCard">
                             <Card.Body>
                                 <Card.Title className="regCardTitle">Why You Need Move-In/Move-Out Cleaning
@@ -64,7 +65,7 @@ function MoveCleaning() {
                         </Card>
                     </Col>
 
-                    <Col className="howMoveClenaing">
+                    <Col className="howMoveClenaing" md={12} lg={6}>
                         <Card className="regCard">
                             <Card.Body>
                                 <Card.Title className="regCardTitle">How It Helps You
@@ -90,8 +91,8 @@ function MoveCleaning() {
                 <h2 className="regCardTitle mb-5" >What’s Included in Our Move-In/Move-Out Cleaning
                 </h2>
 
-                <Row>
-                    <Col>
+                <Row className="justify-content-center g-4 mb-4">
+                    <Col xs={12} sm={6} lg={4} xl={3}>
                         <Card className="smCard">
                             <Card.Body>
                                 <Card.Img className="cardImg" variant="top" src={MoveKitchen} />
@@ -104,7 +105,7 @@ function MoveCleaning() {
                         </Card>
                     </Col>
 
-                    <Col>
+                    <Col xs={12} sm={6} lg={4} xl={3}>
                         <Card className="smCard">
                             <Card.Body>
                                 <Card.Img className="cardImg" variant="top" src={MoveBathroom} />
@@ -117,7 +118,8 @@ function MoveCleaning() {
                         </Card>
                     </Col>
 
-                    <Col>
+                    
+                    <Col xs={12} sm={6} lg={4} xl={3}>
                         <Card className="smCard">
                             <Card.Body>
                                 <Card.Img className="cardImg" variant="top" src={MoveLiving} />
@@ -129,8 +131,9 @@ function MoveCleaning() {
                             </Card.Body>
                         </Card>
                     </Col>
-
-                    <Col>
+                    </Row>
+                    <Row className="justify-content-center g-4">
+                    <Col xs={12} sm={6} lg={4} xl={3}>
                         <Card className="smCard">
                             <Card.Body>
                                 <Card.Img className="cardImg" variant="top" src={MoveDeep} />
@@ -143,7 +146,7 @@ function MoveCleaning() {
                         </Card>
                     </Col>
 
-                    <Col>
+                    <Col xs={12} sm={6} lg={4} xl={3}>
                         <Card className="smCard">
                             <Card.Body>
                                 <Card.Img className="cardImg" variant="top" src={MoveProducts} />
@@ -158,9 +161,11 @@ function MoveCleaning() {
                     </Col>
                 </Row>
 
+               
+
 
                 <Row className="justify-content-center">
-                    <Col md={6}>
+                    <Col xs={12} md={8} lg={6}>
                         <Card className="bookCard ">
                             <Card.Body>
                                 <Card.Title className="resCardTitle">Serving Bolingbrook and Surrounding Areas</Card.Title>
@@ -184,11 +189,11 @@ function MoveCleaning() {
 
                                             ) : (
                                                 <a
-                                                    href="tel:1234567890"
+                                                    href="tel:6304414446"
                                                     onClick={handlePhoneClick}
                                                     className="m-2 text-decoration-none"
                                                 >
-                                                    <strong style={{ fontSize: "1.2rem" }}>📱 (123) 456-7890</strong>
+                                                    <strong style={{ fontSize: "1.2rem" }}>📱 630-441-4446</strong>
                                                 </a>
 
                                             )}
