@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Form, Button, Container, Row, Col, Card } from 'react-bootstrap';
+import { Form, Button, Row, Col, Card } from 'react-bootstrap';
 import handShake from '../src/assets/handShake.jpg';
 import "../styles/Career.css";
 import emailjs from '@emailjs/browser';
