@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Form, Button, Container, Row, Col, Card } from 'react-bootstrap';
 import handShake from '../src/assets/handShake.jpg';
 import "../styles/Career.css";
+import emailjs from '@emailjs/browser';
 
 function Career() {
     const [formData, setFormData] = useState({
@@ -28,6 +29,10 @@ function Career() {
     const handleSubmit = (e) => {
         e.preventDefault();
         const newErrors = {};
+
+        const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+        const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+        const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
         // Full Name
         if (!formData.fullName.trim()) {
@@ -77,11 +82,33 @@ function Career() {
         setErrors(newErrors);
 
         if (Object.keys(newErrors).length === 0) {
-            alert("Application submitted!");
-            console.log(formData);
-            // optionally reset the form or send data to API
+            // Send email via EmailJS
+            emailjs.send(
+                serviceId,
+                templateId,
+                formData,
+                publicKey
+            ).then((response) => {
+                console.log('SUCCESS!', response.status, response.text);
+                alert("Application submitted!");
+
+                // Clear form
+                setFormData({
+                    fullName: '',
+                    phone: '',
+                    email: '',
+                    availability: '',
+                    experience: '',
+                    transportation: '',
+                    aboutYou: ''
+                });
+            }).catch((err) => {
+                console.error('FAILED...', err);
+                alert("Something went wrong. Please try again later.");
+            });
         }
     };
+
 
 
 
@@ -92,20 +119,20 @@ function Career() {
                     <Col>
                         <div className="regIntro">
                             <h2 className="regTitle">Join Our Team | Rux Cleaning</h2>
-                            <div className="regIntroText" id="indent">
+                            <div className="regIntroText text-indent">
                                 <p>Are you looking for a rewarding job with a flexible schedule and great pay? </p>
-                                <p><strong>We are hiring</strong> dedicated and detail-oriented cleaners to join our growing team in Bolingbrook and surrounding areas!</p>
+                                <p>We are hiring dedicated and detail-oriented cleaners to join our growing team in Bolingbrook and surrounding areas!</p>
                             </div>
                         </div>
                     </Col>
                 </Row>
 
                 <Row>
-                    <Col md={12} lg={6} className="d-flex align-items-center justify-content-center">
+                    <Col md={6} className="d-flex align-items-center justify-content-center">
                         <Card.Img className="imgC" src={handShake} />
                     </Col>
 
-                    <Col md={12} lg={6}>
+                    <Col md={6}>
                         <Card className="regCard">
                             <Card.Body>
                                 <Card.Title className="resCardTitle">Why Work With Us?</Card.Title>
@@ -122,7 +149,7 @@ function Career() {
                 </Row>
 
                 <Row className="justify-content-center mt-5">
-                <Col md={12} lg={8} className="mx-auto">
+                    <Col md={6} lg={8}>
                         <h2 className="resCardTitle mb-5" style={{ fontSize: "1.8rem" }}>Employment Contact Form</h2>
                         <Card className="resCard">
                             <Card.Body>
@@ -204,7 +231,7 @@ function Career() {
                                             onChange={handleChange}
                                             isInvalid={!!errors.experience}
                                         />
-                                         <Form.Control.Feedback type="invalid">
+                                        <Form.Control.Feedback type="invalid">
                                             {errors.experience}
                                         </Form.Control.Feedback>
                                     </Form.Group>
