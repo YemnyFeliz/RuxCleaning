@@ -35,7 +35,7 @@ function EcoFriendly() {
                 </Row>
 
                 <Row>
-                    <Col md={{ span: 8, offset: 2 }}>
+                <Col md={12} lg={8} className="mx-auto">
                         <Card className="regCard">
                             <Card.Body>
                                 <Card.Title className="regCardTitle">What is Eco-Friendly Cleaning?</Card.Title>
@@ -54,13 +54,13 @@ function EcoFriendly() {
 
 
                 <Row xs={1} md={2} className="g-4">
-                    <Col md={6} className="d-flex align-items-center justify-content-center">
+                    <Col xs={12} sm={10} md={12} lg={6} className="d-flex align-items-center justify-content-center">
                         <div>
                             <Card.Img src={ecofriendly} className="imgEco" style={{ maxWidth: '100%', height: 'auto' }} />
                         </div>
                     </Col>
 
-                    <Col>
+                    <Col xs={12} md={12} lg={6}>
                         <Card className="regCard">
                             <Card.Body>
                                 <Card.Title className="regCardTitle">What Types of Products Are Used in Eco-Friendly Cleaning?
@@ -85,7 +85,7 @@ function EcoFriendly() {
 
 
                 <Row>
-                    <Col md={{ span: 8, offset: 2 }}>
+                <Col md={12} lg={8} className="mx-auto">
                         <Card className="regCard">
                             <Card.Body>
                                 <Card.Title className="regCardTitle">How Does Eco-Friendly Cleaning Help Clients?</Card.Title>
@@ -103,7 +103,7 @@ function EcoFriendly() {
 
                 <Row>
 
-                    <Col>
+                    <Col xs={12} md={12} lg={6}>
                         <Card className="regCard">
                             <Card.Body>
                                 <Card.Title className="regCardTitle">Why Do Clients Need Eco-Friendly Cleaning?</Card.Title>
@@ -118,7 +118,7 @@ function EcoFriendly() {
                         </Card>
                     </Col>
 
-                    <Col>
+                    <Col xs={12} md={12} lg={6}>
                         <Card className="regCard">
                             <Card.Body>
                                 <Card.Title className="regCardTitle">Why Choose Rux Cleaning?</Card.Title>
@@ -139,7 +139,7 @@ function EcoFriendly() {
 
 
                 <Row className="justify-content-center">
-                <Col md={6}>
+                <Col xs={12} md={8} lg={6}>
                     <Card className="bookCard ">
                         <Card.Body>
                             <Card.Title className="resCardTitle">Experience a Cleaner, Greener Space with Rux Cleaning!</Card.Title>
@@ -150,21 +150,21 @@ function EcoFriendly() {
                                     Rux Cleaning is your go-to choice! </strong> 
                                 </p>
 
-                                <div className="d-flex flex-column align-items-center">
+                                <div className="d-flex flex-column align-items-center text-center">
                                 <p id="indent" className="text-center">
                                     {!showPhone ? (
-                                        <Button variant="secondary" className="m-1" onClick={handleToggle}>
+                                        <Button variant="secondary" className="contactBtn" onClick={handleToggle}>
                                             📞 Call Us for a Free Quote Today!
                                         </Button>
                                         
 
                                     ) : (
                                         <a
-                                            href="tel:1234567890"
+                                            href="tel:6304414446"
                                             onClick={handlePhoneClick}
                                             className="m-2 text-decoration-none"
                                         >
-                                            <strong style={{ fontSize: "1.2rem" }}>📱 (123) 456-7890</strong>
+                                            <strong style={{ fontSize: "1.2rem" }}>📱 630-441-4446</strong>
                                         </a>
 
                                     )}

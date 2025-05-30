@@ -43,13 +43,13 @@ function DeepCleaning() {
 
 
             <Row xs={1} md={2} className="g-4">
-                <Col className="whatDeepCleaning">
+                <Col className="whatDeepCleaning" >
                     <Card className="regCard">
                         <Card.Body>
                             <Card.Title className="regCardTitle">What is Deep Cleaning?
                             </Card.Title>
                             <Card.Text className="regCardText">
-                                <p><strong>Deep cleaning</strong> is an intensive, detailed cleaning process that goes beyond regular housekeeping. It targets dirt, grime, bacteria, and buildup in hard-to-reach areas, ensuring a healthier and more hygienic home environment. Unlike standard cleaning, which focuses on surface-level tidiness, deep cleaning removes deep-seated dust, allergens, and germs.</p>
+                                <p id="indent"><strong>Deep cleaning</strong> is an intensive, detailed cleaning process that goes beyond regular housekeeping. It targets dirt, grime, bacteria, and buildup in hard-to-reach areas, ensuring a healthier and more hygienic home environment. Unlike standard cleaning, which focuses on surface-level tidiness, deep cleaning removes deep-seated dust, allergens, and germs.</p>
                             </Card.Text>
                         </Card.Body>
                     </Card>
@@ -57,7 +57,7 @@ function DeepCleaning() {
 
 
 
-                <Col className="whenDeepCleaning">
+                <Col className="whenDeepCleaning" >
                     <Card className="regCard">
                         <Card.Body>
                             <Card.Title className="regCardTitle">When Should You Get a Deep Cleaning Service?
@@ -95,12 +95,12 @@ function DeepCleaning() {
 
 
             <Row className="mb-5">
-            <Col className="d-flex align-items-center" >
+            <Col md={12} lg={8} className="mx-auto">
             <Card className="resCard deepCard ">
                     <Card.Body >
                             {/* <Card.Title className="regCardTitle">Why Choose Deep Cleaning?
                             </Card.Title> */}
-                            <Card.Text className="regCardText centerText">
+                            <Card.Text className="regCardText">
                                 {/* <p id="includedIntro" className="text-indent">Deep cleaning is essential for homeowners, renters, and property managers who want a truly fresh and sanitized space. Here’s how it helps:
                                 </p><br /> */}
                                 <p>✅ <strong>Healthier Home Environment –</strong> Removes allergens, bacteria,  and dust buildup, improving indoor air quality.
@@ -132,7 +132,7 @@ function DeepCleaning() {
 
             {/* KITCHEN */}
             <Row className="flex-md-row-reverse mb-5">
-                <Col md={6}>
+                <Col xs={12} sm={6} md={12} lg={6}>
                     <Card className="regCard">
                         <Card.Body>
                             <Card.Title className="resCardTitle">Kitchen</Card.Title>
@@ -152,21 +152,21 @@ function DeepCleaning() {
                     </Card>
                 </Col>
 
-                <Col md={6}>
+                <Col xs={12} sm={6} md={12} lg={6}>
                     <Card.Img className="imgC" src={DeepKitchen} />
                 </Col>
             </Row>
 
-            <Row className="align-items-center flex-md-row-reverse mb-5">
-                <Col md={6}>
+            <Row className="align-items-center  mb-5">
+                {/* <Col xs={12} sm={6} md={10} lg={6}>
                     <Card.Img
                         className="imgC"
                         src={DeepBathroom}
                         style={{ height: "450px", objectFit: "cover", width: "100%" }}
                     />
-                </Col>
+                </Col> */}
 
-                <Col md={6}>
+                <Col xs={12} sm={6} md={12} lg={6}>
                     <Card className="regCard">
                         <Card.Body>
                             <Card.Title className="resCardTitle">Bathrooms</Card.Title>
@@ -184,13 +184,19 @@ function DeepCleaning() {
                         </Card.Body>
                     </Card>
                 </Col>
-
+                <Col xs={12} sm={6} md={12} lg={6}>
+                    <Card.Img
+                        className="imgC"
+                        src={DeepBathroom}
+                        style={{ height: "450px", objectFit: "cover", width: "100%" }}
+                    />
+                </Col>
 
             </Row>
 
             {/* BEDROOMS */}
             <Row className="flex-md-row-reverse mb-5">
-                <Col md={6}>
+            <Col xs={12} sm={6} md={12} lg={6}>
                     <Card className="regCard">
                         <Card.Body>
                             <Card.Title className="resCardTitle">Bedrooms</Card.Title>
@@ -208,19 +214,19 @@ function DeepCleaning() {
                     </Card>
                 </Col>
 
-                <Col md={6}>
+                <Col xs={12} sm={6} md={12} lg={6}>
                     <Card.Img className="imgC" src={DeepBedroom} />
                 </Col>
             </Row>
 
             {/* Living Areas */}
-            <Row className="flex-md-row-reverse mb-5">
+            <Row className=" mb-5">
 
-                <Col md={6}>
+            {/* <Col xs={12} sm={6} md={10} lg={6}>
                     <Card.Img className="imgC" src={DeepLivingArea} />
-                </Col>
+                </Col> */}
 
-                <Col md={6}>
+                <Col xs={12} sm={6} md={12} lg={6}>
                     <Card className="regCard">
                         <Card.Body>
                             <Card.Title className="resCardTitle">Other Areas: living room, hallway, stairs</Card.Title>
@@ -239,13 +245,15 @@ function DeepCleaning() {
                     </Card>
                 </Col>
 
-
+                <Col xs={12} sm={6} md={12} lg={6}>
+                    <Card.Img className="imgC" src={DeepLivingArea} />
+                </Col>
             </Row>
 
 
 
             <Row className="justify-content-center">
-                <Col md={6}>
+                <Col xs={12} md={8} lg={6}>
                     <Card className="bookCard ">
                         <Card.Body>
                             <Card.Title className="resCardTitle">Serving Bolingbrook and Surrounding Areas</Card.Title>
@@ -268,11 +276,11 @@ function DeepCleaning() {
 
                                         ) : (
                                             <a
-                                                href="tel:1234567890"
+                                                href="tel:6304414446"
                                                 onClick={handlePhoneClick}
                                                 className="m-2 text-decoration-none"
                                             >
-                                                <strong style={{ fontSize: "1.2rem" }}>📱 (123) 456-7890</strong>
+                                                <strong style={{ fontSize: "1.2rem" }}>📱 630-441-4446</strong>
                                             </a>
 
                                         )}

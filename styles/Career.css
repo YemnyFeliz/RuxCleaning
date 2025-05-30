@@ -7,6 +7,14 @@
 }
 
 #applyBtn{
-    background-color:#6c757d !important;
-    color: #fff !important;
+    /* background-color:#ffbb00!important; */
+   
+    
+}
+.btn-secondary {
+    background-color: red;
+    color: white;
+}
+.btn-secondary:hover{
+    background-color: #ffbb00;
 }

@@ -36,6 +36,8 @@
     height: 33%;
 }
 
-.centerText{
-padding-left: 3rem;
+@media (max-width: 768px){
+    .text-indent{
+        text-indent: 3rem;
+    }
 }

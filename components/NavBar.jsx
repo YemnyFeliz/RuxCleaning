@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import '../styles/NavBar.css';
 import '../src/App.css';
 
+import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
@@ -14,6 +15,7 @@ import logo from '../src/assets/logo.png';
 const Navigation = () => {
   return (
     <Navbar fixed="top" collapseOnSelect expand="lg" className="bg-body-tertiary">
+      <Container>
       <Navbar.Brand as={Link} to="/" className="d-flex align-items-center">
         <img alt="ruxcleaninglogo" src={logo} width="200" height="150" className="d-inline-block align-top" />
         {/* <span className="brand-name">RuxCleaning</span> */}
@@ -35,9 +37,10 @@ const Navigation = () => {
           <Nav.Link as={Link} to="/commercial">Commercial</Nav.Link>
           <Nav.Link as={Link} to="/ecoFriendly">Eco Friendly</Nav.Link>
           <Nav.Link as={Link} to="/career">Career</Nav.Link>
-          <Button className="callBtn" variant="secondary" href="tel:609-757-5153">Call Now 777-777-7777</Button>
+          <Button className="callBtn" variant="secondary" href="tel:630-441-4446">Call Now (630) 441 - 4446</Button>
         </Nav>
       </Navbar.Collapse>
+      </Container>
     </Navbar>
   );
 };

@@ -21,7 +21,7 @@ function PostConstruction() {
         setShowPhone(false);
     };
 
-    
+
     return (
         <>
             <div className="regResidential container">
@@ -35,30 +35,30 @@ function PostConstruction() {
                 </Row>
 
                 <Row xs={1} md={2} className="g-4">
-                    <Col md={6}>
+                    <Col md={12} lg={6}>
 
                         <Card className="regCard">
                             <Card.Body>
                                 <Card.Title className="regCardTitle">What is Post-Construction Cleaning?
                                 </Card.Title>
                                 <Card.Text className="regCardText">
-                                    <p>
-                                    Post-construction cleaning is the <strong>final step after a building or renovation project</strong>, 
-                                    ensuring that a newly constructed or remodeled home is <strong>clean, safe, and move-in ready</strong>. 
-                                    Construction projects leave behind dust, debris, and hazardous materials that require professional cleaning to make the space safe, spotless, and livable. 
-                                    At <strong>Rux Cleaning</strong>, we take it a step further by using <srtong>eco-friendly, non-toxic products</srtong> that protect both your home and the environment.
+                                    <p id="indent">
+                                        Post-construction cleaning is the <strong>final step after a building or renovation project</strong>,
+                                        ensuring that a newly constructed or remodeled home is <strong>clean, safe, and move-in ready</strong>.
+                                        Construction projects leave behind dust, debris, and hazardous materials that require professional cleaning to make the space safe, spotless, and livable.
+                                        At <strong>Rux Cleaning</strong>, we take it a step further by using <srtong>eco-friendly, non-toxic products</srtong> that protect both your home and the environment.
                                     </p>
                                 </Card.Text>
                             </Card.Body>
                         </Card>
                     </Col>
-                    <Col md={6}>
+                    <Col md={12} lg={6}>
                         <Card.Img className="img" src={postConstruction}></Card.Img>
                     </Col>
                 </Row>
 
                 <Row>
-                <Col md={{ span: 8, offset: 2 }}>
+                    <Col md={12} lg={8} className="mx-auto">
                         <Card className="regCard">
                             <Card.Body>
                                 <Card.Title className="regCardTitle">Why Do You Need Post-Construction Cleaning?
@@ -78,10 +78,10 @@ function PostConstruction() {
                             </Card.Body>
                         </Card>
                     </Col>
-                    </Row>
+                </Row>
 
                 <Row>
-                    <Col>
+                    <Col md={12} lg={6}>
                         <Card className="regCard">
                             <Card.Body>
                                 <Card.Title className="regCardTitle">How Post-Construction Cleaning Helps You</Card.Title>
@@ -113,7 +113,7 @@ function PostConstruction() {
 
 
                 <Row className="mb-5">
-                    <Col md={{ span: 8, offset: 2 }}>
+                    <Col md={12} lg={8} className="mx-auto">
                         <Card Card className="resCard h-100">
                             <Card.Body>
                                 <Card.Title className="resCardTitle">What’s Included in Our Post-Construction Cleaning?</Card.Title>
@@ -131,48 +131,48 @@ function PostConstruction() {
                 </Row>
 
                 <Row className="justify-content-center">
-                <Col md={6}>
-                    <Card className="bookCard ">
-                        <Card.Body>
-                            <Card.Title className="resCardTitle">Get a Fresh Start with Post-Construction Cleaning!
-</Card.Title>
-                            <Card.Text className="resCardText">
-                                <p id="indent">
-                                If you've recently completed a construction or renovation project in <strong>Bolingbrook</strong>, 
-                                let <strong>Rux Cleaning</strong> handle the final cleanup.
-                                 Contact us today for a <strong>free quote</strong> and enjoy a clean, safe, and eco-friendly home!
-                                </p>
+                    <Col xs={12} md={8} lg={6}>
+                        <Card className="bookCard ">
+                            <Card.Body>
+                                <Card.Title className="resCardTitle">Get a Fresh Start with Post-Construction Cleaning!
+                                </Card.Title>
+                                <Card.Text className="resCardText">
+                                    <p id="indent">
+                                        If you've recently completed a construction or renovation project in <strong>Bolingbrook</strong>,
+                                        let <strong>Rux Cleaning</strong> handle the final cleanup.
+                                        Contact us today for a <strong>free quote</strong> and enjoy a clean, safe, and eco-friendly home!
+                                    </p>
 
-                                <div className="d-flex flex-column align-items-center">
-                                <p id="indent" className="text-center">
-                                    {!showPhone ? (
-                                        <Button variant="secondary" className="m-1" onClick={handleToggle}>
-                                            📞 Call Rux Cleaning Today!
-                                        </Button>
-                                        
+                                    <div className="d-flex flex-column align-items-center text-center">
+                                        <p id="indent" className="text-center">
+                                            {!showPhone ? (
+                                                <Button variant="secondary" className="m-1 contactBtn" onClick={handleToggle}>
+                                                    📞 Call Rux Cleaning Today!
+                                                </Button>
 
-                                    ) : (
-                                        <a
-                                            href="tel:1234567890"
-                                            onClick={handlePhoneClick}
-                                            className="m-2 text-decoration-none"
-                                        >
-                                            <strong style={{ fontSize: "1.2rem" }}>📱 (123) 456-7890</strong>
-                                        </a>
 
-                                    )}
-                                   </p>
-                                   <p><strong>
-                                   📍 Serving Bolingbrook & Nearby Areas
+                                            ) : (
+                                                <a
+                                                    href="tel:6304414446"
+                                                    onClick={handlePhoneClick}
+                                                    className="m-2 text-decoration-none"
+                                                >
+                                                    <strong style={{ fontSize: "1.2rem" }}>📱 630-441-4446</strong>
+                                                </a>
 
-                                    </strong></p>
-                                </div>
+                                            )}
+                                        </p>
+                                        <p><strong>
+                                            📍 Serving Bolingbrook & Nearby Areas
 
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
-                </Col>
-            </Row>
+                                        </strong></p>
+                                    </div>
+
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                </Row>
 
 
             </div>

@@ -35,13 +35,30 @@ nav.bg-body-tertiary {
 }
 
 .callBtn {
-font-size: 1.3rem !important;
-margin-right: 2rem !important;
-background-color:#6c757d !important;
-color: #fff !important;
+font-size: 1.5rem !important;
+/* margin-right: 2rem !important; */
+/* background-color:#6c757d !important; */
+/* color: #fff !important; */
 }
 
 .dropdown-link {
     text-decoration: none;
     color: var(--bs-nav-link-color);
+}
+
+@media (max-width: 768px){
+    .show{
+        background-color: #00b4d8; 
+        padding:2rem;
+        border-radius: 1rem;
+        font-weight: bold;
+
+        min-width: 100% !important;
+        max-width: 100% !important ;
+        box-sizing: border-box;
+    }
+
+    .navbar-brand img {
+        position: fixed;
+    }
 }
