@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/Home.css";
 import Card from 'react-bootstrap/Card';
 
-import { Container, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 
 
 function Home() {

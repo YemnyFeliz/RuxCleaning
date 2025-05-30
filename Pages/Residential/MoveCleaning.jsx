@@ -3,12 +3,12 @@ import { useState } from 'react';
 import "../../src/App.css";
 import '../../styles/MoveCleaning.css';
 
-import { Container } from "react-bootstrap";
+// import { Container } from "react-bootstrap";
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
-import residentialCleaning from "../../src/assets/residentialCleaning.jpg";
+// import residentialCleaning from "../../src/assets/residentialCleaning.jpg";
 
 import MoveKitchen from '../../src/assets/MoveKitchen.jpg';
 import MoveDeep from '../../src/assets/MoveDeep.jpg';
