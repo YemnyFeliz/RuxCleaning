@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from 'react';
 import '../src/App.css';
-import '../styles/residential.css';
+import '../styles/Residential.css';
 
 
 import Card from 'react-bootstrap/Card';
