@@ -266,8 +266,8 @@ function DeepCleaning() {
 
                                 </p>
 
-                                <div className="d-flex flex-column align-items-center">
-                                    <p id="indent" className="text-center">
+                                <div className="d-flex flex-column ">
+                                    <p id="indent" >
                                         {!showPhone ? (
                                             <Button variant="secondary" className="m-1" onClick={handleToggle}>
                                                 📞 Contact us

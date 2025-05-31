@@ -144,14 +144,14 @@ function EcoFriendly() {
                         <Card.Body>
                             <Card.Title className="resCardTitle">Experience a Cleaner, Greener Space with Rux Cleaning!</Card.Title>
                             <Card.Text className="resCardText">
-                                <p id="indent" className="text-center">
+                                <p id="indent" >
                                 If you're looking for a 
-                                <strong>safe, effective, and environmentally responsible cleaning service in Bolingbrook, 
+                                <strong> safe, effective, and environmentally responsible cleaning service in Bolingbrook, 
                                     Rux Cleaning is your go-to choice! </strong> 
                                 </p>
 
-                                <div className="d-flex flex-column align-items-center text-center">
-                                <p id="indent" className="text-center">
+                                <div className="d-flex flex-column ">
+                                <p id="indent" >
                                     {!showPhone ? (
                                         <Button variant="secondary" className="contactBtn" onClick={handleToggle}>
                                             📞 Call Us for a Free Quote Today!

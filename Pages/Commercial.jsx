@@ -184,12 +184,12 @@ function Commercial() {
                         <Card.Body>
                             <Card.Title className="resCardTitle">Schedule Your Commercial Cleaning Service Today!</Card.Title>
                             <Card.Text className="resCardText">
-                                <p id="indent" className="text-center">
+                                <p id="indent" >
                                 Let <strong>Rux Cleaning</strong> keep your <strong>office, store, or business space</strong> spotless and sanitary
                                  with our <strong>eco-friendly commercial cleaning services in Bolingbrook.</strong>
                                 </p>
 
-                                <div className="d-flex flex-column align-items-center text-center">
+                                <div className="d-flex flex-column align-items-center ">
                                 <p id="indent" >
                                     {!showPhone ? (
                                         <Button variant="secondary" className="contactBtn" onClick={handleToggle}>

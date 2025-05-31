@@ -10,9 +10,10 @@
 }
 
 h1 {
-    font-size: 4.5rem;
-    font-family: Bradley Hand, cursive;
-    font-style: italic;
+    font-size: 4rem;
+    /* font-family: Bradley Hand, cursive; */
+    /* font-style: italic; */
+    font-weight: lighter;
     
 }
 
@@ -109,7 +110,7 @@ h2 {
 
 /* Make dropdown larger */
 .navbar .dropdown-menu {
-    background-color: rgba(255,255,255,0.5)!important;  /* Dark blue background */
+    background-color: white!important;  /* Dark blue background */
     border-radius: 10px !important;  /* Rounded corners */
     border-style: hidden;
     min-width: 600px !important;  /* Set width */
@@ -118,7 +119,7 @@ h2 {
 
 /* Style dropdown items */
 .navbar .dropdown-menu .dropdown-item {
-    color: #7d8597!important;  /* White text */
+    color: black!important;  /* White text */
     font-size: 1.2rem !important;  /* Larger font */
     padding: 12px 20px !important;
 }

@@ -170,7 +170,7 @@ function MoveCleaning() {
                             <Card.Body>
                                 <Card.Title className="resCardTitle">Serving Bolingbrook and Surrounding Areas</Card.Title>
                                 <Card.Text className="resCardText">
-                                    <p id="indent" className="text-center">
+                                    <p id="indent" >
 
                                         Let <strong>Rux Cleaning</strong> make your move easier and more eco-friendly.
                                         Our <strong>move-in/out cleaning services in Bolingbrook</strong> provide a
@@ -180,7 +180,7 @@ function MoveCleaning() {
                                     </p>
 
                                     <div className="d-flex flex-column align-items-center">
-                                        <p id="indent" className="text-center">
+                                        <p id="indent" >
                                             {!showPhone ? (
                                                 <Button variant="secondary" className="m-1" onClick={handleToggle}>
                                                     📞 Contact us

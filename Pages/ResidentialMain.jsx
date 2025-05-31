@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import '../src/App.css';
 import '../styles/Residential.css';
 
@@ -21,6 +21,9 @@ import dirtyStove from "../src/assets/dirtyStove.jpeg";
 
 function ResidentialMain() {
 
+
+
+
     const [showPhone, setShowPhone] = useState(false);
 
     const handleToggle = () => {
@@ -31,6 +34,8 @@ function ResidentialMain() {
         setShowPhone(false);
     };
 
+
+    
 
     return (
 
@@ -143,8 +148,8 @@ function ResidentialMain() {
                                 <p id="indent">Rux Cleaning is proud to serve the <strong>Bolingbrook community </strong> 
                                 with reliable, professional cleaning services that prioritize your satisfaction and well-being.</p>
 
-                                <div className="d-flex flex-column align-items-center">
-                                <p id="indent" className="text-center">
+                                <div className="d-flex flex-column">
+                                <p id="indent">
                                     {!showPhone ? (
                                         <Button variant="secondary" className="m-1" onClick={handleToggle}>
                                             📞 Contact us

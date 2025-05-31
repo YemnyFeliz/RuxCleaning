@@ -144,7 +144,7 @@ function PostConstruction() {
                                     </p>
 
                                     <div className="d-flex flex-column align-items-center text-center">
-                                        <p id="indent" className="text-center">
+                                        <p id="indent">
                                             {!showPhone ? (
                                                 <Button variant="secondary" className="m-1 contactBtn" onClick={handleToggle}>
                                                     📞 Call Rux Cleaning Today!
