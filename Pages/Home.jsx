@@ -22,7 +22,7 @@ function Home() {
                         <Card className="regCard">
                             <Card.Body>
                             
-                                <Card.Text className="text-center intro-text regCardText">
+                                <Card.Text className=" intro-text regCardText">
                                     <p>At <strong>Rux Cleaning</strong>, our mission is to provide top-quality, reliable, and eco-friendly cleaning services that create healthier and more comfortable spaces for our clients. 
 We are committed to excellence, professionalism, and customer satisfaction, ensuring every home and business we clean is left spotless and refreshed. 
 Through sustainability, integrity, and attention to detail, we strive to build long-term relationships and make a positive impact on our community - one clean space at a time.
@@ -40,7 +40,7 @@ Through sustainability, integrity, and attention to detail, we strive to build l
 
                     <Row className="justify-content-center">
                         <Col xs={12} sm={10} md={8}>
-                            <Card className="text-center cardHome">
+                            <Card className="cardHome">
                                 <Card.Body>
                                     {/* <Card.Title>Special title treatment</Card.Title> */}
                                     <Card.Text className="cardtext">

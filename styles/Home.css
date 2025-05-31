@@ -99,7 +99,7 @@ h2 {
 
 .cardtext {
     width: 100%;
-    text-align: center; 
+    /* text-align: center;  */
     padding: 1rem;
     font-size: clamp(1.2rem, 2vw, 1.5rem);
     line-height: 1.5; /* Improve readability */

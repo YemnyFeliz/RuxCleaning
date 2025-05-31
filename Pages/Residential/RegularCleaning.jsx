@@ -38,8 +38,9 @@ function RegularCleaning() {
                         <div className="regIntro">
                             <h2 className="regTitle">Regular Residential Cleaning </h2>
                             <div className="regIntroText">
-                                <p id="indent">Keeping your home clean is essential for a <strong>healthy, comfortable, and stress-free living environment.</strong></p>
-                                <p>At <strong>Rux Cleaning</strong>, we provide <strong>professional, eco-friendly regular cleaning services</strong> in Bolingbrook, ensuring your home stays fresh and spotless without the use of harsh chemicals.</p>
+                                
+                                <p id="indent">
+                                Keeping your home clean is essential for a <strong>healthy, comfortable, and stress-free living environment.</strong> At <strong>Rux Cleaning</strong>, we provide <strong>professional, eco-friendly regular cleaning services</strong> in Bolingbrook, ensuring your home stays fresh and spotless without the use of harsh chemicals.</p>
                             </div>
                         </div>
                     </Col>

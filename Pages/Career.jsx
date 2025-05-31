@@ -119,9 +119,9 @@ function Career() {
                     <Col>
                         <div className="regIntro">
                             <h2 className="regTitle">Join Our Team | Rux Cleaning</h2>
-                            <div className="regIntroText text-indent">
-                                <p>Are you looking for a rewarding job with a flexible schedule and great pay? </p>
-                                <p>We are hiring dedicated and detail-oriented cleaners to join our growing team in Bolingbrook and surrounding areas!</p>
+                            <div className="regIntroText">
+                                <p id="indent">Are you looking for a rewarding job with a flexible schedule and great pay? < br />
+                                We are hiring dedicated and detail-oriented cleaners to join our growing team in Bolingbrook and surrounding areas!</p>
                             </div>
                         </div>
                     </Col>

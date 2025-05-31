@@ -36,8 +36,8 @@ function Commercial() {
                             <h2 className="regTitle">Commercial Cleaning Services
                             </h2>
                             <div className="regIntroText text-indent">
-                            <p >A <strong>clean and well-maintained workspace</strong> is essential for productivity, professionalism, and employee well-being. </p>
-                             <p>   At <strong>Rux Cleaning</strong>, we offer <strong>eco-friendly commercial cleaning services</strong> in <strong>Bolingbrook</strong> to ensure your business space is spotless, hygienic, and welcoming for employees, clients, and visitors.
+                            <p>A <strong>clean and well-maintained workspace</strong> is essential for productivity, professionalism, and employee well-being. 
+                             At <strong>Rux Cleaning</strong>, we offer <strong>eco-friendly commercial cleaning services</strong> in <strong>Bolingbrook</strong> to ensure your business space is spotless, hygienic, and welcoming for employees, clients, and visitors.
                             </p>
                             </div>
                         </div>
