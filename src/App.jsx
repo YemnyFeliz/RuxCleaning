@@ -8,15 +8,15 @@ import Header from '../components/Header';
 import BubblesBackground from '../components/Bubbles';
 
 import ContentProtector from '../components/ContentProtector';
-import Home from '../pages/Home';
-import ResidentialMain from '../pages/ResidentialMain';
-import RegularCleaning from '../pages/Residential/RegularCleaning';
-import DeepCleaning from '../pages/Residential/DeepCleaning';
-import MoveCleaning from '../pages/Residential/MoveCleaning';
-import PostConstruction from '../pages/Residential/PostConstruction';
-import Commercial from '/pages/Commercial';
-import EcoFriendly from '/pages/Eco-Friendly';
-import Career from '../pages/Career';
+import Home from '../Pages/Home';
+import ResidentialMain from '../Pages/ResidentialMain';
+import RegularCleaning from '../Pages/Residential/RegularCleaning';
+import DeepCleaning from '../Pages/Residential/DeepCleaning';
+import MoveCleaning from '../Pages/Residential/MoveCleaning';
+import PostConstruction from '../Pages/Residential/PostConstruction';
+import Commercial from '/Pages/Commercial';
+import EcoFriendly from '/Pages/Eco-Friendly';
+import Career from '../Pages/Career';
 import RuxFooter from '../components/Footer'
 
 console.log("✅ App component is rendering...");
