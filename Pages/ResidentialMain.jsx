@@ -20,14 +20,13 @@ import dirtyStove from "../src/assets/dirtyStove.jpeg";
 function ResidentialMain() {
 
     const isDesktop = useMediaQuery({ minWidth: 992 });
-    const [showVideo, setShowVideo] = useState(isDesktop);
-    
-    useEffect(() => {
-      if (!isDesktop) {
-        const timeout = setTimeout(() => setShowVideo(true), 1000); // show after 1 sec
-        return () => clearTimeout(timeout);
-      }
-    }, [isDesktop]);
+  const [showVideo, setShowVideo] = useState(false);
+
+  // Always delay the video by 1s regardless of screen size
+  useEffect(() => {
+    const timeout = setTimeout(() => setShowVideo(true), 1000);
+    return () => clearTimeout(timeout);
+  }, []);
 
 
     const [showPhone, setShowPhone] = useState(false);
@@ -102,9 +101,10 @@ function ResidentialMain() {
  <div style={{ width: '100%', maxHeight: '550px', borderRadius: '0.5rem', overflow: 'hidden' }}>
      <video
          src={cleaningSink}
-         autoPlay={isDesktop}
+         autoPlay
          muted
          loop
+         playsInline // Important for iOS autoplay
          className="w-100 h-100 object-fit-cover"
      />
  </div>
