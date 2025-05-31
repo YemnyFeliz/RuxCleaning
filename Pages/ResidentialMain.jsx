@@ -9,19 +9,27 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 
-// import cleaningSink2 from "../src/assets/cleaningSink2.mp4";
+
 import cleaningSink from "../src/assets/cleaningSink.mp4";
-// import cleanMicrowave from "../src/assets/cleanMicrowave.jpeg";
-// import cleanSink from "../src/assets/postConstruction.jpeg";
 import cleanStove from "../src/assets/cleanStove.jpeg";
-// import dirtyMicrowave from "../src/assets/dirtyMicrowave.jpeg";
-// import dirtySink from "../src/assets/dirtySink.jpeg";
 import dirtyStove from "../src/assets/dirtyStove.jpeg";
-// import gifSink from "../src/assets/gifSink.gif";
+
+
 
 function ResidentialMain() {
 
-
+    const useIsDesktop = () => {
+        const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 992);
+    
+        useEffect(() => {
+            const handleResize = () => setIsDesktop(window.innerWidth >= 992);
+            window.addEventListener("resize", handleResize);
+            return () => window.removeEventListener("resize", handleResize);
+        }, []);
+    
+        return isDesktop;
+    };
+    const isDesktop = useIsDesktop();
 
 
     const [showPhone, setShowPhone] = useState(false);
@@ -34,8 +42,6 @@ function ResidentialMain() {
         setShowPhone(false);
     };
 
-
-    
 
     return (
 
@@ -97,7 +103,7 @@ function ResidentialMain() {
                     <div style={{ width: '100%', maxHeight: '550px', borderRadius: '0.5rem', overflow: 'hidden' }}>
                         <video
                             src={cleaningSink}
-                            autoPlay
+                            autoPlay={isDesktop}
                             muted
                             loop
                             className="w-100 h-100 object-fit-cover"

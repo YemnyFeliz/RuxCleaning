@@ -39,7 +39,7 @@ const Navigation = () => {
             <Nav.Link as={Link} to="/" onClick={handleLinkClick} >Home</Nav.Link>
 
             {/* <Nav.Link as={Link} to="/residential"> Residential */}
-            <NavDropdown title={<Link to="/residential" className="dropdown-link">Residential</Link>} id="collapsible-nav-dropdown" className='custom-dropdown'>
+            <NavDropdown title={<Link to="/residential" className="dropdown-link" onClick={handleLinkClick} >Residential</Link>} id="collapsible-nav-dropdown" className='custom-dropdown'>
               <NavDropdown.Item as={Link} to="/regularCleaning" onClick={handleLinkClick} >Regular Cleaning</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/deepCleaning" onClick={handleLinkClick} >Deep Cleaning</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/moveCleaning" onClick={handleLinkClick} >Move in/out Cleaning</NavDropdown.Item>
