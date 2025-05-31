@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from 'react';
+import { useMediaQuery } from 'react-responsive';
 import '../src/App.css';
 import '../styles/Residential.css';
 
@@ -18,18 +19,15 @@ import dirtyStove from "../src/assets/dirtyStove.jpeg";
 
 function ResidentialMain() {
 
-    const useIsDesktop = () => {
-        const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 992);
+    const isDesktop = useMediaQuery({ minWidth: 992 });
+    const [showVideo, setShowVideo] = useState(isDesktop);
     
-        useEffect(() => {
-            const handleResize = () => setIsDesktop(window.innerWidth >= 992);
-            window.addEventListener("resize", handleResize);
-            return () => window.removeEventListener("resize", handleResize);
-        }, []);
-    
-        return isDesktop;
-    };
-    const isDesktop = useIsDesktop();
+    useEffect(() => {
+      if (!isDesktop) {
+        const timeout = setTimeout(() => setShowVideo(true), 1000); // show after 1 sec
+        return () => clearTimeout(timeout);
+      }
+    }, [isDesktop]);
 
 
     const [showPhone, setShowPhone] = useState(false);
@@ -99,17 +97,20 @@ function ResidentialMain() {
                 </Col>
 
                 {/* Video column with half-height video */}
-                <Col xs={12} sm={10} md={12} lg={6} className="d-flex justify-content-center">
-                    <div style={{ width: '100%', maxHeight: '550px', borderRadius: '0.5rem', overflow: 'hidden' }}>
-                        <video
-                            src={cleaningSink}
-                            autoPlay={isDesktop}
-                            muted
-                            loop
-                            className="w-100 h-100 object-fit-cover"
-                        />
-                    </div>
-                </Col>
+                {showVideo && (
+ <Col xs={12} sm={10} md={12} lg={6} className="d-flex justify-content-center">
+ <div style={{ width: '100%', maxHeight: '550px', borderRadius: '0.5rem', overflow: 'hidden' }}>
+     <video
+         src={cleaningSink}
+         autoPlay={isDesktop}
+         muted
+         loop
+         className="w-100 h-100 object-fit-cover"
+     />
+ </div>
+</Col>
+                )}
+               
             </Row>
 
             <h2 className="resCardTitle m-5">What Does Residential Cleaning Include?</h2>
