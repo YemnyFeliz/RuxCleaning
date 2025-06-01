@@ -29,7 +29,7 @@ const Navigation = () => {
       className="bg-body-tertiary">
       <Container>
         <Navbar.Brand as={Link} to="/" onClick={handleLinkClick} className="d-flex align-items-center">
-          <img alt="ruxcleaninglogo" src={logo} width="250" height="250" className="d-inline-block align-top mt-5" />
+          <img alt="ruxcleaninglogo" src={logo}  className="d-inline-block align-top mt-5 logo" />
           {/* <span className="brand-name">RuxCleaning</span> */}
         </Navbar.Brand>
 
