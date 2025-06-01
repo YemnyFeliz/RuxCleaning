@@ -27,7 +27,7 @@ const Navigation = () => {
       expanded={expanded}
       onToggle={(isExpanded) => setExpanded(isExpanded)}
       className="bg-body-tertiary">
-      <Container>
+      <Container className='navContainer'>
         <Navbar.Brand as={Link} to="/" onClick={handleLinkClick} className="d-flex align-items-center">
           <img alt="ruxcleaninglogo" src={logo}  className="d-inline-block align-top mt-5 logo" />
           {/* <span className="brand-name">RuxCleaning</span> */}
