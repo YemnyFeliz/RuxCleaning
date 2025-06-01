@@ -9,7 +9,7 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background: linear-gradient( #caf0f8 , #00b4d8 ) !important;
+    background: linear-gradient( #caf0f8 30%, #00b4d8 ) !important;
     /* background: linear-gradient( #caf0f8 30%, #023e8a) !important; */
     
     /* background-color: blue !important; */
