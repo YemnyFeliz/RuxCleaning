@@ -32,7 +32,7 @@ function DeepCleaning() {
         <div className="deepCleaning container">
             <Row>
                 <Col>
-                    <h2 className="deepCleaningTitle">Deep Cleaning Services </h2>
+                    <h2 className="regTitle">Deep Cleaning Services </h2>
                     <div className="deepCleaningIntroText">
                         <p className="text-indent">Looking for a <strong>thorough and eco-friendly deep cleaning service</strong> in Bolingbrook?
                             At <strong>Rux Cleaning</strong>, we specialize in <strong>green deep cleaning solutions</strong> that eliminate dirt, bacteria, and allergens while using <strong>safe, non-toxic products</strong> for a healthier home and environment.
