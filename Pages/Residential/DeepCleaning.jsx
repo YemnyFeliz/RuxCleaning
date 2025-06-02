@@ -85,18 +85,25 @@ function DeepCleaning() {
 
             <Row className="text-center">
                 <Col>
+
+                </Col>
+            </Row>
+
+            <Row className="justify-content-center text-center">
+                <Col md={8}>
                     <div className="deepCleaningIntroText">
                         <h2 className="regCardTitle">Why Choose Deep Cleaning?
                         </h2>
-                        <p id="includedIntro" className="text-indent">Deep cleaning is essential for homeowners, renters, and property managers who want a truly fresh and sanitized space. <p className="mt-4">Here’s how it helps:</p>
+                        <p >Deep cleaning is essential for homeowners, renters, and property managers who want a truly fresh and sanitized space. <p className="mt-4">Here’s how it helps:</p>
                         </p>
                     </div>
                 </Col>
             </Row>
-
-
             <Row className="mb-5 text-center ">
-                <Col md={12} lg={8} className="mx-auto">
+
+
+                <Col md={12} lg={8} className="mx-auto" >
+
                     <Card className="regCard">
                         <Card.Body >
                             {/* <Card.Title className="regCardTitle">Why Choose Deep Cleaning?
@@ -268,12 +275,12 @@ function DeepCleaning() {
                         </Card.Body>
                     </Card>
                 </Col>
-{/* </Row>
+                {/* </Row>
 <Row> */}
                 <Col xs={12} sm={6} md={6} lg={4}>
                     <Card className="smCard">
                         <Card.Body>
-                            <Card.Img className="cardImg" variant="top" src={DeepBathroom} id="deepBathImg"/>
+                            <Card.Img className="cardImg" variant="top" src={DeepBathroom} id="deepBathImg" />
                             <Card.Title className="smCardTitle">Bathrooms:
                             </Card.Title>
                             <Card.Text className="smCardText">
@@ -293,15 +300,15 @@ function DeepCleaning() {
                         </Card.Body>
                     </Card>
                 </Col>
-                </Row>
-                <Row className="g-4 text-center justify-content-center">
+            </Row>
+            <Row className="g-4 text-center justify-content-center">
                 <Col xs={12} sm={6} md={6} lg={4}>
                     <Card className="smCard">
                         <Card.Body>
                             <Card.Img className="cardImg" variant="top" src={DeepBedroom} />
                             <Card.Title className="smCardTitle">Bedrooms:</Card.Title>
                             <Card.Text className="smCardText">
-                            <ul>
+                                <ul>
                                     <li>All surfaces dusted and cleaned</li>
                                     <li>Mirrors cleaned </li>
                                     <li>Beds made and linens changed (if provided)</li>
@@ -322,7 +329,7 @@ function DeepCleaning() {
                             <Card.Img className="cardImg" variant="top" src={DeepLivingArea} />
                             <Card.Title className="smCardTitle">Other Areas: living room, hallway, stairs</Card.Title>
                             <Card.Text className="smCardText">
-                            <ul>
+                                <ul>
                                     <li>All surfaces dusted and cleaned</li>
                                     <li>Cleaning baseboards, doors, windowsills and blinds
                                     </li>

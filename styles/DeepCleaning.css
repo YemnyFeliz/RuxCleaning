@@ -17,7 +17,7 @@
     align-items: center;
     text-align: center;
     font-size: 1.3rem;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
 }
 
 #includedIntro {
@@ -37,6 +37,8 @@ ul {
     object-fit: cover;
 
 }
+
+
 
 @media (max-width: 768px){
     .text-indent{
