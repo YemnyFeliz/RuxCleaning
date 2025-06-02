@@ -153,9 +153,7 @@ h2 {
     width: 300px;
     height: 250px
 }
-p {
-    padding-right: 2rem;
-}
+
 /* -----------------------Responsive-------------------- */
 @media (max-width: 768px) {
     .intro-text {
@@ -196,9 +194,7 @@ p {
         
         margin-top: 5rem;
     }
-    p {
-        padding-right: 2rem;
-    }
+   
   
   }
   

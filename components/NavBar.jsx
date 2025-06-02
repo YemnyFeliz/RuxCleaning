@@ -19,7 +19,7 @@ const Navigation = () => {
 
   const handleLinkClick = () => {
     setExpanded(false); // Collapse the menu after any link is clicked
-    window.scrollTo({ top: 0, behavior: 'smooth' }); 
+    // window.scrollTo({ top: 0, behavior: 'smooth' }); 
   };
 
   return (
@@ -39,7 +39,15 @@ const Navigation = () => {
             <Nav.Link as={Link} to="/" onClick={handleLinkClick} >Home</Nav.Link>
 
             {/* <Nav.Link as={Link} to="/residential"> Residential */}
-            <NavDropdown title={<Link to="/residential" className="dropdown-link" onClick={handleLinkClick} >Residential</Link>} id="collapsible-nav-dropdown" className='custom-dropdown'>
+            <NavDropdown title={
+              
+              <span className="dropdown-title-link">
+              <Link to="/residential" className="dropdown-link" onClick={handleLinkClick}>
+                Residential
+              </Link>
+            </span>}
+            
+            id="collapsible-nav-dropdown" className='custom-dropdown'>
               <NavDropdown.Item as={Link} to="/regularCleaning" onClick={handleLinkClick} >Regular Cleaning</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/deepCleaning" onClick={handleLinkClick} >Deep Cleaning</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/moveCleaning" onClick={handleLinkClick} >Move in/out Cleaning</NavDropdown.Item>

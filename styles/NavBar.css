@@ -51,6 +51,13 @@ font-size: 1.5rem !important;
     color: var(--bs-nav-link-color);
 }
 
+/* Adjusts spacing between the link text and dropdown arrow */
+.dropdown-title-link {
+    /* display: inline-block; */
+    padding-right: 1.5rem; /* You can increase/decrease this */
+  }
+  
+
 @media (max-width: 768px){
     .show{
         background-color: #00b4d8; 

@@ -35,7 +35,7 @@ function EcoFriendly() {
                 </Row>
 
                 <Row>
-                <Col md={12} lg={8} className="mx-auto">
+                <Col md={12} lg={8} className="mx-auto text-center">
                         <Card className="regCard">
                             <Card.Body>
                                 <Card.Title className="regCardTitle">What is Eco-Friendly Cleaning?</Card.Title>

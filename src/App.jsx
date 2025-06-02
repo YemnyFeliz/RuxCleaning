@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from '../components/Header';
 import BubblesBackground from '../components/Bubbles';
 
+import ScrollToTop from '../components/ScrollToTop';
 import ContentProtector from '../components/ContentProtector';
 import Home from '../Pages/Home';
 import ResidentialMain from '../Pages/ResidentialMain';
@@ -38,7 +39,7 @@ function App() {
     <div className='App'>
       <BubblesBackground key={key} />  {/* 🔄 This forces it to re-render */}
       <Header />
-      
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/residential" element={<ResidentialMain />} /> 

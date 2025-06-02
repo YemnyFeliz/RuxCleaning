@@ -2,22 +2,24 @@ import { useEffect } from 'react';
 
 function ContentProtector({ children }) {
   useEffect(() => {
-    const disableRightClick = (e) => e.preventDefault();
     const disableKeys = (e) => {
+      const key = e.key.toLowerCase();
+
+      // Block common shortcuts (copy, cut, save, view source)
       if (
-        (e.ctrlKey && ['u', 'c', 'x', 's'].includes(e.key.toLowerCase())) ||
-        (e.metaKey && ['u', 'c', 'x', 's'].includes(e.key.toLowerCase()))
+        (e.ctrlKey || e.metaKey) &&
+        ['c', 'x', 's', 'u'].includes(key)
       ) {
         e.preventDefault();
       }
     };
 
-    document.addEventListener('contextmenu', disableRightClick);
     document.addEventListener('keydown', disableKeys);
+
+    // Optional: prevent text selection
     document.body.style.userSelect = 'none';
 
     return () => {
-      document.removeEventListener('contextmenu', disableRightClick);
       document.removeEventListener('keydown', disableKeys);
       document.body.style.userSelect = 'auto';
     };
@@ -27,3 +29,4 @@ function ContentProtector({ children }) {
 }
 
 export default ContentProtector;
+
