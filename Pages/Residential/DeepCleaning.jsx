@@ -97,7 +97,7 @@ function DeepCleaning() {
 
             <Row className="mb-5 text-center ">
                 <Col md={12} lg={8} className="mx-auto">
-                    <Card className="resCard deepCard ">
+                    <Card className="regCard">
                         <Card.Body >
                             {/* <Card.Title className="regCardTitle">Why Choose Deep Cleaning?
                             </Card.Title> */}
@@ -132,7 +132,7 @@ function DeepCleaning() {
             </Row>
 
             {/* KITCHEN */}
-            <Row className="flex-md-row-reverse mb-5 text-center">
+            {/* <Row className="flex-md-row-reverse mb-5 text-center">
                 <Col xs={12} sm={6} md={12} lg={6}>
                     <Card className="regCard">
                         <Card.Body>
@@ -156,16 +156,10 @@ function DeepCleaning() {
                 <Col xs={12} sm={6} md={12} lg={6}>
                     <Card.Img className="imgC" src={DeepKitchen} />
                 </Col>
-            </Row>
+            </Row> */}
 
-            <Row className="align-items-center mb-5 text-center">
-                {/* <Col xs={12} sm={6} md={10} lg={6}>
-                    <Card.Img
-                        className="imgC"
-                        src={DeepBathroom}
-                        style={{ height: "450px", objectFit: "cover", width: "100%" }}
-                    />
-                </Col> */}
+            {/* <Row className="align-items-center mb-5 text-center">
+               
 
                 <Col xs={12} sm={6} md={12} lg={6}>
                     <Card className="regCard">
@@ -195,10 +189,10 @@ function DeepCleaning() {
                     />
                 </Col>
 
-            </Row>
+            </Row> */}
 
             {/* BEDROOMS */}
-            <Row className="flex-md-row-reverse mb-5 text-center">
+            {/* <Row className="flex-md-row-reverse mb-5 text-center">
                 <Col xs={12} sm={6} md={12} lg={6}>
                     <Card className="regCard">
                         <Card.Body>
@@ -221,14 +215,12 @@ function DeepCleaning() {
                 <Col xs={12} sm={6} md={12} lg={6}>
                     <Card.Img className="imgC" src={DeepBedroom} />
                 </Col>
-            </Row>
+            </Row> */}
 
             {/* Living Areas */}
-            <Row className=" mb-5 text-center">
+            {/* <Row className=" mb-5 text-center">
 
-                {/* <Col xs={12} sm={6} md={10} lg={6}>
-                    <Card.Img className="imgC" src={DeepLivingArea} />
-                </Col> */}
+              
 
                 <Col xs={12} sm={6} md={12} lg={6}>
                     <Card className="regCard">
@@ -252,7 +244,103 @@ function DeepCleaning() {
                 <Col xs={12} sm={6} md={12} lg={6}>
                     <Card.Img className="imgC" src={DeepLivingArea} />
                 </Col>
+            </Row> */}
+
+            <Row className="justify-content-center g-4 text-center mb-5">
+
+                <Col xs={12} sm={6} md={6} lg={4}>
+                    <Card className="smCard ">
+                        <Card.Body>
+                            <Card.Img className="cardImg" variant="top" src={DeepKitchen} />
+                            <Card.Title className="smCardTitle">Kitchen:</Card.Title>
+                            <Card.Text className="smCardText ">
+                                <ul>
+                                    <li>All surfaces dusted and cleaned (ceiling fans, blinds, furniture tops, trims, doors, baseboards, chairs, table)</li>
+                                    <li>Scrubbing grease and grime from stove tops and range hoods</li>
+                                    <li>Deep cleaning appliances exterior (oven, refrigerator, dishwasher)</li>
+                                    <li>Microwave cleaned inside and out </li>
+                                    <li>Countertops, sinks, and cabinet exteriors cleaned and disinfected </li>
+                                    <li>Degreasing backsplash and tile grout</li>
+                                    <li>Trash emptied and trash can cleaned and sanitized</li>
+                                    <li>Floor vacuumed and mopped. </li>
+                                </ul>
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </Col>
+{/* </Row>
+<Row> */}
+                <Col xs={12} sm={6} md={6} lg={4}>
+                    <Card className="smCard">
+                        <Card.Body>
+                            <Card.Img className="cardImg" variant="top" src={DeepBathroom} id="deepBathImg"/>
+                            <Card.Title className="smCardTitle">Bathrooms:
+                            </Card.Title>
+                            <Card.Text className="smCardText">
+
+                                <ul>
+                                    <li>All surfaces dusted and cleaned (air vents, blinds, doors, baseboards, window sills, fixtures, vanities, medicine cabinet)</li>
+                                    <li>Mirrors cleaned</li>
+                                    <li>Deep scrubbing of showers, tubs, tiles, sinks, and toilets inside and out</li>
+                                    <li>Disinfecting high-touch surfaces like doorknobs and light switches
+                                    </li>
+                                    <li>Trash emptied and trash can cleaned and sanitized
+                                    </li>
+                                    <li>Floor vacuumed, mopped and disinfected
+                                    </li>
+                                </ul>
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                </Row>
+                <Row className="g-4 text-center justify-content-center">
+                <Col xs={12} sm={6} md={6} lg={4}>
+                    <Card className="smCard">
+                        <Card.Body>
+                            <Card.Img className="cardImg" variant="top" src={DeepBedroom} />
+                            <Card.Title className="smCardTitle">Bedrooms:</Card.Title>
+                            <Card.Text className="smCardText">
+                            <ul>
+                                    <li>All surfaces dusted and cleaned</li>
+                                    <li>Mirrors cleaned </li>
+                                    <li>Beds made and linens changed (if provided)</li>
+                                    <li>Cleaning baseboards, doors, windowsills and blinds</li>
+                                    <li>Cleaning air vents and ceiling fans to remove dust buildup</li>
+                                    <li>Trash emptied and trash can cleaned and sanitized</li>
+                                    <li>Floor vacuumed and mopped</li>
+                                </ul>
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                {/* </Row>
+                <Row> */}
+                <Col xs={12} sm={6} md={6} lg={4}>
+                    <Card className="smCard">
+                        <Card.Body>
+                            <Card.Img className="cardImg" variant="top" src={DeepLivingArea} />
+                            <Card.Title className="smCardTitle">Other Areas: living room, hallway, stairs</Card.Title>
+                            <Card.Text className="smCardText">
+                            <ul>
+                                    <li>All surfaces dusted and cleaned</li>
+                                    <li>Cleaning baseboards, doors, windowsills and blinds
+                                    </li>
+                                    <li>Sofas, chairs vacuumed
+                                    </li>
+                                    <li>Floors vacuumed and mopped, including hard floors.
+                                    </li>
+                                </ul>
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </Col>
             </Row>
+
+
+
+
+
 
 
 

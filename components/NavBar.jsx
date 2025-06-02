@@ -39,7 +39,8 @@ const Navigation = () => {
             <Nav.Link as={Link} to="/" onClick={handleLinkClick} >Home</Nav.Link>
 
             {/* <Nav.Link as={Link} to="/residential"> Residential */}
-            <NavDropdown title={
+            <NavDropdown 
+            title={
               
               <span className="dropdown-title-link">
               <Link to="/residential" className="dropdown-link" onClick={handleLinkClick}>
