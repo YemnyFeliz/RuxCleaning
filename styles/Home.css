@@ -52,6 +52,7 @@ h1 {
     word-spacing: normal;
     overflow-wrap: break-word;
     hyphens: auto; */
+    
 }
 
 .slogan {
@@ -152,6 +153,9 @@ h2 {
     width: 300px;
     height: 250px
 }
+p {
+    padding-right: 2rem;
+}
 /* -----------------------Responsive-------------------- */
 @media (max-width: 768px) {
     .intro-text {
@@ -159,6 +163,8 @@ h2 {
       text-align: justify;
       padding: 1rem;
       text-indent: 1.5rem !important;
+      
+      
       
     }
     .homeh2{
@@ -184,7 +190,14 @@ h2 {
     }
     .logo{
         width: 200px;
-        height: 200px
+        height: 200px;
+    }
+    h1 {
+        
+        margin-top: 5rem;
+    }
+    p {
+        padding-right: 2rem;
     }
   
   }

@@ -30,20 +30,21 @@ function MoveCleaning() {
 
     return (
         <>
-            <div className="regResidential container">
-                <Row>
+            <div className="regResidential container ">
+                <Row className="text-center">
                     <Col>
                         <div className="regIntro">
                             <h2 className="regTitle">Move-In/Move-Out Cleaning
                             </h2>
-                            <div className="regIntroText">
-                                <p className="text-indent">Moving into a new home or leaving your old one can be stressful, but <strong>move-in/out cleaning</strong> from <strong>Rux Cleaning</strong> makes the process easier and more enjoyable. Our professional cleaning service ensures that your new or vacated home is spotless and ready for the next chapter, all while using <strong>safe, environmentally-friendly cleaning products</strong> that protect your health and the planet.</p>
+                            <div className="regIntroText" id="indent">
+                                <p >Moving into a new home or leaving your old one can be stressful, but <strong>move-in/out cleaning</strong> from <strong>Rux Cleaning</strong> makes the process easier and more enjoyable. </p>
+                                <p>Our professional cleaning service ensures that your new or vacated home is spotless and ready for the next chapter, all while using <strong>safe, environmentally-friendly cleaning products</strong> that protect your health and the planet.</p>
                             </div>
                         </div>
                     </Col>
                 </Row>
 
-                <Row xs={1} md={2} className="g-4">
+                <Row xs={1} md={2} className="g-4 text-center">
                     <Col className="whyMoveCleaning" md={12} lg={6} >
                         <Card className="regCard">
                             <Card.Body>
@@ -51,13 +52,13 @@ function MoveCleaning() {
                                 </Card.Title>
                                 <Card.Text className="regCardText">
                                     <ul>
-                                        <li><strong>A Fresh Start – </strong>Whether you're moving in or moving out, cleaning is essential to make sure every corner of your space is ready for a new beginning. Our move-in/out service guarantees a <strong>fresh, hygienic environment</strong> free of dirt, grime, and odors.
-                                        </li>
-                                        <li><strong>Safe and Green Cleaning –</strong> we use <strong>eco-friendly solutions</strong> that are non-toxic, biodegradable, and safe for everyone, including children and pets. You don’t have to worry about harsh chemicals in your new home or on your belongings.
-                                        </li>
-                                        <li><strong>Time and Energy Saver –</strong> Moving is exhausting enough. With our comprehensive cleaning services, you won’t have to spend hours scrubbing every surface, giving you more time to focus on your move.
-                                        </li>
-                                        <li><strong>Avoiding Security Deposit Deductions – </strong>If you're a renter, cleaning your old space thoroughly is essential to avoid deductions from your security deposit. Our expert cleaners will make sure the property is spotless, ensuring you get the maximum refund.
+                                        <li><strong>A Fresh Start<br /> </strong>Whether you're moving in or moving out, cleaning is essential to make sure every corner of your space is ready for a new beginning. <br />Our move-in/out service guarantees a <strong>fresh, hygienic environment</strong> free of dirt, grime, and odors.
+                                        </li><br />
+                                        <li><strong>Safe and Green Cleaning <br /></strong> we use <strong>eco-friendly solutions</strong> that are non-toxic, biodegradable, and safe for everyone, including children and pets. You don’t have to worry about harsh chemicals in your new home or on your belongings.
+                                        </li><br />
+                                        <li><strong>Time and Energy Saver <br /></strong> Moving is exhausting enough. With our cleaning services, you won’t have to spend hours scrubbing every surface, giving you more time to focus on your move.
+                                        </li><br />
+                                        <li><strong>Avoiding Security Deposit Deductions <br /></strong>If you're a renter, cleaning your old space thoroughly is essential to avoid deductions from your security deposit. Our expert cleaners will make sure the property is spotless, ensuring you get the maximum refund.
                                         </li>
                                     </ul>
                                 </Card.Text>
@@ -72,11 +73,11 @@ function MoveCleaning() {
                                 </Card.Title>
                                 <Card.Text className="regCardText">
                                     <ul>
-                                        <li><strong>Healthy Living Environment:</strong> Our eco-friendly products clean without leaving behind harmful residue, so you can breathe easy in your new space.
-                                        </li>
-                                        <li><strong>Comprehensive Service:</strong> We cover all areas, including hard-to-reach spots, ensuring every inch of your space is clean and disinfected.
-                                        </li>
-                                        <li><strong>Peace of Mind:</strong> With Rux Cleaning, you can rest assured that your move-in or move-out cleaning will be done right. We take care of the details, so you don’t have to worry about a thing.
+                                        <li><strong>Healthy Living Environment<br /></strong> Our eco-friendly products clean without leaving behind harmful residue, so you can breathe easy in your new space.
+                                        </li><br />
+                                        <li><strong>Comprehensive Service<br /></strong> We cover all areas, including hard-to-reach spots, ensuring every inch of your space is clean and disinfected.
+                                        </li><br />
+                                        <li><strong>Peace of Mind<br /></strong> With Rux Cleaning, you can rest assured that your move-in or move-out cleaning will be done right. We take care of the details, so you don’t have to worry about a thing.
                                         </li>
                                     </ul>
                                 </Card.Text>
@@ -91,13 +92,13 @@ function MoveCleaning() {
                 <h2 className="regCardTitle mb-5" >What’s Included in Our Move-In/Move-Out Cleaning
                 </h2>
 
-                <Row className="justify-content-center g-4 mb-4">
+                <Row className="justify-content-center g-4 m-4" >
                     <Col xs={12} sm={6} lg={4} xl={3}>
                         <Card className="smCard">
                             <Card.Body>
                                 <Card.Img className="cardImg" variant="top" src={MoveKitchen} />
                                 <Card.Title className="smCardTitle">Kitchen:</Card.Title>
-                                <Card.Text className="smCardText">
+                                <Card.Text className="smCardText p-3 text-center" id="indent">
                                     <p>Cleaning all appliances (inside and out), countertops, sinks, and cabinets. Scrubbing floors and wiping down baseboards.
                                     </p>
                                 </Card.Text>
@@ -110,7 +111,7 @@ function MoveCleaning() {
                             <Card.Body>
                                 <Card.Img className="cardImg" variant="top" src={MoveBathroom} />
                                 <Card.Title className="smCardTitle">Bathrooms:</Card.Title>
-                                <Card.Text className="smCardText">
+                                <Card.Text className="smCardText p-3 text-center" id="indent">
                                     <p>Disinfecting toilets, tubs, showers, sinks, and counters. Cleaning mirrors and ensuring that every surface is sanitized.
                                     </p>
                                 </Card.Text>
@@ -124,7 +125,7 @@ function MoveCleaning() {
                             <Card.Body>
                                 <Card.Img className="cardImg" variant="top" src={MoveLiving} />
                                 <Card.Title className="smCardTitle">Living Areas & Bedrooms:</Card.Title>
-                                <Card.Text className="smCardText">
+                                <Card.Text className="smCardText p-3 text-center" id="indent">
                                     <p>Dusting and wiping down all furniture, baseboards, and window sills. Vacuuming carpets, cleaning floors, and removing any debris left behind.
                                     </p>
                                 </Card.Text>
@@ -138,7 +139,7 @@ function MoveCleaning() {
                             <Card.Body>
                                 <Card.Img className="cardImg" variant="top" src={MoveDeep} />
                                 <Card.Title className="smCardTitle">Deep Cleaning Areas:</Card.Title>
-                                <Card.Text className="smCardText">
+                                <Card.Text className="smCardText p-3 text-center" id="indent">
                                     <p>Cleaning inside cabinets, closets, and drawers to remove dust and debris. Wiping down walls, light switches, and door frames.
                                     </p>
                                 </Card.Text>
@@ -151,7 +152,7 @@ function MoveCleaning() {
                             <Card.Body>
                                 <Card.Img className="cardImg" variant="top" src={MoveProducts} />
                                 <Card.Title className="smCardTitle">Eco-Friendly Products:</Card.Title>
-                                <Card.Text className="smCardText">
+                                <Card.Text className="smCardText p-3 text-center" id="indent">
                                     <p>We use <strong>green-certified, biodegradable cleaning supplies</strong> that are effective yet gentle on the environment, leaving your home fresh without the harsh chemicals.
 
                                     </p>
@@ -164,7 +165,7 @@ function MoveCleaning() {
                
 
 
-                <Row className="justify-content-center">
+                <Row className="justify-content-center text-center">
                     <Col xs={12} md={8} lg={6}>
                         <Card className="bookCard ">
                             <Card.Body>

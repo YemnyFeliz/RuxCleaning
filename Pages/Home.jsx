@@ -17,16 +17,16 @@ function Home() {
 
                 </div>
 
-                <Row>
+                <Row >
                     <Col md={{ span: 8, offset: 2 }}>
                         <Card className="regCard">
                             <Card.Body>
                             
                                 
-                                <Card.Text className=" intro-text regCardText text-start">
-                                    <p>At <strong>Rux Cleaning</strong>, our mission is to provide top-quality, reliable, and eco-friendly cleaning services that create healthier and more comfortable spaces for our clients. 
-We are committed to excellence, professionalism, and customer satisfaction, ensuring every home and business we clean is left spotless and refreshed. 
-Through sustainability, integrity, and attention to detail, we strive to build long-term relationships and make a positive impact on our community - one clean space at a time.
+                                <Card.Text className=" intro-text regCardText text-center ">
+                                    <p>At <strong>Rux Cleaning</strong>, <br />our mission is to provide top-quality, reliable, and eco-friendly cleaning services that create healthier and more comfortable spaces for our clients.</p> 
+<p>We are committed to excellence, professionalism, and customer satisfaction, ensuring every home and business we clean is left spotless and refreshed. </p>
+<p>Through sustainability, integrity, and attention to detail, we strive to build long-term relationships and make a positive impact on our community - one clean space at a time.
 
                                     </p>
                                 </Card.Text>
@@ -45,16 +45,16 @@ Through sustainability, integrity, and attention to detail, we strive to build l
                             <Card className="cardHome">
                                 <Card.Body>
                                     {/* <Card.Title>Special title treatment</Card.Title> */}
-                                    <Card.Text className="cardtext">
-                                        <strong>🏡 Residential Cleaning – </strong>Routine and deep home cleaning to keep your living space fresh and inviting. <br />
+                                    <Card.Text className="cardtext text-center">
+                                        <strong>🏡 Residential Cleaning <br /> </strong>Routine and deep home cleaning to keep your living space fresh and inviting. <br />
                                         <br />
-                                        <strong>🏢 Commercial Cleaning –</strong> Office, retail, warehouse, and industrial cleaning for a healthier work environment. <br />
+                                        <strong>🏢 Commercial Cleaning <br /> </strong> Office, retail, warehouse, and industrial cleaning for a healthier work environment. <br />
                                         <br />
-                                        <strong>🛠 Post-Construction Cleaning – </strong>Removing dust, debris, and residue for a clean, move-in-ready space. <br />
+                                        <strong>🛠 Post-Construction Cleaning <br />  </strong>Removing dust, debris, and residue for a clean, move-in-ready space. <br />
                                         <br />
-                                        <strong>🚛 Move-In/Move-Out Cleaning – </strong>Preparing homes for new occupants by removing dirt, dust, and grime. <br />
+                                        <strong>🚛 Move-In/Move-Out Cleaning  <br /> </strong>Preparing homes for new occupants by removing dirt, dust, and grime. <br />
                                         <br />
-                                        <strong>🧼 Deep Cleaning – </strong>Comprehensive cleaning for hard-to-reach areas and high-traffic spaces.
+                                        <strong>🧼 Deep Cleaning <br />  </strong>Comprehensive cleaning for hard-to-reach areas and high-traffic spaces.
                                     </Card.Text>
                                 </Card.Body>
                             </Card>

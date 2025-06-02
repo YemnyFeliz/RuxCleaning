@@ -117,11 +117,12 @@ function Career() {
             <div className="regResidential container">
                 <Row>
                     <Col>
-                        <div className="regIntro">
+                        <div className="regIntro text-center">
                             <h2 className="regTitle">Join Our Team | Rux Cleaning</h2>
                             <div className="regIntroText">
                                 <p id="indent">Are you looking for a rewarding job with a flexible schedule and great pay? < br />
-                                We are hiring dedicated and detail-oriented cleaners to join our growing team in Bolingbrook and surrounding areas!</p>
+                                </p>
+                                <p>We are hiring dedicated and detail-oriented cleaners to join our growing team in Bolingbrook and surrounding areas!</p>
                             </div>
                         </div>
                     </Col>
@@ -133,15 +134,15 @@ function Career() {
                     </Col>
 
                     <Col md={6}>
-                        <Card className="regCard">
+                        <Card className="regCard text-center">
                             <Card.Body>
                                 <Card.Title className="resCardTitle">Why Work With Us?</Card.Title>
                                 <Card.Text className="resCardText">
-                                    <p><strong>✅ Competitive Pay – </strong>Earn great wages for quality work</p>
-                                    <p><strong>✅ Flexible Scheduling – </strong>Full-time & part-time positions available</p>
-                                    <p><strong>✅ Supportive Team Environment – </strong>We value and respect our employees</p>
-                                    <p><strong>✅ Training & Growth Opportunities – </strong>No experience? We’ll train you!</p>
-                                    <p><strong>✅ Eco-Friendly Cleaning –</strong>Work with safe, non-toxic products</p>
+                                    <p><strong>✅ Competitive Pay <br /> </strong>Earn great wages for quality work</p>
+                                    <p><strong>✅ Flexible Scheduling <br /> </strong>Full-time & part-time positions available</p>
+                                    <p><strong>✅ Supportive Team Environment <br /> </strong>We value and respect our employees</p>
+                                    <p><strong>✅ Training & Growth Opportunities <br /> </strong>No experience? We’ll train you!</p>
+                                    <p><strong>✅ Eco-Friendly Cleaning <br /></strong>Work with safe, non-toxic products</p>
                                 </Card.Text>
                             </Card.Body>
                         </Card>

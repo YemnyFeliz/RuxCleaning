@@ -19,7 +19,7 @@ const Navigation = () => {
 
   const handleLinkClick = () => {
     setExpanded(false); // Collapse the menu after any link is clicked
-    window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top
+    window.scrollTo({ top: 0, behavior: 'smooth' }); 
   };
 
   return (

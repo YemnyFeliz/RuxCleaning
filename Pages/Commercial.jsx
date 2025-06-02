@@ -30,21 +30,22 @@ function Commercial() {
     return (
         <>
             <div className="regResidential container">
-                <Row>
+                <Row className="text-center">
                     <Col>
                         <div className="regIntro">
                             <h2 className="regTitle">Commercial Cleaning Services
                             </h2>
                             <div className="regIntroText text-indent">
                             <p>A <strong>clean and well-maintained workspace</strong> is essential for productivity, professionalism, and employee well-being. 
-                             At <strong>Rux Cleaning</strong>, we offer <strong>eco-friendly commercial cleaning services</strong> in <strong>Bolingbrook</strong> to ensure your business space is spotless, hygienic, and welcoming for employees, clients, and visitors.
+                             
                             </p>
+                            <p>At <strong>Rux Cleaning</strong>, we offer <strong>eco-friendly commercial cleaning services</strong> in <strong>Bolingbrook</strong> to ensure your business space is spotless, hygienic, and welcoming for employees, clients, and visitors.</p>
                             </div>
                         </div>
                     </Col>
                 </Row>
 
-                <Row className="mb-5">
+                <Row className="mb-5 text-center">
 
                 <Col md={12} lg={6}>
                         <Card.Img className="imgC" src={commercialCleaning} />
@@ -55,8 +56,9 @@ function Commercial() {
                                 <Card.Title className="resCardTitle">What is Commercial Cleaning?</Card.Title>
                                 <Card.Text className="resCardText">
                                     <p id="indent">Commercial cleaning is a <strong>specialized cleaning service tailored for businesses, offices, and commercial properties. </strong>
-                                        Unlike residential cleaning, it involves <strong>deep sanitation, high-traffic area maintenance, and large-scale cleaning solutions</strong> to meet industry standards and ensure a healthy work environment.
+                                        
                                     </p>
+                                    <p>Unlike residential cleaning, it involves <strong>deep sanitation, high-traffic area maintenance, and large-scale cleaning solutions</strong> to meet industry standards and ensure a healthy work environment.</p>
                                 </Card.Text>
                             </Card.Body>
                         </Card>
@@ -68,17 +70,17 @@ function Commercial() {
                 </Row>
 
 
-                <Row>
+                <Row className="text-center">
                 <Col md={12} lg={8} className="mx-auto">
                         <Card className="regCard h-100">
                             <Card.Body>
                                 <Card.Title className="resCardTitle">Why Do Businesses Need Commercial Cleaning?</Card.Title>
                                 <Card.Text className="resCardText">
-                                    <p>✅ <strong>Creates a Professional & Welcoming Environment –</strong> A clean workspace <strong>enhances your company’s image</strong> and leaves a great impression on clients and visitors.</p>
-                                    <p>✅ <strong>Ensures a Healthier Workplace –</strong> Reducing <strong>dust, bacteria, and allergens</strong> promotes a safer work environment, leading to fewer sick days.</p>
-                                    <p>✅ <strong>Increases Employee Productivity –</strong> A clean, clutter-free workspace improves <strong>focus, morale, and efficiency.</strong></p>
-                                    <p>✅<strong> Eco-Friendly & Safe –</strong> We use <strong>non-toxic, biodegradable cleaning products</strong>, ensuring a healthy environment without harmful chemicals.</p>
-                                    <p>✅ <strong>Complies with Health & Safety Standards –</strong> Many industries have strict <strong>cleaning and sanitation requirements</strong> that must be met to ensure compliance.</p>
+                                    <p>✅ <strong>Creates a Professional & Welcoming Environment <br /></strong> A clean workspace <strong>enhances your company’s image</strong> and leaves a great impression on clients and visitors.</p>
+                                    <p>✅ <strong>Ensures a Healthier Workplace <br /></strong> Reducing <strong>dust, bacteria, and allergens</strong> promotes a safer work environment, leading to fewer sick days.</p>
+                                    <p>✅ <strong>Increases Employee Productivity <br /></strong> A clean, clutter-free workspace improves <strong>focus, morale, and efficiency.</strong></p>
+                                    <p>✅<strong> Eco-Friendly & Safe <br /></strong> We use <strong>non-toxic, biodegradable cleaning products</strong>, ensuring a healthy environment without harmful chemicals.</p>
+                                    <p>✅ <strong>Complies with Health & Safety Standards <br /></strong> Many industries have strict <strong>cleaning and sanitation requirements</strong> that must be met to ensure compliance.</p>
                                 </Card.Text>
                             </Card.Body>
                         </Card>
@@ -87,14 +89,14 @@ function Commercial() {
 
 
                 <h2 className="resCardTitle mb-5">What’s Included in commercial Cleaning? </h2>
-                <Row className="includedRegResidential g-4">
+                <Row className="includedRegResidential g-4 text-center">
                     <Col xs={12} sm={6} md={6} lg={3}>
                         <Card className="smCard">
                             <Card.Body>
                                 <Card.Img className="cardImg h-100" variant="top" src={gencleaning} />
                                 <Card.Title className="smCardTitle"></Card.Title>
                                 <Card.Text className="smCardText">
-                                    <p>🧹 <strong>General Cleaning & Maintenance –</strong> Dusting, sweeping, mopping, and disinfecting high-traffic areas.</p>
+                                    <p>🧹 <strong>General Cleaning & Maintenance <br /></strong> Dusting, sweeping, mopping, and disinfecting high-traffic areas.</p>
                                 </Card.Text>
                             </Card.Body>
                         </Card>
@@ -106,7 +108,7 @@ function Commercial() {
                                 <Card.Img className="cardImg h-100" variant="top" src={restroom} />
                                 <Card.Title className="smCardTitle"></Card.Title>
                                 <Card.Text className="smCardText">
-                                    <p>🛁 <strong>Restroom Sanitation –</strong> Deep cleaning and sanitizing of sinks, toilets, and high-touch surfaces.</p>
+                                    <p>🛁 <strong>Restroom Sanitation <br /></strong> Deep cleaning and sanitizing of sinks, toilets, and high-touch surfaces.</p>
                                 </Card.Text>
                             </Card.Body>
                         </Card>
@@ -118,7 +120,7 @@ function Commercial() {
                                 <Card.Img className="cardImg h-100" variant="top" src={breakroom} />
                                 <Card.Title className="smCardTitle"></Card.Title>
                                 <Card.Text className="smCardText">
-                                    🍽 <strong>Breakroom & Kitchen Cleaning –</strong> Wiping down countertops, cleaning sinks, and sanitizing appliances.
+                                    🍽 <strong>Breakroom & Kitchen Cleaning <br /></strong> Wiping down countertops, cleaning sinks, and sanitizing appliances.
                                 </Card.Text>
                             </Card.Body>
                         </Card>
@@ -130,7 +132,7 @@ function Commercial() {
                                 <Card.Img className="cardImg" variant="top" src={trashremoval} />
                                 <Card.Title className="smCardTitle"></Card.Title>
                                 <Card.Text className="smCardText">
-                                    🗑 <strong>Trash Removal –</strong> Ensuring a clean, clutter-free workspace with responsible waste disposal.
+                                    🗑 <strong>Trash Removal <br /></strong> Ensuring a clean, clutter-free workspace with responsible waste disposal.
                                 </Card.Text>
                             </Card.Body>
                         </Card>
@@ -139,21 +141,21 @@ function Commercial() {
 
 
                
-                <Row>
+                <Row className="text-center">
                 <Col md={12} lg={6}>
                         <Card className="regCard">
                             <Card.Body>
                                 <Card.Title className="regCardTitle">How Rux Cleaning’s Commercial Services Help Your Business</Card.Title>
                                 <Card.Text className="regCardText">
-                                    <p>🌿 <strong>Healthier Workspace –</strong> Reduce germs, allergens, and bacteria to promote employee wellness.
+                                    <p>🌿 <strong>Healthier Workspace <br /></strong> Reduce germs, allergens, and bacteria to promote employee wellness.
                                     </p>
-                                    <p>💼 <strong>Enhances Professional Image –</strong> A spotless workspace leaves a lasting impression on clients and visitors.
+                                    <p>💼 <strong>Enhances Professional Image <br /></strong> A spotless workspace leaves a lasting impression on clients and visitors.
                                     </p>
-                                    <p>⏳ <strong>Saves Time & Money –</strong> Our efficient services <strong>free up your staff</strong> to focus on their work instead of cleaning.
+                                    <p>⏳ <strong>Saves Time & Money <br /></strong> Our efficient services <strong>free up your staff</strong> to focus on their work instead of cleaning.
                                     </p>
-                                    <p>♻ <strong>Eco-Friendly & Sustainable –</strong> We use <strong>green-certified cleaning products</strong> that are safe for people and the planet.
+                                    <p>♻ <strong>Eco-Friendly & Sustainable <br /></strong> We use <strong>green-certified cleaning products</strong> that are safe for people and the planet.
                                     </p>
-                                    <p>🏢 <strong>Custom Cleaning Plans –</strong> Choose from daily, weekly, or customized cleaning schedules to suit your needs.
+                                    <p>🏢 <strong>Custom Cleaning Plans <br /></strong> Choose from daily, weekly, or customized cleaning schedules to suit your needs.
                                     </p>
                                 </Card.Text>
                             </Card.Body>
@@ -167,10 +169,10 @@ function Commercial() {
                                 <Card.Title className="regCardTitle">Why Choose Rux Cleaning?</Card.Title>
                                 <Card.Text className="regCardText">
 
-                                    <p>✨ <strong>Reliable & Professional Team –</strong> We provide <strong>consistent, high-quality service</strong> tailored to your business.</p>
-                                    <p>🌿 <strong>Eco-Friendly & Non-Toxic Products –</strong> Our cleaning solutions are <strong>safe, effective, and environmentally responsible.</strong></p>
+                                    <p>✨ <strong>Reliable & Professional Team <br /></strong> We provide <strong>consistent, high-quality service</strong> tailored to your business.</p>
+                                    <p>🌿 <strong>Eco-Friendly & Non-Toxic Products <br /></strong> Our cleaning solutions are <strong>safe, effective, and environmentally responsible.</strong></p>
                                     <p>📍 <strong></strong> Serving businesses across the <strong>Bolingbrook area with expert commercial cleaning services.</strong></p>
-                                    <p>📅 <strong><strong>Flexible Scheduling –</strong></strong> Available <strong>after-hours and on weekends</strong> to minimize business disruptions.</p>
+                                    <p>📅 <strong><strong>Flexible Scheduling <br /></strong></strong> Available <strong>after-hours and on weekends</strong> to minimize business disruptions.</p>
                                 </Card.Text>
                             </Card.Body>
                         </Card>
@@ -178,7 +180,7 @@ function Commercial() {
 
                 </Row>
 
-                <Row className="justify-content-center">
+                <Row className="justify-content-center text-center">
                 <Col xs={12} md={8} lg={6}>
                     <Card className="bookCard ">
                         <Card.Body>

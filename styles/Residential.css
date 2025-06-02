@@ -67,4 +67,9 @@ font-size: 1.2rem;
   border: none;
   box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.3);
   color: black;
+  margin-right: 0.75rem;
+}
+
+ul {
+  list-style: none;
 }
