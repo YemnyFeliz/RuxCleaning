@@ -98,7 +98,7 @@ function MoveCleaning() {
                             <Card.Body>
                                 <Card.Img className="cardImg" variant="top" src={MoveKitchen} />
                                 <Card.Title className="smCardTitle">Kitchen:</Card.Title>
-                                <Card.Text className="smCardText p-3 text-center" id="indent">
+                                <Card.Text className="smCardText  text-center" id="indent">
                                     <p>Cleaning all appliances (inside and out), countertops, sinks, and cabinets. Scrubbing floors and wiping down baseboards.
                                     </p>
                                 </Card.Text>
@@ -111,7 +111,7 @@ function MoveCleaning() {
                             <Card.Body>
                                 <Card.Img className="cardImg" variant="top" src={MoveBathroom} />
                                 <Card.Title className="smCardTitle">Bathrooms:</Card.Title>
-                                <Card.Text className="smCardText p-3 text-center" id="indent">
+                                <Card.Text className="smCardText  text-center" id="indent">
                                     <p>Disinfecting toilets, tubs, showers, sinks, and counters. Cleaning mirrors and ensuring that every surface is sanitized.
                                     </p>
                                 </Card.Text>
@@ -125,7 +125,7 @@ function MoveCleaning() {
                             <Card.Body>
                                 <Card.Img className="cardImg" variant="top" src={MoveLiving} />
                                 <Card.Title className="smCardTitle">Living Areas & Bedrooms:</Card.Title>
-                                <Card.Text className="smCardText p-3 text-center" id="indent">
+                                <Card.Text className="smCardText  text-center" id="indent">
                                     <p>Dusting and wiping down all furniture, baseboards, and window sills. Vacuuming carpets, cleaning floors, and removing any debris left behind.
                                     </p>
                                 </Card.Text>
@@ -139,7 +139,7 @@ function MoveCleaning() {
                             <Card.Body>
                                 <Card.Img className="cardImg" variant="top" src={MoveDeep} />
                                 <Card.Title className="smCardTitle">Deep Cleaning Areas:</Card.Title>
-                                <Card.Text className="smCardText p-3 text-center" id="indent">
+                                <Card.Text className="smCardText  text-center" id="indent">
                                     <p>Cleaning inside cabinets, closets, and drawers to remove dust and debris. Wiping down walls, light switches, and door frames.
                                     </p>
                                 </Card.Text>
@@ -152,7 +152,7 @@ function MoveCleaning() {
                             <Card.Body>
                                 <Card.Img className="cardImg" variant="top" src={MoveProducts} />
                                 <Card.Title className="smCardTitle">Eco-Friendly Products:</Card.Title>
-                                <Card.Text className="smCardText p-3 text-center" id="indent">
+                                <Card.Text className="smCardText  text-center" id="indent">
                                     <p>We use <strong>green-certified, biodegradable cleaning supplies</strong> that are effective yet gentle on the environment, leaving your home fresh without the harsh chemicals.
 
                                     </p>
