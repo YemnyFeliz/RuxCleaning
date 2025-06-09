@@ -3,6 +3,7 @@ import "../styles/Home.css";
 import Card from 'react-bootstrap/Card';
 
 import { Row, Col } from 'react-bootstrap';
+import QuoteBtn from "../components/QuoteBtn";
 
 
 function Home() {
@@ -56,6 +57,7 @@ function Home() {
                                         <br />
                                         <strong>🧼 Deep Cleaning <br />  </strong>Comprehensive cleaning for hard-to-reach areas and high-traffic spaces.
                                     </Card.Text>
+                                    <QuoteBtn />
                                 </Card.Body>
                             </Card>
                         </Col>

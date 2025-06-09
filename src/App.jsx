@@ -18,7 +18,8 @@ import PostConstruction from '../Pages/Residential/PostConstruction';
 import Commercial from '/Pages/Commercial';
 import EcoFriendly from '/Pages/Eco-Friendly';
 import Career from '../Pages/Career';
-import RuxFooter from '../components/Footer'
+import RuxFooter from '../components/Footer';
+
 
 console.log("✅ App component is rendering...");
 
