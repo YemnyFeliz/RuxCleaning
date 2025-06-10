@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from 'react';
-import { useMediaQuery } from 'react-responsive';
+// import { useMediaQuery } from 'react-responsive';
 import '../src/App.css';
 import '../styles/Residential.css';
 
@@ -19,7 +19,7 @@ import dirtyStove from "../src/assets/dirtyStove.jpeg";
 
 function ResidentialMain() {
 
-    const isDesktop = useMediaQuery({ minWidth: 992 });
+    // const isDesktop = useMediaQuery({ minWidth: 992 });
     const [showVideo, setShowVideo] = useState(false);
 
     // Always delay the video by 1s regardless of screen size

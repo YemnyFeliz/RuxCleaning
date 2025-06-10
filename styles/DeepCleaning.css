@@ -4,10 +4,10 @@
   }
 
 
-.deepCleaningTitle{
+/* .deepCleaningTitle{
     font-size: 2.7rem;
     color: black;
-}
+} */
 
 .deepCleaningIntroText{
     padding-top: 1.5rem;
@@ -17,20 +17,20 @@
     align-items: center;
     text-align: center;
     font-size: 1.3rem;
-    /* margin-bottom: 3rem; */
+    
 }
 
-#includedIntro {
+/* #includedIntro {
     text-align: center;
-}
+} */
 
-#deepCard{
+/* #deepCard{
     max-height: 50%;
-}
+} */
 
-ul {
+/* ul {
     list-style: none;
-}
+} */
 
 #deepBathImg{
     height: 15rem;
