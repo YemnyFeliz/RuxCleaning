@@ -57,7 +57,9 @@ function Home() {
                                         <br />
                                         <strong>🧼 Deep Cleaning <br />  </strong>Comprehensive cleaning for hard-to-reach areas and high-traffic spaces.
                                     </Card.Text>
+                                    <div className="d-inline-block text-center">
                                     <QuoteBtn />
+                                    </div>
                                 </Card.Body>
                             </Card>
                         </Col>

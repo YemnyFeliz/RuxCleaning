@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from 'react';
 import "../../src/App.css";
-import '../../styles/MoveCleaning.css';
+
 
 // import { Container } from "react-bootstrap";
 import Card from 'react-bootstrap/Card';
