@@ -114,45 +114,6 @@ h2 {
     
 }
 
-/* -----------------------Dropdown-------------------- */
-
-/* Make dropdown larger */
-.navbar .dropdown-menu {
-    background-color: white!important;  /* Dark blue background */
-    border-radius: 10px !important;  /* Rounded corners */
-    border-style: hidden;
-    min-width: 600px !important;  /* Set width */
-    padding: 12px !important;
-}
-
-/* Style dropdown items */
-.navbar .dropdown-menu .dropdown-item {
-    color: black!important;  /* White text */
-    font-size: 1.2rem !important;  /* Larger font */
-    padding: 12px 20px !important;
-}
-
-/* Hover effect */
-.navbar .dropdown-menu .dropdown-item:hover {
-    background-color: #0077b6 !important;  /* Lighter blue */
-    color: #fff !important;
-}
-
-/* Active item */
-.navbar .dropdown-menu .dropdown-item:active {
-    background-color: #00b4d8 !important; 
-}
-
-/* Ensure Navbar links fill entire width */
-.navbar-nav {
-    width: 100% !important;
-    justify-content: space-between !important; /* Spread items */
-}
-
-.logo{
-    width: 300px;
-    height: 250px
-}
 
 /* -----------------------Responsive-------------------- */
 @media (max-width: 768px) {
@@ -168,28 +129,7 @@ h2 {
     .homeh2{
         font-size: 1.8rem !important;
     }
-    .navbar .dropdown-menu {
-        background-color:#00b4d8 !important;  
-        border-radius: 1rem !important;  
-        border-style: hidden;
-        padding: 12px !important;
-
-        min-width: 100% !important;
-        max-width: 100% !important ;
-        box-sizing: border-box;
-    }
-    
-    /* Style dropdown items */
-    .navbar .dropdown-menu .dropdown-item {
-        color: black!important;  /* White text */
-        font-size: 1.2rem !important;  /* Larger font */
-        font-weight: bold;
-        padding: 12px 20px !important;
-    }
-    .logo{
-        width: 200px;
-        height: 200px;
-    }
+ 
     h1 {
         
         margin-top: 5rem;
